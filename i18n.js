@@ -8,7 +8,6 @@ const translations = {
     'nav-services':      'Servicios',
     'nav-methodology':   'Metodología',
     'nav-about':         'Nosotros',
-    'nav-cases':         'Casos',
     'nav-cta':           'Hablar con un experto',
 
     /* HERO */
@@ -106,17 +105,6 @@ const translations = {
     'step-4-title':      'Seguimiento y mejora',
     'step-4-desc':       'No desaparecemos tras el proyecto. Medimos el impacto, ajustamos y seguimos contigo.',
 
-    /* TESTIMONIALS */
-    'testi-eyebrow':     'Clientes',
-    'testi-title':       'Lo que dicen quienes <span class="grad">ya lo han vivido.</span>',
-    'testi-sub':         'Empresas reales, resultados reales.',
-    'testi-1-text':      'Llevábamos años sabiendo que había ineficiencias, pero no sabíamos por dónde atacar. En ocho semanas, Iselia nos ayudó a identificarlas y automatizar dos procesos clave. Recuperamos casi 15 horas semanales de trabajo administrativo.',
-    'testi-1-role':      'Directora de Operaciones — Distribución, 45 empleados',
-    'testi-2-text':      'Lo que más me sorprendió fue que desde el primer día hablaron de negocio, no de tecnología. Entendieron nuestra realidad antes de proponer nada. Eso marca la diferencia.',
-    'testi-2-role':      'Gerente — Restauración, 60 empleados',
-    'testi-3-text':      'Teníamos miedo de que la IA fuera demasiado compleja para nuestro equipo. Iselia adaptó todo a nuestro ritmo. Ahora el equipo usa herramientas que antes parecían imposibles, y las ha adoptado de forma natural.',
-    'testi-3-role':      'CEO — Clínica médica privada, 22 empleados',
-
     /* CONTACT */
     'contact-eyebrow':   'Contacto',
     'contact-title':     '¿Listo para<br /><span class="grad">la conversación?</span>',
@@ -169,7 +157,6 @@ const translations = {
     'nav-services':      'Services',
     'nav-methodology':   'Methodology',
     'nav-about':         'About',
-    'nav-cases':         'Cases',
     'nav-cta':           'Talk to an expert',
 
     /* HERO */
@@ -266,17 +253,6 @@ const translations = {
     'step-4-num':        'STEP 04',
     'step-4-title':      'Follow-up & improvement',
     'step-4-desc':       'We don\'t disappear after the project. We measure impact, adjust and stay with you.',
-
-    /* TESTIMONIALS */
-    'testi-eyebrow':     'Clients',
-    'testi-title':       'What those who\'ve <span class="grad">lived it say.</span>',
-    'testi-sub':         'Real companies, real results.',
-    'testi-1-text':      'We\'d known for years that there were inefficiencies, but didn\'t know where to start. In eight weeks, Iselia helped us identify them and automate two key processes. We recovered nearly 15 hours of administrative work per week.',
-    'testi-1-role':      'Operations Director — Distribution, 45 employees',
-    'testi-2-text':      'What surprised me most was that from day one they talked about business, not technology. They understood our reality before proposing anything. That makes all the difference.',
-    'testi-2-role':      'Manager — Food & Beverage, 60 employees',
-    'testi-3-text':      'We were afraid AI would be too complex for our team. Iselia adapted everything to our pace. Now the team uses tools that once seemed impossible, and they\'ve adopted them naturally.',
-    'testi-3-role':      'CEO — Private medical clinic, 22 employees',
 
     /* CONTACT */
     'contact-eyebrow':   'Contact',

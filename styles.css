@@ -610,29 +610,6 @@ section {
 .step h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .5rem; }
 .step p  { font-size: .85rem; color: var(--muted); line-height: 1.6; }
 
-/* ─── TESTIMONIALS ───────────────────────── */
-.testimonials { background: var(--bg); }
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.25rem;
-}
-.testi-card {
-  background: var(--glass);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 2rem;
-  position: relative;
-  transition: border-color .25s, transform .25s;
-}
-.testi-card:hover { border-color: var(--border2); transform: translateY(-3px); }
-.testi-stars { display: flex; gap: .25rem; margin-bottom: 1rem; }
-.testi-stars span { color: #fbbf24; font-size: .9rem; }
-.testi-text { font-size: .9rem; color: var(--text); line-height: 1.7; margin-bottom: 1.5rem; }
-.testi-author { display: flex; flex-direction: column; gap: .15rem; }
-.testi-name { font-size: .875rem; font-weight: 700; color: var(--white); }
-.testi-role { font-size: .78rem; color: var(--muted); }
-
 /* ─── CONTACT ────────────────────────────── */
 .contact { background: var(--bg2); }
 .contact-layout {

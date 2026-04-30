@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Active nav link on scroll
-const navSections = ['nosotros', 'servicios', 'metodologia', 'casos', 'contacto']
+const navSections = ['nosotros', 'servicios', 'metodologia', 'contacto']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
