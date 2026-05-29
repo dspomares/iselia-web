@@ -138,6 +138,7 @@ const translations = {
     'form-sector-8':     'Otro',
     'form-msg-lbl':      '¿Cuál es tu mayor reto ahora mismo?',
     'form-msg-ph':       'Cuéntanos brevemente el problema o la oportunidad que quieres explorar…',
+    'form-consent':      'He leído y acepto la <a href="privacidad.html">Política de Privacidad</a>. *',
     'form-submit':       'Solicitar diagnóstico gratuito →',
     'form-note':         'Sin spam. Tus datos se usan únicamente para contactarte.',
     'form-ok-title':     '¡Mensaje recibido!',
@@ -146,6 +147,46 @@ const translations = {
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia · Todos los derechos reservados',
     'footer-tag':        'Hecho con experiencia real, no con plantillas.',
+    'footer-privacy':    '<a href="privacidad.html">Política de Privacidad</a>',
+
+    /* PRIVACY PAGE */
+    'priv-page-title':   'Política de Privacidad — Iselia',
+    'priv-meta-desc':    'Política de privacidad de Iselia: responsable del tratamiento, finalidades, base legal y derechos del usuario conforme al RGPD y la LOPDGDD.',
+    'priv-back':         '← Volver al inicio',
+    'priv-title':        'Política de Privacidad',
+    'priv-updated':      'Última actualización: 29 de mayo de 2026',
+    'priv-1-h':          '1. Responsable del Tratamiento',
+    'priv-1-p':          'El responsable del tratamiento de tus datos personales es:',
+    'priv-c-addr':       'Domicilio: Av. Estrasburgo II, 1, 28514 Nuevo Baztán (Madrid)',
+    'priv-c-email':      'Email: <a href="mailto:privacidad@iselia.es">privacidad@iselia.es</a>',
+    'priv-c-phone':      'Teléfono: <a href="tel:+34623042205">+34 623 04 22 05</a>',
+    'priv-2-h':          '2. Finalidades del Tratamiento',
+    'priv-2-p':          'Tratamos los datos que nos facilitas con las siguientes finalidades:',
+    'priv-2-li1':        'Gestionar y responder a las consultas y solicitudes recibidas a través del formulario de contacto.',
+    'priv-2-li2':        'Coordinar y prestar la sesión de diagnóstico solicitada.',
+    'priv-2-li3':        'Enviarte información comercial sobre nuestros servicios, únicamente si nos has dado tu autorización previa.',
+    'priv-2-li4':        'Prevenir envíos automatizados, abusos del servicio y actividades maliciosas.',
+    'priv-3-h':          '3. Base Legal',
+    'priv-3-p1':         'La base legal para el tratamiento de tus datos es el <strong>consentimiento del interesado</strong>, otorgado al marcar la casilla de aceptación de esta Política de Privacidad (art. 6.1.a del RGPD).',
+    'priv-3-p2':         'Para la prevención del fraude y el abuso del servicio, la base es el <strong>interés legítimo</strong> del responsable (art. 6.1.f del RGPD).',
+    'priv-4-h':          '4. Datos Recogidos',
+    'priv-4-p':          'A través del formulario de contacto recogemos los siguientes datos:',
+    'priv-4-li1':        'Nombre.',
+    'priv-4-li2':        'Empresa.',
+    'priv-4-li3':        'Correo electrónico.',
+    'priv-4-li4':        'Número de empleados (opcional).',
+    'priv-4-li5':        'Sector de actividad (opcional).',
+    'priv-4-li6':        'Mensaje o consulta (opcional).',
+    'priv-4-note':       'No es necesario facilitar ningún dato adicional para tramitar tu solicitud.',
+    'priv-5-h':          '5. Destinatarios',
+    'priv-5-p':          'Tus datos se gestionan en los sistemas propios de Iselia y <strong>no serán cedidos a terceros</strong>, salvo obligación legal. No se realizan transferencias internacionales de datos.',
+    'priv-6-h':          '6. Plazo de Conservación',
+    'priv-6-p':          'Conservaremos tus datos durante el tiempo necesario para dar respuesta a tu solicitud y mantener la relación comercial mientras no solicites su supresión, así como durante los plazos legalmente exigibles. Transcurridos dichos plazos, los datos serán eliminados.',
+    'priv-7-h':          '7. Derechos del Usuario',
+    'priv-7-p1':         'Puedes ejercer en cualquier momento tus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición, dirigiéndote a <a href="mailto:privacidad@iselia.es">privacidad@iselia.es</a>, indicando el derecho que deseas ejercer.',
+    'priv-7-p2':         'Si consideras que el tratamiento de tus datos no se ajusta a la normativa, tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.',
+    'priv-8-h':          '8. Medidas de Seguridad',
+    'priv-8-p':          'Aplicamos las medidas técnicas y organizativas adecuadas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, incluyendo controles de validación, limitación de solicitudes y monitorización básica del servicio.',
   },
 
   en: {
@@ -287,6 +328,7 @@ const translations = {
     'form-sector-8':     'Other',
     'form-msg-lbl':      'What is your biggest challenge right now?',
     'form-msg-ph':       'Tell us briefly about the problem or opportunity you\'d like to explore…',
+    'form-consent':      'I have read and accept the <a href="privacidad.html">Privacy Policy</a>. *',
     'form-submit':       'Request a free diagnosis →',
     'form-note':         'No spam. Your data is used solely to contact you.',
     'form-ok-title':     'Message received!',
@@ -295,6 +337,46 @@ const translations = {
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia · All rights reserved',
     'footer-tag':        'Built with real experience, not templates.',
+    'footer-privacy':    '<a href="privacidad.html">Privacy Policy</a>',
+
+    /* PRIVACY PAGE */
+    'priv-page-title':   'Privacy Policy — Iselia',
+    'priv-meta-desc':    'Iselia privacy policy: data controller, purposes, legal basis and user rights under the GDPR.',
+    'priv-back':         '← Back to home',
+    'priv-title':        'Privacy Policy',
+    'priv-updated':      'Last updated: 29 May 2026',
+    'priv-1-h':          '1. Data Controller',
+    'priv-1-p':          'The controller responsible for processing your personal data is:',
+    'priv-c-addr':       'Address: Av. Estrasburgo II, 1, 28514 Nuevo Baztán (Madrid), Spain',
+    'priv-c-email':      'Email: <a href="mailto:privacidad@iselia.es">privacidad@iselia.es</a>',
+    'priv-c-phone':      'Phone: <a href="tel:+34623042205">+34 623 04 22 05</a>',
+    'priv-2-h':          '2. Purposes of Processing',
+    'priv-2-p':          'We process the data you provide for the following purposes:',
+    'priv-2-li1':        'To manage and respond to enquiries and requests received through the contact form.',
+    'priv-2-li2':        'To coordinate and deliver the requested diagnosis session.',
+    'priv-2-li3':        'To send you commercial information about our services, only where you have given your prior consent.',
+    'priv-2-li4':        'To prevent automated submissions, service abuse and malicious activity.',
+    'priv-3-h':          '3. Legal Basis',
+    'priv-3-p1':         'The legal basis for processing your data is the <strong>consent of the data subject</strong>, given by ticking the box accepting this Privacy Policy (Art. 6.1.a GDPR).',
+    'priv-3-p2':         'For the prevention of fraud and service abuse, the basis is the <strong>legitimate interest</strong> of the controller (Art. 6.1.f GDPR).',
+    'priv-4-h':          '4. Data Collected',
+    'priv-4-p':          'Through the contact form we collect the following data:',
+    'priv-4-li1':        'Name.',
+    'priv-4-li2':        'Company.',
+    'priv-4-li3':        'Email address.',
+    'priv-4-li4':        'Number of employees (optional).',
+    'priv-4-li5':        'Industry sector (optional).',
+    'priv-4-li6':        'Message or enquiry (optional).',
+    'priv-4-note':       'No additional data is required to process your request.',
+    'priv-5-h':          '5. Recipients',
+    'priv-5-p':          'Your data is managed within Iselia\'s own systems and <strong>will not be shared with third parties</strong>, except where legally required. No international data transfers are carried out.',
+    'priv-6-h':          '6. Retention Period',
+    'priv-6-p':          'We will retain your data for as long as necessary to respond to your request and to maintain the business relationship, unless you request its deletion, and for the periods legally required. Once those periods have elapsed, the data will be deleted.',
+    'priv-7-h':          '7. Your Rights',
+    'priv-7-p1':         'You may exercise your rights of access, rectification, erasure, restriction of processing, portability and objection at any time by writing to <a href="mailto:privacidad@iselia.es">privacidad@iselia.es</a>, indicating the right you wish to exercise.',
+    'priv-7-p2':         'If you believe that the processing of your data does not comply with the applicable regulations, you have the right to lodge a complaint with the Spanish Data Protection Agency (AEPD) at <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.',
+    'priv-8-h':          '8. Security Measures',
+    'priv-8-p':          'We apply the appropriate technical and organisational measures to ensure the security of your personal data and to prevent its alteration, loss, unauthorised processing or access, including validation controls, request rate limiting and basic service monitoring.',
   }
 };
 
@@ -305,11 +387,13 @@ function applyLang(lang) {
   if (!t) return;
   currentLang = lang;
 
-  // html lang + meta
+  // html lang + meta (per-page keys via data attrs, defaulting to the home page)
   document.documentElement.lang = lang;
-  document.title = t['page-title'];
+  const titleKey = document.documentElement.dataset.i18nTitle || 'page-title';
+  const descKey  = document.documentElement.dataset.i18nDesc  || 'meta-desc';
+  if (t[titleKey] !== undefined) document.title = t[titleKey];
   const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.setAttribute('content', t['meta-desc']);
+  if (metaDesc && t[descKey] !== undefined) metaDesc.setAttribute('content', t[descKey]);
 
   // mobile button aria
   const mobileBtn = document.getElementById('mobileToggle');

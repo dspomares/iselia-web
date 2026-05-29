@@ -58,9 +58,82 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav, { passive: true });
 updateActiveNav();
 
+// ── Lead capture — endpoint per environment (by hostname)
+const isDevHost = ['localhost', '127.0.0.1', '0.0.0.0'].includes(location.hostname);
+const CRM_BASE  = isDevHost ? 'http://localhost:9090' : 'https://crm.iselia.es';
+const LEADS_API = `${CRM_BASE}/api/public/leads/`;
+
 // ── Form submit
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
-  this.style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
+
+  const form    = this;
+  const btn     = form.querySelector('.form-submit');
+  const errorEl = document.getElementById('formError');
+
+  // Privacy policy opt-in is mandatory
+  const consent = form.querySelector('#privacidad');
+  if (!consent.checked) {
+    errorEl.textContent = currentLang === 'es'
+      ? 'Debes aceptar la Política de Privacidad para continuar.'
+      : 'You must accept the Privacy Policy to continue.';
+    errorEl.hidden = false;
+    consent.focus();
+    return;
+  }
+
+  const nombre = form.querySelector('#nombre').value.trim();
+  const spaceIdx = nombre.indexOf(' ');
+  const first_name = spaceIdx === -1 ? nombre : nombre.slice(0, spaceIdx);
+  const last_name  = spaceIdx === -1 ? undefined : nombre.slice(spaceIdx + 1) || undefined;
+
+  const employees = form.querySelector('#empleados').value || undefined;
+  const sector    = form.querySelector('#sector').value    || undefined;
+  const notes     = form.querySelector('#mensaje').value.trim() || undefined;
+
+  const payload = {
+    first_name,
+    ...(last_name  && { last_name }),
+    email:   form.querySelector('#email').value.trim(),
+    company: form.querySelector('#empresa').value.trim(),
+    ...(employees  && { employees }),
+    ...(sector     && { sector }),
+    ...(notes      && { notes }),
+    campaign: form.querySelector('[name="campaign"]').value,
+    privacy_optin: consent.checked,
+  };
+
+  const originalHTML = btn.innerHTML;
+  btn.disabled  = true;
+  btn.innerHTML = currentLang === 'es' ? 'Enviando…' : 'Sending…';
+  errorEl.hidden = true;
+
+  try {
+    const res = await fetch(LEADS_API, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify(payload),
+    });
+
+    if (res.status === 201) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      const data = await res.json().catch(() => ({}));
+      errorEl.textContent = data.message ||
+        (currentLang === 'es'
+          ? 'Ha ocurrido un error. Por favor, inténtalo de nuevo.'
+          : 'Something went wrong. Please try again.');
+      errorEl.hidden  = false;
+      btn.disabled    = false;
+      btn.innerHTML   = originalHTML;
+    }
+  } catch {
+    errorEl.textContent = currentLang === 'es'
+      ? 'No se pudo conectar con el servidor. Inténtalo de nuevo.'
+      : 'Could not connect to the server. Please try again.';
+    errorEl.hidden  = false;
+    btn.disabled    = false;
+    btn.innerHTML   = originalHTML;
+  }
 });

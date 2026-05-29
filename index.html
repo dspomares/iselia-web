@@ -353,6 +353,7 @@
     <div class="form-wrap">
       <p class="form-heading" data-i18n="form-heading">Cuéntanos sobre tu empresa</p>
       <form id="contactForm">
+        <input type="hidden" name="campaign" value="iselia" />
         <div class="form-row">
           <div class="form-group">
             <label for="nombre" data-i18n="form-name-lbl">Nombre *</label>
@@ -398,7 +399,12 @@
           <label for="mensaje" data-i18n="form-msg-lbl">¿Cuál es tu mayor reto ahora mismo?</label>
           <textarea id="mensaje" name="mensaje" data-i18n-ph="form-msg-ph" placeholder="Cuéntanos brevemente el problema o la oportunidad que quieres explorar…"></textarea>
         </div>
+        <div class="form-consent">
+          <input type="checkbox" id="privacidad" name="privacidad" required />
+          <label for="privacidad" data-i18n="form-consent">He leído y acepto la <a href="privacidad.html">Política de Privacidad</a>. *</label>
+        </div>
         <button type="submit" class="form-submit" data-i18n="form-submit">Solicitar diagnóstico gratuito →</button>
+        <p class="form-error" id="formError" hidden></p>
         <p class="form-note" data-i18n="form-note">Sin spam. Tus datos se usan únicamente para contactarte.</p>
       </form>
       <div class="form-success" id="formSuccess">
@@ -415,6 +421,7 @@
   <div class="footer-logo">Isel<span>ia</span></div>
   <p data-i18n="footer-copy">© 2026 Iselia Consultoría Tecnológica · Todos los derechos reservados</p>
   <p data-i18n="footer-tag">Hecho con experiencia real, no con plantillas.</p>
+  <p class="footer-legal" data-i18n="footer-privacy"><a href="privacidad.html">Política de Privacidad</a></p>
 </footer>
 
 <script src="i18n.js"></script>
