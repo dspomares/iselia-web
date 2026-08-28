@@ -86,10 +86,10 @@ nav {
 nav.scrolled { border-color: var(--border2); }
 
 .nav-logo {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.45rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -.02em;
+  letter-spacing: .06em;
   color: var(--white);
   text-decoration: none;
   position: relative;
@@ -808,9 +808,10 @@ footer {
   gap: 1rem;
 }
 .footer-logo {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
+  letter-spacing: .06em;
   color: var(--white);
 }
 .footer-logo span {
