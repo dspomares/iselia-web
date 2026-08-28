@@ -782,6 +782,7 @@ section {
   transition: color .2s;
 }
 .footer-legal a:hover { color: var(--white); }
+.footer-sep { font-size: .78rem; color: var(--muted); opacity: .5; margin: 0 .2rem; }
 
 .form-success {
   display: none;

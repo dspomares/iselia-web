@@ -147,12 +147,13 @@ const translations = {
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · Todos los derechos reservados',
     'footer-tag':        'Hecho con experiencia real, no con plantillas.',
-    'footer-privacy':    '<a href="privacidad.html">Política de Privacidad</a>',
+    'footer-legal-notice': 'Aviso Legal',
+    'footer-privacy':    'Política de Privacidad',
+    'footer-cookies':    'Política de Cookies',
 
     /* PRIVACY PAGE */
     'priv-page-title':   'Política de Privacidad — Iselia',
     'priv-meta-desc':    'Política de privacidad de Iselia Networks, SLU: responsable del tratamiento, finalidades, base legal y derechos del usuario conforme al RGPD y la LOPDGDD.',
-    'priv-back':         '← Volver al inicio',
     'priv-title':        'Política de Privacidad',
     'priv-updated':      'Última actualización: 28 de agosto de 2026',
     'priv-1-h':          '1. Responsable del Tratamiento',
@@ -180,7 +181,8 @@ const translations = {
     'priv-4-li6':        'Mensaje o consulta (opcional).',
     'priv-4-note':       'No es necesario facilitar ningún dato adicional para tramitar tu solicitud.',
     'priv-5-h':          '5. Destinatarios',
-    'priv-5-p':          'Tus datos se gestionan en los sistemas propios de Iselia Networks, SLU y <strong>no serán cedidos a terceros</strong>, salvo obligación legal. No se realizan transferencias internacionales de datos.',
+    'priv-5-p':          'Los datos que nos facilitas a través del formulario se gestionan en los sistemas propios de Iselia Networks, SLU y <strong>no serán cedidos a terceros</strong>, salvo obligación legal.',
+    'priv-5-p2':         'Con independencia de lo anterior, este sitio web carga sus fuentes tipográficas desde Google Fonts, servicio prestado por Google Ireland Limited y Google LLC. Al visitar cualquier página, tu dirección IP se comunica a Google para servir dichas fuentes, lo que puede suponer una <strong>transferencia internacional de datos</strong> a Estados Unidos, amparada en la Decisión de Adecuación del EU-US Data Privacy Framework. Puedes consultar el detalle en nuestra <a href="cookies.html">Política de Cookies</a>.',
     'priv-6-h':          '6. Plazo de Conservación',
     'priv-6-p':          'Conservaremos tus datos durante el tiempo necesario para dar respuesta a tu solicitud y mantener la relación comercial mientras no solicites su supresión, así como durante los plazos legalmente exigibles. Transcurridos dichos plazos, los datos serán eliminados.',
     'priv-7-h':          '7. Derechos del Usuario',
@@ -188,6 +190,86 @@ const translations = {
     'priv-7-p2':         'Si consideras que el tratamiento de tus datos no se ajusta a la normativa, tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.',
     'priv-8-h':          '8. Medidas de Seguridad',
     'priv-8-p':          'Aplicamos las medidas técnicas y organizativas adecuadas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado, incluyendo controles de validación, limitación de solicitudes y monitorización básica del servicio.',
+
+    // --- shared legal ---
+    'legal-back':        '\u2190 Volver al inicio',
+
+    // --- aviso legal ---
+    'avl-page-title':    'Aviso Legal \u2014 Iselia',
+    'avl-meta-desc':     'Aviso legal de Iselia Networks, SLU: datos identificativos del titular, condiciones de uso, propiedad intelectual y legislaci\u00f3n aplicable conforme a la LSSICE.',
+    'avl-title':         'Aviso Legal',
+    'avl-updated':       '\u00daltima actualizaci\u00f3n: 28 de agosto de 2026',
+
+    'avl-1-h':           '1. Datos Identificativos del Titular',
+    'avl-1-p':           'En cumplimiento del deber de informaci\u00f3n previsto en el art\u00edculo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci\u00f3n y de Comercio Electr\u00f3nico (LSSICE), se facilitan los siguientes datos del titular de este sitio web:',
+    'avl-c-name':        'Denominaci\u00f3n social: <strong>Iselia Networks, SLU</strong>',
+    'avl-c-cif':         'CIF: B93913408',
+    'avl-c-addr':        'Domicilio social: Av. Estrasburgo II, 1, 28514 Nuevo Bazt\u00e1n (Madrid), Espa\u00f1a',
+    'avl-c-reg':         'Inscripci\u00f3n: Registro Mercantil de [PROVINCIA], Tomo [TOMO], Folio [FOLIO], Hoja [HOJA], Inscripci\u00f3n [N\u00daMERO]',
+    'avl-c-email':       'Email: <a href="mailto:info@iselia.es">info@iselia.es</a>',
+    'avl-c-phone':       'Tel\u00e9fono: <a href="tel:+34623042205">+34 623 04 22 05</a>',
+    'avl-c-web':         'Sitio web: <a href="https://www.iselia.es">www.iselia.es</a>',
+    'avl-c-act':         'Actividad: consultor\u00eda tecnol\u00f3gica y servicios de inteligencia artificial aplicada',
+
+    'avl-2-h':           '2. Objeto',
+    'avl-2-p1':          'El presente Aviso Legal regula el acceso, la navegaci\u00f3n y el uso del sitio web <a href="https://www.iselia.es">www.iselia.es</a> (en adelante, \u00abel Sitio Web\u00bb), cuya titularidad corresponde a Iselia Networks, SLU (en adelante, \u00abIselia\u00bb).',
+    'avl-2-p2':          'El acceso al Sitio Web es gratuito y atribuye la condici\u00f3n de usuario, lo que implica la aceptaci\u00f3n plena y sin reservas de todas las disposiciones de este Aviso Legal en la versi\u00f3n publicada en el momento del acceso. Si no est\u00e1s de acuerdo con alguna de ellas, te pedimos que no utilices el Sitio Web.',
+
+    'avl-3-h':           '3. Condiciones de Uso',
+    'avl-3-p':           'El usuario se compromete a hacer un uso diligente y l\u00edcito del Sitio Web y, en particular, a:',
+    'avl-3-li1':         'No emplear el Sitio Web con fines o efectos il\u00edcitos, lesivos de derechos de terceros o que puedan da\u00f1ar, inutilizar o sobrecargar el Sitio Web o impedir su normal utilizaci\u00f3n.',
+    'avl-3-li2':         'No introducir ni difundir virus, c\u00f3digo malicioso ni cualquier otro sistema que pueda provocar da\u00f1os en los sistemas de Iselia o de terceros.',
+    'avl-3-li3':         'No intentar acceder a \u00e1reas restringidas, ni realizar acciones de extracci\u00f3n masiva de datos, ingenier\u00eda inversa o elusi\u00f3n de medidas t\u00e9cnicas de seguridad.',
+    'avl-3-li4':         'Facilitar informaci\u00f3n veraz y actualizada en el formulario de contacto, respondiendo de la exactitud de los datos aportados.',
+    'avl-3-p2':          'Iselia se reserva el derecho a modificar, suspender o interrumpir, en cualquier momento y sin necesidad de preaviso, la presentaci\u00f3n, configuraci\u00f3n y contenidos del Sitio Web, as\u00ed como a denegar el acceso a quien incumpla estas condiciones.',
+
+    'avl-4-h':           '4. Propiedad Intelectual e Industrial',
+    'avl-4-p1':          'Todos los contenidos del Sitio Web \u2014 incluidos, con car\u00e1cter no limitativo, textos, im\u00e1genes, dise\u00f1o gr\u00e1fico, estructura de navegaci\u00f3n, c\u00f3digo fuente, logotipos, marcas y nombres comerciales \u2014 son titularidad de Iselia o de terceros que han autorizado su uso, y est\u00e1n protegidos por la normativa de propiedad intelectual e industrial.',
+    'avl-4-p2':          'Queda prohibida la reproducci\u00f3n, distribuci\u00f3n, comunicaci\u00f3n p\u00fablica, transformaci\u00f3n o cualquier otra forma de explotaci\u00f3n, total o parcial, de dichos contenidos sin la autorizaci\u00f3n previa y por escrito de Iselia. El acceso al Sitio Web no otorga al usuario ning\u00fan derecho de titularidad sobre los mismos.',
+
+    'avl-5-h':           '5. Enlaces y Servicios de Terceros',
+    'avl-5-p1':          'El Sitio Web puede contener enlaces a p\u00e1ginas de terceros. Iselia no controla ni asume responsabilidad alguna sobre sus contenidos, pol\u00edticas o pr\u00e1cticas. La inclusi\u00f3n de un enlace no implica recomendaci\u00f3n ni relaci\u00f3n entre Iselia y el titular del sitio enlazado.',
+    'avl-5-p2':          'El Sitio Web incorpora fuentes tipogr\u00e1ficas servidas por Google Fonts. Puedes consultar el detalle de este servicio y su tratamiento de datos en nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a> y en la <a href="cookies.html">Pol\u00edtica de Cookies</a>.',
+
+    'avl-6-h':           '6. Exclusi\u00f3n de Garant\u00edas y Responsabilidad',
+    'avl-6-p1':          'Iselia adopta medidas razonables para que la informaci\u00f3n del Sitio Web sea correcta y est\u00e9 actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del servicio, que puede verse afectada por causas t\u00e9cnicas ajenas a su control.',
+    'avl-6-p2':          'Los contenidos del Sitio Web tienen car\u00e1cter general e informativo y no constituyen asesoramiento profesional vinculante. Cualquier decisi\u00f3n adoptada a partir de ellos es responsabilidad exclusiva del usuario, sin perjuicio de las obligaciones asumidas por Iselia en el marco de un contrato de servicios espec\u00edfico.',
+
+    'avl-7-h':           '7. Protecci\u00f3n de Datos',
+    'avl-7-p':           'El tratamiento de los datos personales facilitados a trav\u00e9s del Sitio Web se rige por lo establecido en nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a>, que forma parte integrante de este Aviso Legal.',
+
+    'avl-8-h':           '8. Legislaci\u00f3n Aplicable y Jurisdicci\u00f3n',
+    'avl-8-p':           'Este Aviso Legal se rige por la legislaci\u00f3n espa\u00f1ola. Para la resoluci\u00f3n de cualquier controversia derivada del acceso o uso del Sitio Web, las partes se someten a los Juzgados y Tribunales del domicilio social de Iselia, salvo que la normativa de consumidores y usuarios aplicable determine un fuero distinto de car\u00e1cter imperativo.',
+
+    // --- pol\u00edtica de cookies ---
+    'ck-page-title':     'Pol\u00edtica de Cookies \u2014 Iselia',
+    'ck-meta-desc':      'Pol\u00edtica de cookies de Iselia Networks, SLU: este sitio web no utiliza cookies. Informaci\u00f3n sobre el almacenamiento local de la preferencia de idioma.',
+    'ck-title':          'Pol\u00edtica de Cookies',
+    'ck-updated':        '\u00daltima actualizaci\u00f3n: 28 de agosto de 2026',
+
+    'ck-1-h':            '1. \u00bfQu\u00e9 son las cookies?',
+    'ck-1-p':            'Una cookie es un peque\u00f1o archivo de texto que un sitio web almacena en el navegador del visitante para guardar y recuperar informaci\u00f3n sobre su navegaci\u00f3n. Su uso est\u00e1 regulado por el art\u00edculo 22.2 de la Ley 34/2002 (LSSICE), que exige el consentimiento del usuario salvo para las estrictamente necesarias.',
+
+    'ck-2-h':            '2. Cookies utilizadas en este sitio web',
+    'ck-2-p':            '<strong>Este sitio web no utiliza cookies</strong>, ni propias ni de terceros. No instalamos cookies anal\u00edticas, publicitarias, de personalizaci\u00f3n ni de seguimiento, y no elaboramos perfiles de navegaci\u00f3n.',
+    'ck-2-note':         'Por este motivo no se muestra ning\u00fan banner de consentimiento de cookies: no hay nada que consentir.',
+
+    'ck-3-h':            '3. Almacenamiento local del navegador',
+    'ck-3-p':            'El sitio guarda un \u00fanico dato en el almacenamiento local (<em>localStorage</em>) de tu navegador, con la finalidad de recordar el idioma que has elegido:',
+    'ck-3-li1':          '<strong>Nombre:</strong> iselia-lang',
+    'ck-3-li2':          '<strong>Finalidad:</strong> recordar el idioma seleccionado (espa\u00f1ol o ingl\u00e9s) para no volver a preguntarlo en cada visita.',
+    'ck-3-li3':          '<strong>Contenido:</strong> \u00fanicamente el valor <em>es</em> o <em>en</em>. No contiene datos personales ni permite identificarte.',
+    'ck-3-li4':          '<strong>Duraci\u00f3n:</strong> persiste hasta que borres los datos de navegaci\u00f3n de tu navegador.',
+    'ck-3-note':         'Al tratarse de una preferencia seleccionada expresamente por el usuario, este almacenamiento se considera estrictamente necesario y est\u00e1 <strong>exento del deber de obtener consentimiento</strong>, conforme al art\u00edculo 22.2 de la LSSICE y a la Gu\u00eda sobre el uso de las cookies de la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos.',
+
+    'ck-4-h':            '4. Servicios de terceros',
+    'ck-4-p':            'El sitio carga las fuentes tipogr\u00e1ficas desde Google Fonts (<em>fonts.googleapis.com</em> y <em>fonts.gstatic.com</em>). Este servicio <strong>no instala cookies</strong>, pero al descargar las fuentes tu direcci\u00f3n IP se comunica a Google. Encontrar\u00e1s el detalle de esta comunicaci\u00f3n y su base jur\u00eddica en el apartado \u00abDestinatarios\u00bb de nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a>.',
+
+    'ck-5-h':            '5. C\u00f3mo eliminar el almacenamiento local',
+    'ck-5-p':            'Puedes borrar en cualquier momento el dato descrito en el apartado 3 desde las opciones de tu navegador, normalmente en la secci\u00f3n de privacidad, al eliminar los datos de sitios web o el historial de navegaci\u00f3n. Tambi\u00e9n puedes navegar en modo inc\u00f3gnito o privado. La \u00fanica consecuencia es que el sitio dejar\u00e1 de recordar tu idioma y volver\u00e1 a mostrarse en espa\u00f1ol.',
+
+    'ck-6-h':            '6. Cambios en esta pol\u00edtica',
+    'ck-6-p':            'Si en el futuro incorporamos cookies o servicios que las requieran, actualizaremos esta pol\u00edtica y, cuando la normativa lo exija, solicitaremos tu consentimiento previo mediante el mecanismo correspondiente antes de instalarlas.',
   },
 
   en: {
@@ -338,12 +420,13 @@ const translations = {
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · All rights reserved',
     'footer-tag':        'Built with real experience, not templates.',
-    'footer-privacy':    '<a href="privacidad.html">Privacy Policy</a>',
+    'footer-legal-notice': 'Legal Notice',
+    'footer-privacy':    'Privacy Policy',
+    'footer-cookies':    'Cookie Policy',
 
     /* PRIVACY PAGE */
     'priv-page-title':   'Privacy Policy — Iselia',
     'priv-meta-desc':    'Iselia Networks, SLU privacy policy: data controller, purposes, legal basis and user rights under the GDPR.',
-    'priv-back':         '← Back to home',
     'priv-title':        'Privacy Policy',
     'priv-updated':      'Last updated: 28 August 2026',
     'priv-1-h':          '1. Data Controller',
@@ -371,7 +454,8 @@ const translations = {
     'priv-4-li6':        'Message or enquiry (optional).',
     'priv-4-note':       'No additional data is required to process your request.',
     'priv-5-h':          '5. Recipients',
-    'priv-5-p':          'Your data is managed within Iselia Networks, SLU\'s own systems and <strong>will not be shared with third parties</strong>, except where legally required. No international data transfers are carried out.',
+    'priv-5-p':          'The data you provide through the form is managed within the own systems of Iselia Networks, SLU and <strong>will not be shared with third parties</strong>, except where legally required.',
+    'priv-5-p2':         'Independently of the above, this website loads its web fonts from Google Fonts, a service provided by Google Ireland Limited and Google LLC. When you visit any page, your IP address is communicated to Google in order to serve those fonts, which may constitute an <strong>international data transfer</strong> to the United States, covered by the Adequacy Decision of the EU-US Data Privacy Framework. Details are available in our <a href="cookies.html">Cookie Policy</a>.',
     'priv-6-h':          '6. Retention Period',
     'priv-6-p':          'We will retain your data for as long as necessary to respond to your request and to maintain the business relationship, unless you request its deletion, and for the periods legally required. Once those periods have elapsed, the data will be deleted.',
     'priv-7-h':          '7. Your Rights',
@@ -379,6 +463,86 @@ const translations = {
     'priv-7-p2':         'If you believe that the processing of your data does not comply with the applicable regulations, you have the right to lodge a complaint with the Spanish Data Protection Agency (AEPD) at <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.',
     'priv-8-h':          '8. Security Measures',
     'priv-8-p':          'We apply the appropriate technical and organisational measures to ensure the security of your personal data and to prevent its alteration, loss, unauthorised processing or access, including validation controls, request rate limiting and basic service monitoring.',
+
+    // --- shared legal ---
+    'legal-back':        '\u2190 Back to home',
+
+    // --- legal notice ---
+    'avl-page-title':    'Legal Notice \u2014 Iselia',
+    'avl-meta-desc':     'Legal notice of Iselia Networks, SLU: owner identification details, terms of use, intellectual property and applicable law under Spanish LSSICE.',
+    'avl-title':         'Legal Notice',
+    'avl-updated':       'Last updated: 28 August 2026',
+
+    'avl-1-h':           '1. Owner Identification Details',
+    'avl-1-p':           'In compliance with the duty of information set out in Article 10 of Spanish Act 34/2002 of 11 July on Information Society Services and Electronic Commerce (LSSICE), the following details of the owner of this website are provided:',
+    'avl-c-name':        'Company name: <strong>Iselia Networks, SLU</strong>',
+    'avl-c-cif':         'Spanish tax ID (CIF): B93913408',
+    'avl-c-addr':        'Registered office: Av. Estrasburgo II, 1, 28514 Nuevo Bazt\u00e1n (Madrid), Spain',
+    'avl-c-reg':         'Registration: Commercial Registry of [PROVINCE], Volume [VOLUME], Folio [FOLIO], Sheet [SHEET], Entry [NUMBER]',
+    'avl-c-email':       'Email: <a href="mailto:info@iselia.es">info@iselia.es</a>',
+    'avl-c-phone':       'Phone: <a href="tel:+34623042205">+34 623 04 22 05</a>',
+    'avl-c-web':         'Website: <a href="https://www.iselia.es">www.iselia.es</a>',
+    'avl-c-act':         'Activity: technology consultancy and applied artificial intelligence services',
+
+    'avl-2-h':           '2. Purpose',
+    'avl-2-p1':          'This Legal Notice governs access to, browsing of and use of the website <a href="https://www.iselia.es">www.iselia.es</a> (hereinafter, the Website), owned by Iselia Networks, SLU (hereinafter, Iselia).',
+    'avl-2-p2':          'Access to the Website is free of charge and confers the status of user, which entails full and unreserved acceptance of every provision of this Legal Notice in the version published at the time of access. If you do not agree with any of them, please do not use the Website.',
+
+    'avl-3-h':           '3. Terms of Use',
+    'avl-3-p':           'The user undertakes to make diligent and lawful use of the Website and, in particular:',
+    'avl-3-li1':         'Not to use the Website for unlawful purposes or effects, to the detriment of third-party rights, or in a way that may damage, disable or overload the Website or prevent its normal use.',
+    'avl-3-li2':         'Not to introduce or spread viruses, malicious code or any other system that may cause damage to the systems of Iselia or of third parties.',
+    'avl-3-li3':         'Not to attempt to access restricted areas, nor to carry out mass data extraction, reverse engineering or circumvention of technical security measures.',
+    'avl-3-li4':         'To provide truthful and up-to-date information in the contact form, being responsible for the accuracy of the data supplied.',
+    'avl-3-p2':          'Iselia reserves the right to modify, suspend or discontinue the presentation, configuration and contents of the Website at any time and without prior notice, and to deny access to anyone who breaches these terms.',
+
+    'avl-4-h':           '4. Intellectual and Industrial Property',
+    'avl-4-p1':          'All contents of the Website \u2014 including, without limitation, text, images, graphic design, navigation structure, source code, logos, trade marks and trade names \u2014 are owned by Iselia or by third parties who have authorised their use, and are protected by intellectual and industrial property law.',
+    'avl-4-p2':          'The reproduction, distribution, public communication, transformation or any other form of exploitation, in whole or in part, of such contents without the prior written authorisation of Iselia is prohibited. Access to the Website grants the user no ownership rights over them.',
+
+    'avl-5-h':           '5. Links and Third-Party Services',
+    'avl-5-p1':          'The Website may contain links to third-party pages. Iselia neither controls nor assumes any responsibility for their contents, policies or practices. The inclusion of a link implies neither a recommendation nor any relationship between Iselia and the owner of the linked site.',
+    'avl-5-p2':          'The Website loads web fonts served by Google Fonts. Details of this service and its data processing are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.',
+
+    'avl-6-h':           '6. Disclaimer of Warranties and Liability',
+    'avl-6-p1':          'Iselia takes reasonable measures to keep the information on the Website accurate and up to date, but does not guarantee the absence of errors or uninterrupted availability of the service, which may be affected by technical causes beyond its control.',
+    'avl-6-p2':          'The contents of the Website are general and informative in nature and do not constitute binding professional advice. Any decision taken on the basis of them is the sole responsibility of the user, without prejudice to the obligations assumed by Iselia under a specific services agreement.',
+
+    'avl-7-h':           '7. Data Protection',
+    'avl-7-p':           'The processing of personal data provided through the Website is governed by our <a href="privacidad.html">Privacy Policy</a>, which forms an integral part of this Legal Notice.',
+
+    'avl-8-h':           '8. Applicable Law and Jurisdiction',
+    'avl-8-p':           'This Legal Notice is governed by Spanish law. For the resolution of any dispute arising from access to or use of the Website, the parties submit to the Courts and Tribunals of the registered office of Iselia, unless the applicable consumer protection legislation establishes a different mandatory venue.',
+
+    // --- cookie policy ---
+    'ck-page-title':     'Cookie Policy \u2014 Iselia',
+    'ck-meta-desc':      'Cookie policy of Iselia Networks, SLU: this website does not use cookies. Information about the local storage of the language preference.',
+    'ck-title':          'Cookie Policy',
+    'ck-updated':        'Last updated: 28 August 2026',
+
+    'ck-1-h':            '1. What are cookies?',
+    'ck-1-p':            'A cookie is a small text file that a website stores in the visitor browser in order to save and retrieve information about their browsing. Their use is regulated by Article 22.2 of Spanish Act 34/2002 (LSSICE), which requires user consent except for strictly necessary ones.',
+
+    'ck-2-h':            '2. Cookies used on this website',
+    'ck-2-p':            '<strong>This website does not use cookies</strong>, neither its own nor third-party ones. We do not install analytics, advertising, personalisation or tracking cookies, and we do not build browsing profiles.',
+    'ck-2-note':         'For this reason no cookie consent banner is displayed: there is nothing to consent to.',
+
+    'ck-3-h':            '3. Browser local storage',
+    'ck-3-p':            'The site stores a single item in your browser local storage (<em>localStorage</em>), for the purpose of remembering the language you have chosen:',
+    'ck-3-li1':          '<strong>Name:</strong> iselia-lang',
+    'ck-3-li2':          '<strong>Purpose:</strong> remember the selected language (Spanish or English) so as not to ask again on every visit.',
+    'ck-3-li3':          '<strong>Content:</strong> only the value <em>es</em> or <em>en</em>. It contains no personal data and does not allow you to be identified.',
+    'ck-3-li4':          '<strong>Duration:</strong> persists until you clear your browser browsing data.',
+    'ck-3-note':         'As this is a preference expressly selected by the user, this storage is considered strictly necessary and is <strong>exempt from the requirement to obtain consent</strong>, in accordance with Article 22.2 of the LSSICE and the Guidance on the use of cookies issued by the Spanish Data Protection Agency.',
+
+    'ck-4-h':            '4. Third-party services',
+    'ck-4-p':            'The site loads its web fonts from Google Fonts (<em>fonts.googleapis.com</em> and <em>fonts.gstatic.com</em>). This service <strong>does not install cookies</strong>, but when the fonts are downloaded your IP address is communicated to Google. Details of this communication and its legal basis can be found in the Recipients section of our <a href="privacidad.html">Privacy Policy</a>.',
+
+    'ck-5-h':            '5. How to delete the local storage',
+    'ck-5-p':            'You may delete the item described in section 3 at any time from your browser settings, usually in the privacy section, by clearing website data or browsing history. You may also browse in incognito or private mode. The only consequence is that the site will stop remembering your language and will be displayed in Spanish again.',
+
+    'ck-6-h':            '6. Changes to this policy',
+    'ck-6-p':            'If in future we incorporate cookies or services that require them, we will update this policy and, where the law so requires, we will request your prior consent through the appropriate mechanism before installing them.',
   }
 };
 
