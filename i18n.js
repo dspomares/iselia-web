@@ -146,7 +146,6 @@ const translations = {
 
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · Todos los derechos reservados',
-    'footer-tag':        'Hecho con experiencia real, no con plantillas.',
     'footer-legal-notice': 'Aviso Legal',
     'footer-privacy':    'Política de Privacidad',
     'footer-cookies':    'Política de Cookies',
@@ -419,7 +418,6 @@ const translations = {
 
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · All rights reserved',
-    'footer-tag':        'Built with real experience, not templates.',
     'footer-legal-notice': 'Legal Notice',
     'footer-privacy':    'Privacy Policy',
     'footer-cookies':    'Cookie Policy',
