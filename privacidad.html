@@ -9,6 +9,40 @@
           data-cbid="42545503-d43b-4026-9b3e-4bc26d3a8071" data-blockingmode="auto" type="text/javascript"></script>
   <!-- End Cookiebot CMP -->
 
+  <!-- Google Analytics 4 (G-BYKG0C7WKZ) con Consent Mode v2.
+       Por defecto todo denegado: GA4 no escribe cookies hasta que Cookiebot
+       confirme el consentimiento. Debe ir por encima de GTM, que tambien lee
+       el estado de consentimiento del dataLayer. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage:         'denied',
+      ad_user_data:       'denied',
+      ad_personalization: 'denied',
+      analytics_storage:  'denied',
+      wait_for_update:    500
+    });
+    function iseliaConsentUpdate() {
+      var c = (window.Cookiebot && window.Cookiebot.consent) || {};
+      gtag('consent', 'update', {
+        ad_storage:         c.marketing  ? 'granted' : 'denied',
+        ad_user_data:       c.marketing  ? 'granted' : 'denied',
+        ad_personalization: c.marketing  ? 'granted' : 'denied',
+        analytics_storage:  c.statistics ? 'granted' : 'denied'
+      });
+    }
+    window.addEventListener('CookiebotOnConsentReady', iseliaConsentUpdate);
+    window.addEventListener('CookiebotOnAccept',       iseliaConsentUpdate);
+    window.addEventListener('CookiebotOnDecline',      iseliaConsentUpdate);
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BYKG0C7WKZ"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-BYKG0C7WKZ');
+  </script>
+  <!-- End Google Analytics 4 -->
+
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
