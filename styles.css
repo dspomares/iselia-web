@@ -202,34 +202,6 @@ nav.scrolled { border-color: var(--border2); }
   max-width: 780px;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
-  padding: .35rem 1rem .35rem .7rem;
-  background: rgba(34,211,238,.08);
-  border: 1px solid rgba(34,211,238,.2);
-  border-radius: 100px;
-  color: var(--cyan);
-  font-size: .78rem;
-  font-weight: 600;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-.hero-badge-dot {
-  width: 7px; height: 7px;
-  background: var(--cyan);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--cyan);
-  animation: blink 2.4s ease-in-out infinite;
-  flex-shrink: 0;
-}
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: .3; }
-}
-
 .hero h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.6rem, 5.5vw, 4.4rem);

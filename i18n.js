@@ -11,7 +11,6 @@ const translations = {
     'nav-cta':           'Hablar con un experto',
 
     /* HERO */
-    'hero-badge':        'Consultoría · IA · Transformación',
     'hero-h1':           'No vendemos tecnología.<br /><span class="grad">Entendemos tu negocio.</span>',
     'hero-desc':         'Más de 20 años ayudando a empresas reales a crecer de forma inteligente. Ahora, con la potencia de la inteligencia artificial al servicio de cada decisión y cada proceso de tu pyme.',
     'hero-cta-btn':      'Empieza hoy, sin compromiso',
@@ -283,7 +282,6 @@ const translations = {
     'nav-cta':           'Talk to an expert',
 
     /* HERO */
-    'hero-badge':        'Consulting · AI · Transformation',
     'hero-h1':           'We don\'t sell technology.<br /><span class="grad">We understand your business.</span>',
     'hero-desc':         'Over 20 years helping real companies grow intelligently. Now, with the power of artificial intelligence at the service of every decision and every process in your business.',
     'hero-cta-btn':      'Start today, no commitment',
