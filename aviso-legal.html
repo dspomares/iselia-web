@@ -7,9 +7,14 @@
   <meta name="description" content="Aviso legal de Iselia Networks, SLU: datos identificativos del titular, condiciones de uso, propiedad intelectual y legislación aplicable conforme a la LSSICE." />
   <meta name="robots" content="index, follow" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicons / marcas de la firma -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/iselia-favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/iselia-favicon-32.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/iselia-favicon-claro.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/iselia-favicon-oscuro.svg" media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/iselia-apple-touch-icon.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,7 +25,9 @@
 
 <!-- NAV -->
 <nav id="navbar" class="scrolled">
-  <a href="index.html" class="nav-logo">Isel<span>ia</span></a>
+  <a href="index.html" class="nav-logo" aria-label="Iselia">
+    <img src="assets/iselia-firma-horizontal-oscuro.svg" alt="Iselia" width="200" height="73" />
+  </a>
   <div class="lang-switcher">
     <button class="lang-btn active" data-lang="es">ES</button>
     <span class="lang-divider">|</span>
@@ -83,7 +90,9 @@
 </main>
 
 <footer>
-  <div class="footer-logo">Isel<span>ia</span></div>
+  <div class="footer-logo">
+    <img src="assets/iselia-firma-horizontal-mono.svg" alt="Iselia" width="166" height="61" />
+  </div>
   <p data-i18n="footer-copy">© 2026 Iselia Networks, SLU · Todos los derechos reservados</p>
   <p class="footer-legal">
     <a href="aviso-legal.html" data-i18n="footer-legal-notice">Aviso Legal</a>

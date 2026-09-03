@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1255.2" height="460.8" viewBox="0 0 1255.2 460.8" role="img" aria-labelledby="title">
+  <title id="title">Iselia Espacial Pictograma Izquierda Color Fondo Oscuro</title>
+  <defs>
+    <linearGradient id="iselia-espacial-pictograma-izquierda-color-fondo-oscuro-symbol-core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="iselia-espacial-pictograma-izquierda-color-fondo-oscuro-word-ia" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(38.4 38.4) scale(0.468)">
+  <circle cx="410" cy="410" r="400" fill="none" stroke="#FFFFFF" stroke-width="20"/>
+  <ellipse cx="410" cy="410" rx="380" ry="115" fill="none" stroke="#94A3B8" stroke-width="11"/>
+  <line x1="410" y1="20" x2="410" y2="800" stroke="#A78BFA" stroke-width="14" stroke-linecap="round"/>
+  <line x1="173.897" y1="325.003" x2="646.103" y2="494.997" stroke="#3B82F6" stroke-width="14" stroke-linecap="round"/>
+  <line x1="173.897" y1="494.997" x2="646.103" y2="325.003" stroke="#22D3EE" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="410" cy="410" r="35" fill="url(#iselia-espacial-pictograma-izquierda-color-fondo-oscuro-symbol-core)"/>
+  </g>
+  <g transform="translate(556.8 110.4) scale(0.253)">
+  <g transform="translate(-5 871) scale(1 -1)">
+    <path d="M229.0 693V0H65.0V693Z M762.0 483 704.0 394Q639.0 435 573.0 435Q542.0 435 525.5 424.5Q509.0 414 509.0 395Q509.0 380 516.5 370.5Q524.0 361 547.0 351.0Q570.0 341 618.0 327Q701.0 303 741.5 264.5Q782.0 226 782.0 158Q782.0 104 751.0 64.5Q720.0 25 666.0 4.0Q612.0 -17 546.0 -17Q479.0 -17 421.5 4.0Q364.0 25 324.0 62L401.0 148Q468.0 96 542.0 96Q578.0 96 598.5 109.0Q619.0 122 619.0 146Q619.0 165 611.0 176.0Q603.0 187 580.0 196.5Q557.0 206 507.0 220Q428.0 243 389.0 284.0Q350.0 325 350.0 386Q350.0 432 376.5 468.5Q403.0 505 452.5 526.5Q502.0 548 567.0 548Q624.0 548 674.0 531.0Q724.0 514 762.0 483Z M1348.0 219H1019.0Q1027.0 152 1057.0 125.0Q1087.0 98 1140.0 98Q1172.0 98 1202.0 109.5Q1232.0 121 1267.0 145L1332.0 57Q1239.0 -17 1125.0 -17Q996.0 -17 927.0 59.0Q858.0 135 858.0 263Q858.0 344 887.0 408.5Q916.0 473 972.0 510.5Q1028.0 548 1106.0 548Q1221.0 548 1286.0 476.0Q1351.0 404 1351.0 276Q1351.0 243 1348.0 219ZM1196.0 321Q1194.0 443 1110.0 443Q1069.0 443 1046.5 413.0Q1024.0 383 1019.0 314H1196.0Z M1460.0 135V742L1618.0 759V141Q1618.0 108 1645.0 108Q1659.0 108 1671.0 113L1702.0 1Q1659.0 -17 1606.0 -17Q1537.0 -17 1498.5 22.5Q1460.0 62 1460.0 135Z" fill="#FFFFFF"/>
+    <path d="M1945.0 531V0H1787.0V531ZM1959.0 721Q1959.0 682 1932.5 656.5Q1906.0 631 1865.0 631Q1824.0 631 1798.0 656.5Q1772.0 682 1772.0 721Q1772.0 760 1798.0 785.5Q1824.0 811 1865.0 811Q1906.0 811 1932.5 785.5Q1959.0 760 1959.0 721Z M2552.0 89 2519.0 -14Q2470.0 -10 2439.0 7.5Q2408.0 25 2391.0 63Q2339.0 -17 2231.0 -17Q2152.0 -17 2105.0 29.0Q2058.0 75 2058.0 149Q2058.0 236 2122.0 282.0Q2186.0 328 2307.0 328H2361.0V351Q2361.0 398 2341.0 415.5Q2321.0 433 2271.0 433Q2245.0 433 2208.0 425.5Q2171.0 418 2132.0 405L2096.0 509Q2146.0 528 2198.5 538.0Q2251.0 548 2296.0 548Q2410.0 548 2463.0 501.0Q2516.0 454 2516.0 360V154Q2516.0 124 2524.5 110.0Q2533.0 96 2552.0 89ZM2361.0 147V241H2322.0Q2268.0 241 2241.5 222.0Q2215.0 203 2215.0 163Q2215.0 131 2231.5 113.5Q2248.0 96 2277.0 96Q2331.0 96 2361.0 147Z" fill="url(#iselia-espacial-pictograma-izquierda-color-fondo-oscuro-word-ia)"/>
+  </g>
+  </g>
+</svg>

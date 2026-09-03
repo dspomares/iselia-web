@@ -20,11 +20,16 @@
   <meta property="og:description" content="Más de 20 años de experiencia sectorial e IA para transformar los procesos de tu empresa. Diagnóstico gratuito." />
   <meta property="og:locale"      content="es_ES" />
   <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:image"        content="https://www.iselia.es/assets/iselia-og.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"    content="Iselia" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Iselia — Consultoría tecnológica con IA para Pymes" />
   <meta name="twitter:description" content="Más de 20 años de experiencia sectorial e IA para transformar los procesos de tu empresa." />
+  <meta name="twitter:image"       content="https://www.iselia.es/assets/iselia-og.png" />
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -36,7 +41,7 @@
     "vatID": "ESB93913408",
     "taxID": "B93913408",
     "url": "https://www.iselia.es",
-    "logo": "https://www.iselia.es/logo.png",
+    "logo": "https://www.iselia.es/assets/iselia-logo-512.png",
     "description": "Consultoría tecnológica con IA para pymes. Más de 20 años de experiencia sectorial aplicando inteligencia artificial a procesos empresariales reales.",
     "telephone": "+34623042205",
     "email": "info@iselia.es",
@@ -65,9 +70,14 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicons / marcas de la firma -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/iselia-favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/iselia-favicon-32.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/iselia-favicon-claro.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/iselia-favicon-oscuro.svg" media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/iselia-apple-touch-icon.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -78,7 +88,9 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">Isel<span>ia</span></a>
+  <a href="#" class="nav-logo" aria-label="Iselia">
+    <img src="assets/iselia-firma-horizontal-oscuro.svg" alt="Iselia" width="200" height="73" />
+  </a>
   <button class="nav-mobile-btn" id="mobileToggle" aria-label="Menú"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
   <ul class="nav-links" id="navLinks">
     <li class="lang-switcher">
@@ -421,7 +433,9 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Isel<span>ia</span></div>
+  <div class="footer-logo">
+    <img src="assets/iselia-firma-horizontal-mono.svg" alt="Iselia" width="166" height="61" />
+  </div>
   <p data-i18n="footer-copy">© 2026 Iselia Networks, SLU · Todos los derechos reservados</p>
   <p class="footer-legal">
     <a href="aviso-legal.html" data-i18n="footer-legal-notice">Aviso Legal</a>
