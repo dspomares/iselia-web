@@ -180,7 +180,7 @@ const translations = {
     'priv-4-note':       'No es necesario facilitar ningún dato adicional para tramitar tu solicitud.',
     'priv-5-h':          '5. Destinatarios',
     'priv-5-p':          'Los datos que nos facilitas a través del formulario se gestionan en los sistemas propios de Iselia Networks, SLU y <strong>no serán cedidos a terceros</strong>, salvo obligación legal.',
-    'priv-5-p2':         'Con independencia de lo anterior, este sitio web carga sus fuentes tipográficas desde Google Fonts, servicio prestado por Google Ireland Limited y Google LLC. Al visitar cualquier página, tu dirección IP se comunica a Google para servir dichas fuentes, lo que puede suponer una <strong>transferencia internacional de datos</strong> a Estados Unidos, amparada en la Decisión de Adecuación del EU-US Data Privacy Framework. Puedes consultar el detalle en nuestra <a href="cookies.html">Política de Cookies</a>.',
+    'priv-5-p2':         'Este sitio web no carga recursos de terceros y <strong>no realiza transferencias internacionales de datos</strong>: las tipografías se sirven desde nuestro propio servidor. Puedes consultar el detalle en nuestra <a href="cookies.html">Política de Cookies</a>.',
     'priv-6-h':          '6. Plazo de Conservación',
     'priv-6-p':          'Conservaremos tus datos durante el tiempo necesario para dar respuesta a tu solicitud y mantener la relación comercial mientras no solicites su supresión, así como durante los plazos legalmente exigibles. Transcurridos dichos plazos, los datos serán eliminados.',
     'priv-7-h':          '7. Derechos del Usuario',
@@ -227,7 +227,7 @@ const translations = {
 
     'avl-5-h':           '5. Enlaces y Servicios de Terceros',
     'avl-5-p1':          'El Sitio Web puede contener enlaces a p\u00e1ginas de terceros. Iselia no controla ni asume responsabilidad alguna sobre sus contenidos, pol\u00edticas o pr\u00e1cticas. La inclusi\u00f3n de un enlace no implica recomendaci\u00f3n ni relaci\u00f3n entre Iselia y el titular del sitio enlazado.',
-    'avl-5-p2':          'El Sitio Web incorpora fuentes tipogr\u00e1ficas servidas por Google Fonts. Puedes consultar el detalle de este servicio y su tratamiento de datos en nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a> y en la <a href="cookies.html">Pol\u00edtica de Cookies</a>.',
+    'avl-5-p2':          'Al margen de dichos enlaces, el Sitio Web no incorpora recursos ni servicios de terceros: sus tipograf\u00edas, im\u00e1genes y c\u00f3digo se sirven desde nuestro propio servidor. Puedes consultar el detalle en nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a> y en la <a href="cookies.html">Pol\u00edtica de Cookies</a>.',
 
     'avl-6-h':           '6. Exclusi\u00f3n de Garant\u00edas y Responsabilidad',
     'avl-6-p1':          'Iselia adopta medidas razonables para que la informaci\u00f3n del Sitio Web sea correcta y est\u00e9 actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del servicio, que puede verse afectada por causas t\u00e9cnicas ajenas a su control.',
@@ -261,7 +261,7 @@ const translations = {
     'ck-3-note':         'Al tratarse de una preferencia seleccionada expresamente por el usuario, este almacenamiento se considera estrictamente necesario y est\u00e1 <strong>exento del deber de obtener consentimiento</strong>, conforme al art\u00edculo 22.2 de la LSSICE y a la Gu\u00eda sobre el uso de las cookies de la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos.',
 
     'ck-4-h':            '4. Servicios de terceros',
-    'ck-4-p':            'El sitio carga las fuentes tipogr\u00e1ficas desde Google Fonts (<em>fonts.googleapis.com</em> y <em>fonts.gstatic.com</em>). Este servicio <strong>no instala cookies</strong>, pero al descargar las fuentes tu direcci\u00f3n IP se comunica a Google. Encontrar\u00e1s el detalle de esta comunicaci\u00f3n y su base jur\u00eddica en el apartado \u00abDestinatarios\u00bb de nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a>.',
+    'ck-4-p':            'Este sitio web <strong>no carga recursos de terceros</strong>. Las tipograf\u00edas se sirven desde nuestro propio servidor, y no incorporamos servicios de anal\u00edtica, publicidad, mapas, v\u00eddeo, fuentes externas ni redes sociales. Por tanto, al navegar no se comunica tu direcci\u00f3n IP ni ning\u00fan otro dato a proveedores ajenos a Iselia.',
 
     'ck-5-h':            '5. C\u00f3mo eliminar el almacenamiento local',
     'ck-5-p':            'Puedes borrar en cualquier momento el dato descrito en el apartado 3 desde las opciones de tu navegador, normalmente en la secci\u00f3n de privacidad, al eliminar los datos de sitios web o el historial de navegaci\u00f3n. Tambi\u00e9n puedes navegar en modo inc\u00f3gnito o privado. La \u00fanica consecuencia es que el sitio dejar\u00e1 de recordar tu idioma y volver\u00e1 a mostrarse en espa\u00f1ol.',
@@ -451,7 +451,7 @@ const translations = {
     'priv-4-note':       'No additional data is required to process your request.',
     'priv-5-h':          '5. Recipients',
     'priv-5-p':          'The data you provide through the form is managed within the own systems of Iselia Networks, SLU and <strong>will not be shared with third parties</strong>, except where legally required.',
-    'priv-5-p2':         'Independently of the above, this website loads its web fonts from Google Fonts, a service provided by Google Ireland Limited and Google LLC. When you visit any page, your IP address is communicated to Google in order to serve those fonts, which may constitute an <strong>international data transfer</strong> to the United States, covered by the Adequacy Decision of the EU-US Data Privacy Framework. Details are available in our <a href="cookies.html">Cookie Policy</a>.',
+    'priv-5-p2':         'This website loads no third-party resources and <strong>carries out no international data transfers</strong>: the web fonts are served from our own server. Details are available in our <a href="cookies.html">Cookie Policy</a>.',
     'priv-6-h':          '6. Retention Period',
     'priv-6-p':          'We will retain your data for as long as necessary to respond to your request and to maintain the business relationship, unless you request its deletion, and for the periods legally required. Once those periods have elapsed, the data will be deleted.',
     'priv-7-h':          '7. Your Rights',
@@ -498,7 +498,7 @@ const translations = {
 
     'avl-5-h':           '5. Links and Third-Party Services',
     'avl-5-p1':          'The Website may contain links to third-party pages. Iselia neither controls nor assumes any responsibility for their contents, policies or practices. The inclusion of a link implies neither a recommendation nor any relationship between Iselia and the owner of the linked site.',
-    'avl-5-p2':          'The Website loads web fonts served by Google Fonts. Details of this service and its data processing are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.',
+    'avl-5-p2':          'Apart from such links, the Website embeds no third-party resources or services: its web fonts, images and code are served from our own server. Details are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.',
 
     'avl-6-h':           '6. Disclaimer of Warranties and Liability',
     'avl-6-p1':          'Iselia takes reasonable measures to keep the information on the Website accurate and up to date, but does not guarantee the absence of errors or uninterrupted availability of the service, which may be affected by technical causes beyond its control.',
@@ -532,7 +532,7 @@ const translations = {
     'ck-3-note':         'As this is a preference expressly selected by the user, this storage is considered strictly necessary and is <strong>exempt from the requirement to obtain consent</strong>, in accordance with Article 22.2 of the LSSICE and the Guidance on the use of cookies issued by the Spanish Data Protection Agency.',
 
     'ck-4-h':            '4. Third-party services',
-    'ck-4-p':            'The site loads its web fonts from Google Fonts (<em>fonts.googleapis.com</em> and <em>fonts.gstatic.com</em>). This service <strong>does not install cookies</strong>, but when the fonts are downloaded your IP address is communicated to Google. Details of this communication and its legal basis can be found in the Recipients section of our <a href="privacidad.html">Privacy Policy</a>.',
+    'ck-4-p':            'This website <strong>loads no third-party resources</strong>. The web fonts are served from our own server, and we embed no analytics, advertising, maps, video, external font or social media services. As a result, browsing the site communicates neither your IP address nor any other data to providers outside Iselia.',
 
     'ck-5-h':            '5. How to delete the local storage',
     'ck-5-p':            'You may delete the item described in section 3 at any time from your browser settings, usually in the privacy section, by clearing website data or browsing history. You may also browse in incognito or private mode. The only consequence is that the site will stop remembering your language and will be displayed in Spanish again.',
