@@ -180,7 +180,8 @@ const translations = {
     'priv-4-note':       'No es necesario facilitar ningún dato adicional para tramitar tu solicitud.',
     'priv-5-h':          '5. Destinatarios',
     'priv-5-p':          'Los datos que nos facilitas a través del formulario se gestionan en los sistemas propios de Iselia Networks, SLU y <strong>no serán cedidos a terceros</strong>, salvo obligación legal.',
-    'priv-5-p2':         'Este sitio web no carga recursos de terceros y <strong>no realiza transferencias internacionales de datos</strong>: las tipografías se sirven desde nuestro propio servidor. Puedes consultar el detalle en nuestra <a href="cookies.html">Política de Cookies</a>.',
+    'priv-5-p2':        'Con independencia de lo anterior, este sitio web carga dos servicios de terceros: <strong>Cookiebot</strong>, prestado por Cybot A/S (Dinamarca), que gestiona el consentimiento de cookies desde la Unión Europea; y <strong>Google Tag Manager</strong>, prestado por Google Ireland Limited y Google LLC. Al visitar cualquier página, tu dirección IP se comunica a ambos proveedores. En el caso de Google, esto puede suponer una <strong>transferencia internacional de datos</strong> a Estados Unidos, amparada en la Decisión de Adecuación del EU-US Data Privacy Framework, en la que Google LLC figura certificada.',
+    'priv-5-p3':        'La base jurídica de estas comunicaciones es tu <strong>consentimiento</strong> (art. 6.1.a del RGPD) para las cookies y etiquetas que no sean estrictamente necesarias, y el <strong>interés legítimo</strong> del responsable (art. 6.1.f del RGPD) en disponer de un mecanismo que recabe y conserve esa decisión. Puedes consultar el detalle en nuestra <a href="cookies.html">Política de Cookies</a>.',
     'priv-6-h':          '6. Plazo de Conservación',
     'priv-6-p':          'Conservaremos tus datos durante el tiempo necesario para dar respuesta a tu solicitud y mantener la relación comercial mientras no solicites su supresión, así como durante los plazos legalmente exigibles. Transcurridos dichos plazos, los datos serán eliminados.',
     'priv-7-h':          '7. Derechos del Usuario',
@@ -227,7 +228,7 @@ const translations = {
 
     'avl-5-h':           '5. Enlaces y Servicios de Terceros',
     'avl-5-p1':          'El Sitio Web puede contener enlaces a p\u00e1ginas de terceros. Iselia no controla ni asume responsabilidad alguna sobre sus contenidos, pol\u00edticas o pr\u00e1cticas. La inclusi\u00f3n de un enlace no implica recomendaci\u00f3n ni relaci\u00f3n entre Iselia y el titular del sitio enlazado.',
-    'avl-5-p2':          'Al margen de dichos enlaces, el Sitio Web no incorpora recursos ni servicios de terceros: sus tipograf\u00edas, im\u00e1genes y c\u00f3digo se sirven desde nuestro propio servidor. Puedes consultar el detalle en nuestra <a href="privacidad.html">Pol\u00edtica de Privacidad</a> y en la <a href="cookies.html">Pol\u00edtica de Cookies</a>.',
+    'avl-5-p2':         'Al margen de dichos enlaces, el Sitio Web incorpora dos servicios de terceros: Cookiebot, para la gestión del consentimiento de cookies, y Google Tag Manager. Puedes consultar el detalle de estos servicios y su tratamiento de datos en nuestra <a href="privacidad.html">Política de Privacidad</a> y en la <a href="cookies.html">Política de Cookies</a>. El resto de recursos —tipografías, imágenes y código— se sirven desde nuestro propio servidor.',
 
     'avl-6-h':           '6. Exclusi\u00f3n de Garant\u00edas y Responsabilidad',
     'avl-6-p1':          'Iselia adopta medidas razonables para que la informaci\u00f3n del Sitio Web sea correcta y est\u00e9 actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del servicio, que puede verse afectada por causas t\u00e9cnicas ajenas a su control.',
@@ -249,8 +250,9 @@ const translations = {
     'ck-1-p':            'Una cookie es un peque\u00f1o archivo de texto que un sitio web almacena en el navegador del visitante para guardar y recuperar informaci\u00f3n sobre su navegaci\u00f3n. Su uso est\u00e1 regulado por el art\u00edculo 22.2 de la Ley 34/2002 (LSSICE), que exige el consentimiento del usuario salvo para las estrictamente necesarias.',
 
     'ck-2-h':            '2. Cookies utilizadas en este sitio web',
-    'ck-2-p':            '<strong>Este sitio web no utiliza cookies</strong>, ni propias ni de terceros. No instalamos cookies anal\u00edticas, publicitarias, de personalizaci\u00f3n ni de seguimiento, y no elaboramos perfiles de navegaci\u00f3n.',
-    'ck-2-note':         'Por este motivo no se muestra ning\u00fan banner de consentimiento de cookies: no hay nada que consentir.',
+    'ck-2-p':           'Este sitio web utiliza <strong>una única cookie propia</strong>, denominada <em>CookieConsent</em> y gestionada por Cookiebot. Su única finalidad es recordar la decisión que tomas en el aviso de cookies, se conserva durante 12 meses y no permite identificarte ni elaborar perfiles de navegación. Al limitarse a guardar tu propia elección, se considera estrictamente necesaria y está <strong>exenta del deber de obtener consentimiento</strong>, conforme al artículo 22.2 de la LSSICE.',
+    'ck-2-p2':          'El sitio incorpora además Google Tag Manager, una herramienta que permite activar etiquetas de medición o marketing sin modificar el código del sitio. A fecha de esta política <strong>no hay ninguna etiqueta activa que instale cookies</strong>. Si en el futuro se activa alguna, sus cookies no se instalarán hasta que hayas dado tu consentimiento a la categoría correspondiente.',
+    'ck-2-note':        'Por eso el sitio muestra un aviso de cookies en tu primera visita, en el que puedes aceptarlas, rechazarlas o elegir por categorías. Mientras no des tu consentimiento, no se instala ninguna cookie que no sea estrictamente necesaria.',
 
     'ck-3-h':            '3. Almacenamiento local del navegador',
     'ck-3-p':            'El sitio guarda un \u00fanico dato en el almacenamiento local (<em>localStorage</em>) de tu navegador, con la finalidad de recordar el idioma que has elegido:',
@@ -261,13 +263,14 @@ const translations = {
     'ck-3-note':         'Al tratarse de una preferencia seleccionada expresamente por el usuario, este almacenamiento se considera estrictamente necesario y est\u00e1 <strong>exento del deber de obtener consentimiento</strong>, conforme al art\u00edculo 22.2 de la LSSICE y a la Gu\u00eda sobre el uso de las cookies de la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos.',
 
     'ck-4-h':            '4. Servicios de terceros',
-    'ck-4-p':            'Este sitio web <strong>no carga recursos de terceros</strong>. Las tipograf\u00edas se sirven desde nuestro propio servidor, y no incorporamos servicios de anal\u00edtica, publicidad, mapas, v\u00eddeo, fuentes externas ni redes sociales. Por tanto, al navegar no se comunica tu direcci\u00f3n IP ni ning\u00fan otro dato a proveedores ajenos a Iselia.',
+    'ck-4-p':           'El sitio carga dos servicios de terceros: <strong>Cookiebot</strong>, prestado por Cybot A/S (Dinamarca), que proporciona el sistema de consentimiento; y <strong>Google Tag Manager</strong>, prestado por Google Ireland Limited y Google LLC. Al cargarse, tu dirección IP se comunica a estos proveedores; en el caso de Google, esto puede suponer una transferencia internacional de datos. Encontrarás el detalle y su base jurídica en el apartado «Destinatarios» de nuestra <a href="privacidad.html">Política de Privacidad</a>. El resto de recursos —tipografías, imágenes y código— se sirven desde nuestro propio servidor.',
 
-    'ck-5-h':            '5. C\u00f3mo eliminar el almacenamiento local',
+    'ck-5-h':           '5. Cómo cambiar tu decisión o borrar los datos',
     'ck-5-p':            'Puedes borrar en cualquier momento el dato descrito en el apartado 3 desde las opciones de tu navegador, normalmente en la secci\u00f3n de privacidad, al eliminar los datos de sitios web o el historial de navegaci\u00f3n. Tambi\u00e9n puedes navegar en modo inc\u00f3gnito o privado. La \u00fanica consecuencia es que el sitio dejar\u00e1 de recordar tu idioma y volver\u00e1 a mostrarse en espa\u00f1ol.',
+    'ck-5-p2':          'Para cambiar o retirar tu consentimiento sobre las cookies puedes borrar la cookie <em>CookieConsent</em> desde las opciones de tu navegador: al recargar la página, el aviso de cookies volverá a mostrarse y podrás elegir de nuevo. Retirar el consentimiento no tiene ninguna consecuencia sobre el funcionamiento del sitio.',
 
     'ck-6-h':            '6. Cambios en esta pol\u00edtica',
-    'ck-6-p':            'Si en el futuro incorporamos cookies o servicios que las requieran, actualizaremos esta pol\u00edtica y, cuando la normativa lo exija, solicitaremos tu consentimiento previo mediante el mecanismo correspondiente antes de instalarlas.',
+    'ck-6-p':           'Si en el futuro incorporamos nuevas cookies o servicios que las requieran, actualizaremos esta política y, cuando la normativa lo exija, solicitaremos tu consentimiento previo a través del aviso de cookies antes de instalarlas.',
   },
 
   en: {
@@ -451,7 +454,8 @@ const translations = {
     'priv-4-note':       'No additional data is required to process your request.',
     'priv-5-h':          '5. Recipients',
     'priv-5-p':          'The data you provide through the form is managed within the own systems of Iselia Networks, SLU and <strong>will not be shared with third parties</strong>, except where legally required.',
-    'priv-5-p2':         'This website loads no third-party resources and <strong>carries out no international data transfers</strong>: the web fonts are served from our own server. Details are available in our <a href="cookies.html">Cookie Policy</a>.',
+    'priv-5-p2':        'Independently of the above, this website loads two third-party services: <strong>Cookiebot</strong>, provided by Cybot A/S (Denmark), which manages cookie consent from within the European Union; and <strong>Google Tag Manager</strong>, provided by Google Ireland Limited and Google LLC. When you visit any page, your IP address is communicated to both providers. In the case of Google this may constitute an <strong>international data transfer</strong> to the United States, covered by the Adequacy Decision of the EU-US Data Privacy Framework, under which Google LLC is certified.',
+    'priv-5-p3':        'The legal basis for these communications is your <strong>consent</strong> (Art. 6.1.a GDPR) for cookies and tags that are not strictly necessary, and the <strong>legitimate interest</strong> of the controller (Art. 6.1.f GDPR) in having a mechanism that collects and stores that choice. Details are available in our <a href="cookies.html">Cookie Policy</a>.',
     'priv-6-h':          '6. Retention Period',
     'priv-6-p':          'We will retain your data for as long as necessary to respond to your request and to maintain the business relationship, unless you request its deletion, and for the periods legally required. Once those periods have elapsed, the data will be deleted.',
     'priv-7-h':          '7. Your Rights',
@@ -498,7 +502,7 @@ const translations = {
 
     'avl-5-h':           '5. Links and Third-Party Services',
     'avl-5-p1':          'The Website may contain links to third-party pages. Iselia neither controls nor assumes any responsibility for their contents, policies or practices. The inclusion of a link implies neither a recommendation nor any relationship between Iselia and the owner of the linked site.',
-    'avl-5-p2':          'Apart from such links, the Website embeds no third-party resources or services: its web fonts, images and code are served from our own server. Details are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.',
+    'avl-5-p2':         'Apart from such links, the Website embeds two third-party services: Cookiebot, for cookie consent management, and Google Tag Manager. Details of these services and their data processing are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>. All remaining resources — web fonts, images and code — are served from our own server.',
 
     'avl-6-h':           '6. Disclaimer of Warranties and Liability',
     'avl-6-p1':          'Iselia takes reasonable measures to keep the information on the Website accurate and up to date, but does not guarantee the absence of errors or uninterrupted availability of the service, which may be affected by technical causes beyond its control.',
@@ -520,8 +524,9 @@ const translations = {
     'ck-1-p':            'A cookie is a small text file that a website stores in the visitor browser in order to save and retrieve information about their browsing. Their use is regulated by Article 22.2 of Spanish Act 34/2002 (LSSICE), which requires user consent except for strictly necessary ones.',
 
     'ck-2-h':            '2. Cookies used on this website',
-    'ck-2-p':            '<strong>This website does not use cookies</strong>, neither its own nor third-party ones. We do not install analytics, advertising, personalisation or tracking cookies, and we do not build browsing profiles.',
-    'ck-2-note':         'For this reason no cookie consent banner is displayed: there is nothing to consent to.',
+    'ck-2-p':           'This website uses <strong>a single first-party cookie</strong>, named <em>CookieConsent</em> and managed by Cookiebot. Its only purpose is to remember the choice you make in the cookie notice; it is kept for 12 months and neither identifies you nor builds browsing profiles. As it merely stores your own choice, it is considered strictly necessary and is <strong>exempt from the duty to obtain consent</strong> under article 22.2 of the LSSICE.',
+    'ck-2-p2':          'The site also embeds Google Tag Manager, a tool that allows measurement or marketing tags to be activated without changing the site code. As at the date of this policy <strong>no active tag installs cookies</strong>. Should any be activated in future, its cookies will not be installed until you have given consent to the corresponding category.',
+    'ck-2-note':        'For this reason the site displays a cookie notice on your first visit, where you can accept all cookies, reject them or choose by category. Until you give your consent, no cookie other than the strictly necessary one is installed.',
 
     'ck-3-h':            '3. Browser local storage',
     'ck-3-p':            'The site stores a single item in your browser local storage (<em>localStorage</em>), for the purpose of remembering the language you have chosen:',
@@ -532,13 +537,14 @@ const translations = {
     'ck-3-note':         'As this is a preference expressly selected by the user, this storage is considered strictly necessary and is <strong>exempt from the requirement to obtain consent</strong>, in accordance with Article 22.2 of the LSSICE and the Guidance on the use of cookies issued by the Spanish Data Protection Agency.',
 
     'ck-4-h':            '4. Third-party services',
-    'ck-4-p':            'This website <strong>loads no third-party resources</strong>. The web fonts are served from our own server, and we embed no analytics, advertising, maps, video, external font or social media services. As a result, browsing the site communicates neither your IP address nor any other data to providers outside Iselia.',
+    'ck-4-p':           'The site loads two third-party services: <strong>Cookiebot</strong>, provided by Cybot A/S (Denmark), which supplies the consent mechanism; and <strong>Google Tag Manager</strong>, provided by Google Ireland Limited and Google LLC. When they load, your IP address is communicated to those providers; in the case of Google this may involve an international data transfer. Details and the legal basis can be found in the Recipients section of our <a href="privacidad.html">Privacy Policy</a>. All remaining resources — web fonts, images and code — are served from our own server.',
 
-    'ck-5-h':            '5. How to delete the local storage',
+    'ck-5-h':           '5. How to change your choice or delete the data',
     'ck-5-p':            'You may delete the item described in section 3 at any time from your browser settings, usually in the privacy section, by clearing website data or browsing history. You may also browse in incognito or private mode. The only consequence is that the site will stop remembering your language and will be displayed in Spanish again.',
+    'ck-5-p2':          'To change or withdraw your consent to cookies, delete the <em>CookieConsent</em> cookie from your browser settings: when you reload the page the cookie notice will be displayed again and you can choose anew. Withdrawing consent has no effect on how the site works.',
 
     'ck-6-h':            '6. Changes to this policy',
-    'ck-6-p':            'If in future we incorporate cookies or services that require them, we will update this policy and, where the law so requires, we will request your prior consent through the appropriate mechanism before installing them.',
+    'ck-6-p':           'If in future we incorporate new cookies or services that require them, we will update this policy and, where the law so requires, we will request your prior consent through the cookie notice before installing them.',
   }
 };
 
