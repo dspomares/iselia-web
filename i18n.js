@@ -242,7 +242,7 @@ const translations = {
 
     // --- pol\u00edtica de cookies ---
     'ck-page-title':     'Pol\u00edtica de Cookies \u2014 Iselia',
-    'ck-meta-desc':      'Pol\u00edtica de cookies de Iselia Networks, SLU: este sitio web no utiliza cookies. Informaci\u00f3n sobre el almacenamiento local de la preferencia de idioma.',
+    'ck-meta-desc':     'Política de cookies de Iselia Networks, SLU: qué cookies utiliza el sitio, cómo se solicita tu consentimiento y cómo cambiarlo o retirarlo en cualquier momento.',
     'ck-title':          'Pol\u00edtica de Cookies',
     'ck-updated':        '\u00daltima actualizaci\u00f3n: 3 de septiembre de 2026',
 
@@ -517,7 +517,7 @@ const translations = {
 
     // --- cookie policy ---
     'ck-page-title':     'Cookie Policy \u2014 Iselia',
-    'ck-meta-desc':      'Cookie policy of Iselia Networks, SLU: this website does not use cookies. Information about the local storage of the language preference.',
+    'ck-meta-desc':     'Cookie policy of Iselia Networks, SLU: which cookies the site uses, how your consent is requested and how to change or withdraw it at any time.',
     'ck-title':          'Cookie Policy',
     'ck-updated':        'Last updated: 3 September 2026',
 
