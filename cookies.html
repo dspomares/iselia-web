@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
 
-  <!-- Cookiebot CMP — debe ser el primer script del head, por encima de GTM:
-       data-blockingmode="auto" solo intercepta lo declarado despues de el. -->
+  <!-- Cookiebot CMP — debe ser el primer script del head: data-blockingmode="auto"
+       solo intercepta lo declarado despues de el, y GA4 lee de aqui el consentimiento. -->
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
           data-cbid="42545503-d43b-4026-9b3e-4bc26d3a8071" data-blockingmode="auto" type="text/javascript"></script>
   <!-- End Cookiebot CMP -->
 
   <!-- Google Analytics 4 (G-BYKG0C7WKZ) con Consent Mode v2.
        Por defecto todo denegado: GA4 no escribe cookies hasta que Cookiebot
-       confirme el consentimiento. Debe ir por encima de GTM, que tambien lee
-       el estado de consentimiento del dataLayer. -->
+       confirme el consentimiento. Debe ir por debajo de Cookiebot, del que
+       lee el estado de consentimiento. -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -43,14 +43,6 @@
   </script>
   <!-- End Google Analytics 4 -->
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TV434332');</script>
-  <!-- End Google Tag Manager -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Cookies — Iselia</title>
   <meta name="description" content="Política de cookies de Iselia Networks, SLU: este sitio web no utiliza cookies. Información sobre el almacenamiento local de la preferencia de idioma." />
@@ -67,10 +59,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV434332"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
