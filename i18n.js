@@ -590,7 +590,7 @@ function applyLang(lang) {
   localStorage.setItem('iselia-lang', lang);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initI18n() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
@@ -598,4 +598,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // restore saved language (default es)
   const saved = localStorage.getItem('iselia-lang') || 'es';
   applyLang(saved);
-});
+}
+
+// A consent platform can delay this script past DOMContentLoaded, and that event
+// never fires again — so start straight away when the document is already parsed.
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+  initI18n();
+}

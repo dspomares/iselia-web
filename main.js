@@ -1,3 +1,8 @@
+// ── UI language, read lazily.
+// currentLang is a top-level `let` in i18n.js, so a bare reference throws a
+// ReferenceError if that script never ran. Read it at call time and fall back.
+const uiLang = () => (typeof currentLang !== 'undefined' ? currentLang : 'es');
+
 // ── Navbar scroll shadow
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -76,7 +81,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
   // Privacy policy opt-in is mandatory
   const consent = form.querySelector('#privacidad');
   if (!consent.checked) {
-    errorEl.textContent = currentLang === 'es'
+    errorEl.textContent = uiLang() === 'es'
       ? 'Debes aceptar la Política de Privacidad para continuar.'
       : 'You must accept the Privacy Policy to continue.';
     errorEl.hidden = false;
@@ -107,7 +112,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
   const originalHTML = btn.innerHTML;
   btn.disabled  = true;
-  btn.innerHTML = currentLang === 'es' ? 'Enviando…' : 'Sending…';
+  btn.innerHTML = uiLang() === 'es' ? 'Enviando…' : 'Sending…';
   errorEl.hidden = true;
 
   try {
@@ -123,7 +128,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     } else {
       const data = await res.json().catch(() => ({}));
       errorEl.textContent = data.message ||
-        (currentLang === 'es'
+        (uiLang() === 'es'
           ? 'Ha ocurrido un error. Por favor, inténtalo de nuevo.'
           : 'Something went wrong. Please try again.');
       errorEl.hidden  = false;
@@ -131,7 +136,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
       btn.innerHTML   = originalHTML;
     }
   } catch {
-    errorEl.textContent = currentLang === 'es'
+    errorEl.textContent = uiLang() === 'es'
       ? 'No se pudo conectar con el servidor. Inténtalo de nuevo.'
       : 'Could not connect to the server. Please try again.';
     errorEl.hidden  = false;
