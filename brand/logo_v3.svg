@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1040 960" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="simbolo" transform="matrix(4,0,0,4,-200,-60)">
+        <path id="simbolo-lobulo-0" d="M175,60C153,40 126,24 113,40C97,59 124,99 157,120C142,99 118,65 130,54C140,44 160,54 175,60Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
+        <g id="simbolo-lobulo-90" transform="matrix(-0,1,-1,-0,283,-77)">
+            <path d="M175,60C153,40 126,24 113,40C97,59 124,99 157,120C142,99 118,65 130,54C140,44 160,54 175,60Z" style="fill:url(#_Linear2);fill-rule:nonzero;"/>
+        </g>
+        <g id="simbolo-lobulo-180" transform="matrix(-1,-0,0,-1,360,206)">
+            <path d="M175,60C153,40 126,24 113,40C97,59 124,99 157,120C142,99 118,65 130,54C140,44 160,54 175,60Z" style="fill:url(#_Linear3);fill-rule:nonzero;"/>
+        </g>
+        <g id="simbolo-lobulo-270" transform="matrix(0,-1,1,0,77,283)">
+            <path d="M175,60C153,40 126,24 113,40C97,59 124,99 157,120C142,99 118,65 130,54C140,44 160,54 175,60Z" style="fill:url(#_Linear4);fill-rule:nonzero;"/>
+        </g>
+        <circle id="simbolo-centro" cx="180" cy="103" r="21" style="fill:rgb(4,29,88);"/>
+    </g>
+    <g id="iselia-tipografia-construida" transform="matrix(1.205767,0,0,1.205767,-1.494102,699.711664)">
+        <rect id="i-inicial-punto" x="51" y="50" width="51" height="18" style="fill:rgb(4,29,88);fill-rule:nonzero;"/>
+        <rect id="i-inicial" x="51" y="83" width="51" height="103" style="fill:rgb(4,29,88);fill-rule:nonzero;"/>
+        <path id="s" d="M270,82L157,82C137,82 122,96 122,115C122,132 136,145 153,145L209,145C215,145 219,149 219,154C219,160 215,163 209,163L122,163L122,186L236,186C256,186 270,172 270,153C270,136 256,123 239,123L182,123C176,123 173,119 173,115C173,109 177,105 183,105L270,105L270,82Z" style="fill:rgb(4,29,88);fill-rule:nonzero;"/>
+        <path id="e" d="M447,186L341,186C306,186 284,166 284,135C284,104 305,82 339,82L394,82C432,82 447,90 447,113C447,138 427,148 393,148L341,148L341,125L376,125C391,125 398,122 398,115C398,106 389,105 372,105L358,105C341,105 331,118 331,135C331,152 341,163 360,163L447,163L447,186Z" style="fill:rgb(4,29,88);fill-rule:nonzero;"/>
+        <path id="l" d="M466,50L518,50L518,155C518,164 520,167 529,167L558,167L558,186L488,186C472,186 466,179 466,164L466,50Z" style="fill:rgb(4,29,88);fill-rule:nonzero;"/>
+        <rect id="i-punto-azul" x="577" y="50" width="51" height="18" style="fill:rgb(0,109,250);fill-rule:nonzero;"/>
+        <rect id="i" x="577" y="83" width="51" height="103" style="fill:rgb(0,109,250);fill-rule:nonzero;"/>
+        <path id="a" d="M814,186L763,186L763,137C763,118 751,105 730,105C710,105 697,117 697,133C697,151 710,163 730,163L754,163L754,186L707,186C672,186 648,168 648,135C648,105 670,82 706,82L752,82C792,82 814,100 814,135L814,186Z" style="fill:rgb(0,109,250);fill-rule:nonzero;"/>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(66.737654,86.530612,-86.530612,66.737654,108.262346,33.469388)"><stop offset="0" style="stop-color:rgb(0,115,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,91,234);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(66.737654,86.530612,-86.530612,66.737654,108.262346,33.469388)"><stop offset="0" style="stop-color:rgb(138,48,228);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(104,24,201);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear3" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(66.737654,86.530612,-86.530612,66.737654,108.262346,33.469388)"><stop offset="0" style="stop-color:rgb(0,115,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,91,234);stop-opacity:1"/></linearGradient>
+        <linearGradient id="_Linear4" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(66.737654,86.530612,-86.530612,66.737654,108.262346,33.469388)"><stop offset="0" style="stop-color:rgb(138,48,228);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(104,24,201);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

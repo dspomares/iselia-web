@@ -39,14 +39,19 @@
 
 
 :root {
-  --bg:        #070b14;
-  --bg2:       #0a1020;
-  --bg3:       #0d1529;
-  --blue:      #3b82f6;
-  --blue-glow: rgba(59,130,246,.35);
-  --cyan:      #22d3ee;
-  --cyan-glow: rgba(34,211,238,.25);
-  --purple:    #a78bfa;
+  /* Paleta de marca (manual v3.1, p.7). Tres colores; no se anaden tonos
+     de marca fuera de estos. El verde y el rojo de abajo NO son de marca:
+     son estados funcionales del formulario. */
+  --navy:        #041d58;   /* azul noche     */
+  --blue:        #3b82f6;   /* azul Iselia    */
+  --violet:      #812add;   /* violeta Iselia */
+
+  /* Los fondos NO son azul noche literal, a proposito: comparten su tono
+     (221-224 grados) pero mas oscuros. Sobre #041d58 el violeta cae a 2.50:1
+     de contraste (falla incluso AA-grande) y el azul a 4.32:1. Ver CLAUDE.md. */
+  --bg:          #070b14;
+  --bg2:         #0a1020;
+  --blue-glow:   rgba(59,130,246,.35);
   --white:     #ffffff;
   --text:      #cbd5e1;
   --muted:     #64748b;
@@ -54,6 +59,10 @@
   --border2:   rgba(255,255,255,.12);
   --glass:     rgba(255,255,255,.03);
   --glass2:    rgba(255,255,255,.06);
+
+  /* Estados del formulario (UI funcional, no paleta de marca) */
+  --ok:        #22c55e;
+  --err:       #f87171;
 }
 
 html { scroll-behavior: smooth; }
@@ -93,13 +102,13 @@ body::before {
 }
 .orb-2 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(34,211,238,.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(129,42,221,.12) 0%, transparent 70%);
   bottom: 200px; left: -150px;
   animation: drift2 22s ease-in-out infinite alternate;
 }
 .orb-3 {
   width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(167,139,250,.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(59,130,246,.10) 0%, transparent 70%);
   top: 50%; left: 40%;
   animation: drift3 16s ease-in-out infinite alternate;
 }
@@ -123,8 +132,15 @@ nav {
 }
 nav.scrolled { border-color: var(--border2); }
 
-/* Firma horizontal espacial, pictograma a la izquierda, proporcion 1,60x.
-   200px de ancho, por encima del minimo de 120px del manual. */
+/* Lockup horizontal v3 (simbolo izquierda + wordmark). En la nav va la
+   variante "color sobre fondo oscuro" del manual: orbitas en color, nucleo y
+   "isel" en blanco. El footer usa la monocroma blanca.
+   Anchos reducidos un 25% sobre los originales (200/166/150) por peso visual.
+   El simbolo es cuadrado, asi que su lado == alto del lockup == ancho/5.4688:
+     nav    150px -> simbolo 27px  OK (minimo 24px), lockup en "admitido"
+     footer 125px -> simbolo 23px  por debajo del minimo de 24px
+     movil  113px -> simbolo 21px  por debajo, y bajo el suelo de 120px
+   Los dos ultimos incumplen el manual; si molesta, ahi toca el simbolo solo. */
 .nav-logo {
   display: inline-flex;
   align-items: center;
@@ -133,7 +149,7 @@ nav.scrolled { border-color: var(--border2); }
   z-index: 1;
 }
 .nav-logo img {
-  width: 200px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -157,7 +173,7 @@ nav.scrolled { border-color: var(--border2); }
   display: block;
   height: 2px;
   width: 100%;
-  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  background: linear-gradient(90deg, var(--blue), var(--violet));
   border-radius: 2px;
   margin-top: 2px;
 }
@@ -183,12 +199,12 @@ nav.scrolled { border-color: var(--border2); }
   text-decoration: none;
 }
 .lang-btn:hover { color: var(--white); }
-.lang-btn.active { color: var(--cyan); }
+.lang-btn.active { color: var(--blue); }
 .lang-divider { color: var(--border2); font-size: .65rem; user-select: none; }
 
 .nav-cta {
   padding: .5rem 1.25rem !important;
-  background: linear-gradient(135deg, var(--blue), #1d4ed8) !important;
+  background: linear-gradient(135deg, var(--blue), var(--navy)) !important;
   color: var(--white) !important;
   border-radius: 8px;
   font-weight: 600 !important;
@@ -249,7 +265,7 @@ nav.scrolled { border-color: var(--border2); }
 }
 .hero h1 .grad,
 .section-title .grad {
-  background: linear-gradient(90deg, var(--blue) 0%, var(--cyan) 60%, var(--purple) 100%);
+  background: linear-gradient(90deg, var(--blue) 0%, var(--violet) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -270,7 +286,7 @@ nav.scrolled { border-color: var(--border2); }
   align-items: center;
   gap: .5rem;
   padding: .85rem 1.85rem;
-  background: linear-gradient(135deg, var(--blue) 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
   color: var(--white);
   border: none;
   border-radius: 10px;
@@ -339,7 +355,7 @@ nav.scrolled { border-color: var(--border2); }
   font-weight: 700;
   color: var(--white);
   line-height: 1;
-  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  background: linear-gradient(90deg, var(--blue), var(--violet));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -372,7 +388,7 @@ nav.scrolled { border-color: var(--border2); }
   color: var(--text);
   transition: border-color .2s, color .2s;
 }
-.sector-tag:hover { border-color: var(--cyan); color: var(--cyan); }
+.sector-tag:hover { border-color: var(--blue); color: var(--blue); }
 
 /* ─── SECTIONS ───────────────────────────── */
 section {
@@ -388,14 +404,14 @@ section {
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--blue);
   margin-bottom: .85rem;
 }
 .section-eyebrow::before {
   content: '';
   display: block;
   width: 18px; height: 1px;
-  background: var(--cyan);
+  background: var(--blue);
 }
 .section-title {
   font-family: 'Space Grotesk', sans-serif;
@@ -449,7 +465,7 @@ section {
 }
 .problem-glyph svg {
   width: 26px; height: 26px;
-  color: var(--cyan);
+  color: var(--blue);
 }
 .problem-card h3 {
   font-size: .95rem;
@@ -487,12 +503,12 @@ section {
 }
 .service-card:hover { border-color: rgba(59,130,246,.3); transform: translateY(-4px); }
 .service-card:hover::before { opacity: 1; }
-.service-card:nth-child(2):hover { border-color: rgba(34,211,238,.3); }
-.service-card:nth-child(2)::before { background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
-.service-card:nth-child(3):hover { border-color: rgba(167,139,250,.3); }
-.service-card:nth-child(3)::before { background: linear-gradient(90deg, transparent, var(--purple), transparent); }
-.service-card:nth-child(4):hover { border-color: rgba(34,197,94,.3); }
-.service-card:nth-child(4)::before { background: linear-gradient(90deg, transparent, #22c55e, transparent); }
+.service-card:nth-child(2):hover { border-color: rgba(129,42,221,.3); }
+.service-card:nth-child(2)::before { background: linear-gradient(90deg, transparent, var(--violet), transparent); }
+.service-card:nth-child(3):hover { border-color: rgba(59,130,246,.3); }
+.service-card:nth-child(3)::before { background: linear-gradient(90deg, transparent, var(--blue), transparent); }
+.service-card:nth-child(4):hover { border-color: rgba(129,42,221,.3); }
+.service-card:nth-child(4)::before { background: linear-gradient(90deg, transparent, var(--violet), transparent); }
 
 .service-icon-wrap {
   width: 48px; height: 48px;
@@ -503,9 +519,9 @@ section {
   background: var(--glass2);
 }
 .service-icon-wrap svg { width: 22px; height: 22px; color: var(--blue); }
-.service-card:nth-child(2) .service-icon-wrap svg { color: var(--cyan); }
-.service-card:nth-child(3) .service-icon-wrap svg { color: var(--purple); }
-.service-card:nth-child(4) .service-icon-wrap svg { color: #22c55e; }
+.service-card:nth-child(2) .service-icon-wrap svg { color: var(--violet); }
+.service-card:nth-child(3) .service-icon-wrap svg { color: var(--blue); }
+.service-card:nth-child(4) .service-icon-wrap svg { color: var(--violet); }
 .service-card h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .6rem; }
 .service-card p  { font-size: .875rem; color: var(--muted); line-height: 1.65; }
 .service-list { list-style: none; margin-top: 1rem; display: flex; flex-direction: column; gap: .4rem; }
@@ -518,7 +534,7 @@ section {
   content: '';
   width: 4px; height: 4px;
   border-radius: 50%;
-  background: var(--cyan);
+  background: var(--blue);
   flex-shrink: 0;
 }
 
@@ -536,13 +552,13 @@ section {
   flex-shrink: 0;
   width: 36px; height: 36px;
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(59,130,246,.2), rgba(34,211,238,.2));
+  background: linear-gradient(135deg, rgba(59,130,246,.2), rgba(129,42,221,.2));
   border: 1px solid rgba(59,130,246,.3);
   display: flex; align-items: center; justify-content: center;
   font-family: 'Space Grotesk', sans-serif;
   font-size: .85rem;
   font-weight: 700;
-  color: var(--cyan);
+  color: var(--blue);
 }
 .why-point h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .35rem; }
 .why-point p  { font-size: .875rem; color: var(--muted); line-height: 1.6; }
@@ -574,7 +590,7 @@ section {
   margin-bottom: 1.5rem;
   letter-spacing: -.015em;
 }
-.why-quote .hi { color: var(--cyan); }
+.why-quote .hi { color: var(--blue); }
 .why-author { font-size: .8rem; color: var(--muted); margin-bottom: 2rem; }
 .why-metrics {
   display: grid;
@@ -591,7 +607,7 @@ section {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(90deg, var(--blue), var(--cyan));
+  background: linear-gradient(90deg, var(--blue), var(--violet));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -619,7 +635,7 @@ section {
   font-size: .72rem;
   font-weight: 700;
   letter-spacing: .08em;
-  color: var(--cyan);
+  color: var(--blue);
   margin-bottom: 1rem;
 }
 .step h3 { font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: .5rem; }
@@ -646,12 +662,12 @@ section {
 }
 .contact-icon svg {
   width: 18px; height: 18px;
-  color: var(--cyan);
+  color: var(--blue);
 }
 .contact-item h4 { font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: .2rem; text-transform: uppercase; letter-spacing: .06em; }
 .contact-item p  { font-size: .9rem; color: var(--white); }
 .contact-item p a { color: var(--white); text-decoration: none; transition: color .2s; }
-.contact-item p a:hover { color: var(--cyan); }
+.contact-item p a:hover { color: var(--blue); }
 
 /* ─── FORM ───────────────────────────────── */
 .form-wrap {
@@ -668,7 +684,7 @@ section {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--blue) 30%, var(--cyan) 70%, transparent);
+  background: linear-gradient(90deg, transparent, var(--blue) 30%, var(--violet) 70%, transparent);
 }
 .form-heading {
   font-family: 'Space Grotesk', sans-serif;
@@ -714,13 +730,13 @@ section {
   box-shadow: 0 0 0 3px rgba(59,130,246,.12);
 }
 .form-group select { cursor: pointer; }
-.form-group select option { background: #0d1529; color: var(--white); }
+.form-group select option { background: var(--bg2); color: var(--white); }
 .form-group textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
 
 .form-submit {
   width: 100%;
   padding: .9rem;
-  background: linear-gradient(135deg, var(--blue), #1d4ed8);
+  background: linear-gradient(135deg, var(--blue), var(--navy));
   color: var(--white);
   border: none;
   border-radius: 10px;
@@ -746,7 +762,7 @@ section {
 .form-submit:hover::after { transform: translateX(100%); }
 .form-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; box-shadow: none; }
 
-.form-error { font-size: .82rem; color: #f87171; text-align: center; margin-top: .5rem; }
+.form-error { font-size: .82rem; color: var(--err); text-align: center; margin-top: .5rem; }
 
 .form-note { font-size: .72rem; color: var(--muted); text-align: center; margin-top: .75rem; }
 
@@ -774,7 +790,7 @@ section {
   cursor: pointer;
 }
 .form-consent a {
-  color: var(--cyan);
+  color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -798,7 +814,7 @@ section {
   padding: 3rem 2rem;
 }
 .form-success-icon { margin-bottom: 1rem; }
-.form-success-icon svg { width: 44px; height: 44px; color: #22c55e; }
+.form-success-icon svg { width: 44px; height: 44px; color: var(--ok); }
 .form-success h3 { font-size: 1.25rem; color: var(--white); font-weight: 700; margin-bottom: .5rem; }
 .form-success p  { font-size: .9rem; color: var(--muted); }
 
@@ -820,7 +836,7 @@ footer {
   align-items: center;
 }
 .footer-logo img {
-  width: 166px;
+  width: 125px;
   height: auto;
   display: block;
 }
@@ -847,8 +863,10 @@ footer p { font-size: .78rem; color: var(--muted); }
 @media (max-width: 700px) {
   section { padding: 4rem 5%; }
   nav { padding: .9rem 5%; }
+  /* 113px deja el simbolo en 21px: por debajo del minimo de 24px del manual
+     y del suelo de 120px del lockup. Si molesta, pasar aqui al simbolo solo. */
   .nav-logo img,
-  .footer-logo img { width: 150px; }
+  .footer-logo img { width: 113px; }
   .hero { padding: 6.5rem 5% 3.5rem; }
   .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
   .hero-stats { flex-direction: column; gap: 0; max-width: 100%; }
@@ -912,7 +930,7 @@ footer p { font-size: .78rem; color: var(--muted); }
 .legal p { color: var(--text); line-height: 1.7; margin-bottom: 1rem; font-size: .95rem; }
 .legal ul { margin: 0 0 1rem 1.25rem; }
 .legal li { color: var(--text); line-height: 1.7; margin-bottom: .4rem; font-size: .95rem; }
-.legal a { color: var(--cyan); text-decoration: underline; text-underline-offset: 2px; }
+.legal a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
 .legal a:hover { color: var(--white); }
 .legal-contact {
   margin-top: 1rem;
