@@ -3,10 +3,13 @@
 // ReferenceError if that script never ran. Read it at call time and fall back.
 const uiLang = () => (typeof currentLang !== 'undefined' ? currentLang : 'es');
 
-// ── Navbar scroll shadow
+// ── Navbar: claro arriba, oscuro al hacer scroll
+// El umbral no es solo una sombra: .scrolled cambia el tema entero de la nav
+// y funde entre las dos variantes del logo, asi que 20px se disparaba con
+// cualquier toque de rueda. 80px pide un scroll deliberado.
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
+  navbar.classList.toggle('scrolled', window.scrollY > 80);
 }, { passive: true });
 
 // ── Mobile menu toggle

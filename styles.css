@@ -60,6 +60,15 @@
   --glass:     rgba(255,255,255,.03);
   --glass2:    rgba(255,255,255,.06);
 
+  /* Header claro. #f2f5fa es la superficie clara del propio manual
+     (muestreada de sus paginas: 64-70% blanco, 7-19% de este tono).
+     Texto encima: navy 14.5:1, muted 5.5:1. Azul Iselia da 3.37:1 sobre
+     ella, asi que NO se usa para texto aqui, solo el subrayado decorativo. */
+  --surface:       #f2f5fa;
+  --on-surface:    #041d58;
+  --on-surface-mut:#556579;
+  --surface-line:  rgba(4,29,88,.12);
+
   /* Estados del formulario (UI funcional, no paleta de marca) */
   --ok:        #22c55e;
   --err:       #f87171;
@@ -125,16 +134,25 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem max(5%, calc((100% - 1440px) / 2));
-  background: rgba(7,11,20,.7);
-  backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid transparent;
-  transition: border-color .4s;
+  /* Arriba del todo: claro y SOLIDO a proposito. Con alpha, el
+     backdrop-filter deja subir la pagina oscura y a .82 el tono efectivo
+     era ~#c7ccd6, un gris medio en vez de la superficie clara del manual.
+     Al hacer scroll (.scrolled, scrollY > 20 en main.js) pasa a oscuro, y
+     ahi si tiene sentido el cristal translucido. */
+  background: var(--surface);
+  border-bottom: 1px solid var(--surface-line);
+  transition: background-color .35s ease, border-color .35s ease;
 }
-nav.scrolled { border-color: var(--border2); }
+nav.scrolled {
+  background: rgba(7,11,20,.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom-color: var(--border2);
+}
 
-/* Lockup horizontal v3 (simbolo izquierda + wordmark). En la nav va la
-   variante "color sobre fondo oscuro" del manual: orbitas en color, nucleo y
-   "isel" en blanco. El footer usa la monocroma blanca.
+/* Lockup horizontal v3 (simbolo izquierda + wordmark). La nav tiene fondo
+   claro, asi que lleva el "logo principal" tal cual: orbitas en color,
+   nucleo y "isel" en azul noche. El footer, sobre fondo oscuro, usa la
+   monocroma blanca.
    Anchos reducidos un 25% sobre los originales (200/166/150) por peso visual.
    El simbolo es cuadrado, asi que su lado == alto del lockup == ancho/5.4688:
      nav    150px -> simbolo 27px  OK (minimo 24px), lockup en "admitido"
@@ -142,7 +160,7 @@ nav.scrolled { border-color: var(--border2); }
      movil  113px -> simbolo 21px  por debajo, y bajo el suelo de 120px
    Los dos ultimos incumplen el manual; si molesta, ahi toca el simbolo solo. */
 .nav-logo {
-  display: inline-flex;
+  display: inline-grid;
   align-items: center;
   text-decoration: none;
   position: relative;
@@ -152,22 +170,30 @@ nav.scrolled { border-color: var(--border2); }
   width: 150px;
   height: auto;
   display: block;
+  grid-area: 1 / 1;            /* las dos variantes, una encima de otra */
+  transition: opacity .35s ease;
 }
+.nav-logo .logo-dark { opacity: 0; }
+nav.scrolled .nav-logo .logo-light { opacity: 0; }
+nav.scrolled .nav-logo .logo-dark  { opacity: 1; }
 
 .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
 .nav-links a {
   font-size: .875rem;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--on-surface-mut);
   text-decoration: none;
   transition: color .2s;
   position: relative;
   z-index: 1;
 }
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--on-surface); }
 .nav-links a.nav-active {
-  color: var(--white);
+  color: var(--on-surface);
 }
+nav.scrolled .nav-links a { color: var(--muted); }
+nav.scrolled .nav-links a:hover,
+nav.scrolled .nav-links a.nav-active { color: var(--white); }
 .nav-links a.nav-active::after {
   content: '';
   display: block;
@@ -187,7 +213,7 @@ nav.scrolled { border-color: var(--border2); }
 .lang-btn {
   background: none;
   border: none;
-  color: var(--muted);
+  color: var(--on-surface-mut);
   font-size: .78rem;
   font-weight: 700;
   font-family: inherit;
@@ -198,9 +224,13 @@ nav.scrolled { border-color: var(--border2); }
   line-height: 1;
   text-decoration: none;
 }
-.lang-btn:hover { color: var(--white); }
-.lang-btn.active { color: var(--blue); }
-.lang-divider { color: var(--border2); font-size: .65rem; user-select: none; }
+.lang-btn:hover { color: var(--on-surface); }
+.lang-btn.active { color: var(--on-surface); }
+.lang-divider { color: var(--surface-line); font-size: .65rem; user-select: none; }
+nav.scrolled .lang-btn { color: var(--muted); }
+nav.scrolled .lang-btn:hover { color: var(--white); }
+nav.scrolled .lang-btn.active { color: var(--blue); }
+nav.scrolled .lang-divider { color: var(--border2); }
 
 .nav-cta {
   padding: .5rem 1.25rem !important;
@@ -220,8 +250,8 @@ nav.scrolled { border-color: var(--border2); }
 .nav-mobile-btn {
   display: none;
   background: none;
-  border: 1px solid var(--border2);
-  color: var(--white);
+  border: 1px solid var(--surface-line);
+  color: var(--on-surface);
   border-radius: 8px;
   padding: .45rem .65rem;
   cursor: pointer;
@@ -879,8 +909,8 @@ footer p { font-size: .78rem; color: var(--muted); }
     flex-direction: column;
     position: absolute;
     top: 100%; left: 0; right: 0;
-    background: rgba(7,11,20,.97);
-    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    border-bottom: 1px solid var(--surface-line);
     padding: 1.5rem 5%;
     gap: 1.25rem;
     backdrop-filter: blur(20px);
@@ -940,3 +970,9 @@ footer p { font-size: .78rem; color: var(--muted); }
   border-radius: 12px;
 }
 .legal-contact p { margin-bottom: .35rem; }
+
+/* Boton y panel del menu movil: siguen el estado de la nav. */
+nav.scrolled .nav-mobile-btn { border-color: var(--border2); color: var(--white); }
+@media (max-width: 700px) {
+  nav.scrolled .nav-links.open { background: rgba(7,11,20,.97); border-bottom-color: var(--border); }
+}

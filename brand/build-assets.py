@@ -251,6 +251,7 @@ def write_icon_pngs(sizes):
 
 if __name__ == "__main__":
     print("SVG (lo que sirve el sitio):")
+    write_svg("iselia-lockup-horizontal-color.svg", lockup_horizontal("color"))
     write_svg("iselia-lockup-horizontal-oscuro.svg", lockup_horizontal("oscuro"))
     write_svg("iselia-lockup-horizontal-mono.svg", lockup_horizontal("mono-blanco"))
     write_svg("iselia-favicon-claro.svg", symbol_only("color"))
