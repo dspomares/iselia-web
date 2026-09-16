@@ -170,11 +170,12 @@ nav.scrolled {
    nucleo y "isel" en azul noche. El footer, sobre fondo oscuro, usa la
    monocroma blanca.
    Anchos reducidos un 25% sobre los originales (200/166/150) por peso visual.
-   El simbolo es cuadrado, asi que su lado == alto del lockup == ancho/5.4688:
-     nav    150px -> simbolo 27px  OK (minimo 24px), lockup en "admitido"
-     footer 125px -> simbolo 23px  por debajo del minimo de 24px
-     movil  113px -> simbolo 21px  por debajo, y bajo el suelo de 120px
-   Los dos ultimos incumplen el manual; si molesta, ahi toca el simbolo solo. */
+   El simbolo es cuadrado, asi que su lado == alto del lockup == ancho/5.0132
+   (el ratio cambio al encoger el wordmark y abrir el hueco; ver brand/):
+     nav    150px -> simbolo 30px  OK (minimo 24px), lockup en "admitido"
+     footer 125px -> simbolo 25px  OK
+     movil  113px -> simbolo 22px  por debajo del minimo, y bajo el suelo de 120px
+   Solo el movil incumple el manual; si molesta, ahi toca el simbolo solo. */
 .nav-logo {
   display: inline-grid;
   align-items: center;

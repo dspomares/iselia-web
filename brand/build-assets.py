@@ -54,8 +54,18 @@ SYM = dict(x=233.00, y=65.00, size=573.67)
 WM = dict(x=60.00, y=760.00, w=919.67, h=163.67)
 
 # Proporciones del lockup horizontal, medidas sobre el arte del manual.
-SYM_OVER_WM_H = 215 / 166
-GAP_OVER_SYM = 28 / 215
+SYM_OVER_WM_H_MANUAL = 215 / 166
+GAP_OVER_SYM_MANUAL = 28 / 215
+
+# Ajuste del propietario sobre esas proporciones: el wordmark del arte maestro
+# se veia grande y pegado al pictograma. Se encoge un 15 % respecto al simbolo
+# y se abre el hueco 2,5 veces. Es una desviacion deliberada del arte de la
+# pagina 5; para volver al manual, poner ambos factores a 1.
+WM_SHRINK = 0.85
+GAP_FACTOR = 2.5
+
+SYM_OVER_WM_H = SYM_OVER_WM_H_MANUAL / WM_SHRINK
+GAP_OVER_SYM = GAP_OVER_SYM_MANUAL * GAP_FACTOR
 
 # Tile de icono (manual p.8 / arte 600x600): simbolo al 60.2 % centrado.
 TILE_SYMBOL_FRAC = 361 / 600
@@ -191,13 +201,17 @@ def chrome_png(markup, w, h, out):
             f'<style>html,body{{margin:0;padding:0;background:transparent}}'
             f'img{{display:block;width:{w}px;height:{h}px}}</style>'
             f'<img src="a.svg">')
+        # Se usa el perfil por defecto de Chrome a proposito. Forzar un perfil
+        # nuevo -con --user-data-dir o apuntando HOME a un temporal- hace que
+        # Chrome se cuelgue indefinidamente en el primer arranque del perfil;
+        # con el perfil existente responde en decimas. El timeout evita que un
+        # cuelgue asi vuelva a dejar el script parado en silencio.
         subprocess.run(
             [CHROME, "--headless", "--disable-gpu", "--no-sandbox",
              "--force-device-scale-factor=1", "--default-background-color=00000000",
              "--hide-scrollbars", f"--window-size={w},{h}",
              f"--screenshot={out}", html],
-            check=True, capture_output=True,
-            env={**os.environ, "HOME": tmp})
+            check=True, capture_output=True, timeout=60)
 
 
 def scale_area(pix, nw, nh):
