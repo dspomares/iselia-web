@@ -69,11 +69,9 @@
   --surface-line:  rgba(4,29,88,.12);
 
   /* Estados del formulario (UI funcional, no paleta de marca). El formulario
-     vive en la tarjeta clara, asi que solo existen las variantes para esa
-     superficie: sobre #f2f5fa un verde #22c55e da 2.09:1 y un rojo #f87171
-     da 2.53:1, ambos fallan. Estos dan 6.5:1 y 6.0:1. */
-  --ok-on-surface:  #166534;
-  --err-on-surface: #b3261e;
+     va sobre fondo oscuro, asi que estos son los tonos validos ahi. */
+  --ok:        #22c55e;
+  --err:       #f87171;
 }
 
 html { scroll-behavior: smooth; }
@@ -766,12 +764,9 @@ section {
 .contact-item p a:hover { color: var(--blue); }
 
 /* ─── FORM ───────────────────────────────── */
-/* Tarjeta clara flotando sobre la seccion oscura. Todo lo de dentro cambia
-   de paleta: sobre #f2f5fa el azul Iselia solo da 3.37:1, y el verde/rojo de
-   estado dan 2.09 y 2.53, asi que aqui se usan variantes oscuras. */
 .form-wrap {
-  background: var(--surface);
-  border: 1px solid var(--surface-line);
+  background: var(--glass);
+  border: 1px solid var(--border2);
   border-radius: 22px;
   padding: 2.5rem;
   backdrop-filter: blur(20px);
@@ -789,7 +784,7 @@ section {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--on-surface);
+  color: var(--white);
   margin-bottom: 1.5rem;
   letter-spacing: -.02em;
 }
@@ -800,7 +795,7 @@ section {
 .form-group label {
   font-size: .72rem;
   font-weight: 600;
-  color: var(--on-surface-mut);
+  color: var(--muted);
   letter-spacing: .05em;
   text-transform: uppercase;
 }
@@ -808,10 +803,10 @@ section {
 .form-group select,
 .form-group textarea {
   padding: .7rem 1rem;
-  background: #ffffff;
-  border: 1px solid var(--surface-line);
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border2);
   border-radius: 10px;
-  color: var(--on-surface);
+  color: var(--white);
   font-family: inherit;
   font-size: .9rem;
   outline: none;
@@ -820,16 +815,16 @@ section {
   -webkit-appearance: none;
 }
 .form-group input::placeholder,
-.form-group textarea::placeholder { color: #7c8aa3; }
+.form-group textarea::placeholder { color: rgba(255,255,255,.2); }
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--blue);
-  background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(59,130,246,.18);
+  border-color: rgba(59,130,246,.6);
+  background: rgba(59,130,246,.05);
+  box-shadow: 0 0 0 3px rgba(59,130,246,.12);
 }
 .form-group select { cursor: pointer; }
-.form-group select option { background: #ffffff; color: var(--on-surface); }
+.form-group select option { background: var(--bg2); color: var(--white); }
 .form-group textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
 
 .form-submit {
@@ -851,7 +846,7 @@ section {
 .form-submit:hover::after { transform: translateX(100%); }
 .form-submit:disabled { opacity: .6; cursor: not-allowed; filter: none; }
 
-.form-error { font-size: .82rem; color: var(--err-on-surface); text-align: center; margin-top: .5rem; }
+.form-error { font-size: .82rem; color: var(--err); text-align: center; margin-top: .5rem; }
 
 .form-note { font-size: .72rem; color: var(--muted); text-align: center; margin-top: .75rem; }
 
@@ -874,12 +869,12 @@ section {
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--on-surface-mut);
+  color: var(--muted);
   line-height: 1.5;
   cursor: pointer;
 }
 .form-consent a {
-  color: var(--on-surface);
+  color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -903,9 +898,9 @@ section {
   padding: 3rem 2rem;
 }
 .form-success-icon { margin-bottom: 1rem; }
-.form-success-icon svg { width: 44px; height: 44px; color: var(--ok-on-surface); }
-.form-success h3 { font-size: 1.25rem; color: var(--on-surface); font-weight: 700; margin-bottom: .5rem; }
-.form-success p  { font-size: .9rem; color: var(--on-surface-mut); }
+.form-success-icon svg { width: 44px; height: 44px; color: var(--ok); }
+.form-success h3 { font-size: 1.25rem; color: var(--white); font-weight: 700; margin-bottom: .5rem; }
+.form-success p  { font-size: .9rem; color: var(--muted); }
 
 /* ─── FOOTER ─────────────────────────────── */
 footer {
