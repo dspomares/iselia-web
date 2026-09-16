@@ -65,16 +65,24 @@
 <div class="orb orb-3"></div>
 
 <!-- NAV -->
-<nav id="navbar" class="scrolled">
+<nav id="navbar">
   <a href="index.html" class="nav-logo" aria-label="Iselia">
     <img class="logo-light" src="assets/iselia-lockup-horizontal-color.svg" alt="Iselia" width="150" height="27" />
     <img class="logo-dark" src="assets/iselia-lockup-horizontal-oscuro.svg" alt="" aria-hidden="true" width="150" height="27" />
   </a>
-  <div class="lang-switcher">
-    <button class="lang-btn active" data-lang="es">ES</button>
-    <span class="lang-divider">|</span>
-    <button class="lang-btn" data-lang="en">EN</button>
-  </div>
+  <button class="nav-mobile-btn" id="mobileToggle" aria-label="Menú"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#nosotros" data-i18n="nav-about">Nosotros</a></li>
+    <li><a href="index.html#servicios" data-i18n="nav-services">Servicios</a></li>
+    <li><a href="index.html#metodologia" data-i18n="nav-methodology">Metodología</a></li>
+    <li><a href="index.html#contacto" data-i18n="nav-contact">Contacto</a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </li>
+    <li><a href="index.html#contacto" class="nav-cta" id="ctaLink" data-i18n="nav-cta">Hablemos</a></li>
+  </ul>
 </nav>
 
 <main class="legal">
@@ -146,5 +154,6 @@
 </footer>
 
 <script src="i18n.js" data-cookieconsent="ignore"></script>
+<script src="main.js" data-cookieconsent="ignore"></script>
 </body>
 </html>

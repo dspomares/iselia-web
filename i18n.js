@@ -8,7 +8,8 @@ const translations = {
     'nav-services':      'Servicios',
     'nav-methodology':   'Metodología',
     'nav-about':         'Nosotros',
-    'nav-cta':           'Hablar con un experto',
+    'nav-contact':       'Contacto',
+    'nav-cta':           'Hablemos',
 
     /* HERO */
     'hero-h1':           'No vendemos tecnología.<br /><span class="grad">Entendemos tu negocio.</span>',
@@ -20,14 +21,6 @@ const translations = {
     'stat-3-label':      'Ganancia media de eficiencia',
 
     /* PROOF BAR */
-    'proof-label':       'Experiencia acreditada en:',
-    'sector-logistica':  'Logística',
-    'sector-hosteleria': 'Hostelería',
-    'sector-servicios':  'Servicios profesionales',
-    'sector-industria':  'Industria',
-    'sector-salud':      'Salud',
-    'sector-distrib':    'Distribución',
-    'sector-educacion':  'Educación',
 
     /* PROBLEM */
     'prob-eyebrow':      'Por qué Iselia',
@@ -44,6 +37,7 @@ const translations = {
 
     /* SERVICES */
     'svc-eyebrow':       'Lo que hacemos',
+    'svc-banner':        'Cuatro servicios, un mismo método',
     'svc-title':         'Soluciones a medida,<br /><span class="grad">resultados medibles.</span>',
     'svc-sub':           'No aplicamos recetas genéricas. Diseñamos cada intervención desde el conocimiento profundo de tu sector y tus operaciones.',
     'svc-1-title':       'Diagnóstico y hoja de ruta',
@@ -272,7 +266,27 @@ const translations = {
 
     'ck-6-h':            '6. Cambios en esta pol\u00edtica',
     'ck-6-p':           'Si en el futuro incorporamos nuevas cookies o servicios que las requieran, actualizaremos esta política y, cuando la normativa lo exija, solicitaremos tu consentimiento previo a través del aviso de cookies antes de instalarlas.',
-  },
+
+    /* SECTORES */
+    'sec-eyebrow':      'Sectores',
+    'sec-title':        'Cada sector tiene<br /><span class="grad">sus propias reglas.</span>',
+    'sec-sub':          'Más de 20 años dentro de empresas reales. Estos son los sectores donde mejor conocemos el terreno.',
+    'sec-retail-t':     'Retail',
+    'sec-retail-d':     'Previsión de demanda, control de stock y precios que se ajustan a lo que pasa en tienda.',
+    'sec-logistica-t':  'Logística',
+    'sec-logistica-d':  'Rutas, tiempos y trazabilidad: menos kilómetros en vacío y menos llamadas para saber dónde está un pedido.',
+    'sec-hosteleria-t': 'Hostelería',
+    'sec-hosteleria-d': 'Compras, escandallos y turnos ajustados a la ocupación real, no a la de la semana pasada.',
+    'sec-servicios-t':  'Servicios profesionales',
+    'sec-servicios-d':  'Menos horas en administración y propuestas, más horas facturables en lo que sabéis hacer.',
+    'sec-industria-t':  'Industria',
+    'sec-industria-d':  'Mantenimiento que avisa antes de parar la línea y calidad medida en el momento, no al final.',
+    'sec-salud-t':      'Salud',
+    'sec-salud-d':      'Agendas, documentación y seguimiento al día, con los datos donde la normativa exige que estén.',
+    'sec-distrib-t':    'Distribución',
+    'sec-distrib-d':    'Pedidos, reposición y margen por referencia visibles sin esperar al cierre de mes.',
+    'sec-educacion-t':  'Educación',
+    'sec-educacion-d':  'Matrícula, seguimiento del alumno y tareas administrativas que dejan de comerse el curso.',  },
 
   en: {
     'page-title':        'Iselia — AI-powered Technology Consulting for SMEs',
@@ -283,7 +297,8 @@ const translations = {
     'nav-services':      'Services',
     'nav-methodology':   'Methodology',
     'nav-about':         'About',
-    'nav-cta':           'Talk to an expert',
+    'nav-contact':       'Contact',
+    'nav-cta':           'Let\'s talk',
 
     /* HERO */
     'hero-h1':           'We don\'t sell technology.<br /><span class="grad">We understand your business.</span>',
@@ -295,14 +310,6 @@ const translations = {
     'stat-3-label':      'Average efficiency gain',
 
     /* PROOF BAR */
-    'proof-label':       'Proven experience in:',
-    'sector-logistica':  'Logistics',
-    'sector-hosteleria': 'Hospitality',
-    'sector-servicios':  'Professional services',
-    'sector-industria':  'Industry',
-    'sector-salud':      'Healthcare',
-    'sector-distrib':    'Distribution',
-    'sector-educacion':  'Education',
 
     /* PROBLEM */
     'prob-eyebrow':      'Why Iselia',
@@ -319,6 +326,7 @@ const translations = {
 
     /* SERVICES */
     'svc-eyebrow':       'What we do',
+    'svc-banner':        'Four services, one method',
     'svc-title':         'Tailored solutions,<br /><span class="grad">measurable results.</span>',
     'svc-sub':           'We don\'t apply generic recipes. We design each intervention from a deep understanding of your sector and operations.',
     'svc-1-title':       'Diagnosis & roadmap',
@@ -547,7 +555,27 @@ const translations = {
 
     'ck-6-h':            '6. Changes to this policy',
     'ck-6-p':           'If in future we incorporate new cookies or services that require them, we will update this policy and, where the law so requires, we will request your prior consent through the cookie notice before installing them.',
-  }
+
+    /* SECTORES */
+    'sec-eyebrow':      'Industries',
+    'sec-title':        'Every industry plays<br /><span class="grad">by its own rules.</span>',
+    'sec-sub':          'More than 20 years inside real companies. These are the industries whose ground we know best.',
+    'sec-retail-t':     'Retail',
+    'sec-retail-d':     'Demand forecasting, stock control and pricing that follows what is actually happening in store.',
+    'sec-logistica-t':  'Logistics',
+    'sec-logistica-d':  'Routes, times and traceability: fewer empty miles and fewer calls asking where an order is.',
+    'sec-hosteleria-t': 'Hospitality',
+    'sec-hosteleria-d': 'Purchasing, costing and shifts matched to real occupancy, not to the week before.',
+    'sec-servicios-t':  'Professional services',
+    'sec-servicios-d':  'Fewer hours on admin and proposals, more billable hours on what you do well.',
+    'sec-industria-t':  'Manufacturing',
+    'sec-industria-d':  'Maintenance that warns you before the line stops, and quality measured as you go, not at the end.',
+    'sec-salud-t':      'Health',
+    'sec-salud-d':      'Scheduling, records and follow-up kept current, with the data where regulation requires it.',
+    'sec-distrib-t':    'Distribution',
+    'sec-distrib-d':    'Orders, replenishment and margin per item visible without waiting for month-end.',
+    'sec-educacion-t':  'Education',
+    'sec-educacion-d':  'Enrolment, student tracking and the admin that otherwise eats the school year.',  }
 };
 
 let currentLang = 'es';

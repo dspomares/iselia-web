@@ -17,27 +17,36 @@ const ICON_MENU  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
 const ICON_CLOSE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>';
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
-mobileToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  mobileToggle.innerHTML = navLinks.classList.contains('open') ? ICON_CLOSE : ICON_MENU;
-});
-navLinks.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    mobileToggle.innerHTML = ICON_MENU;
+if (mobileToggle && navLinks) {
+  mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    mobileToggle.innerHTML = navLinks.classList.contains('open') ? ICON_CLOSE : ICON_MENU;
   });
-});
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      mobileToggle.innerHTML = ICON_MENU;
+    });
+  });
+}
 
 // ── Focus contact form: CTA nav + hero button
+// Solo en la home. Las paginas legales cargan este mismo script para tener la
+// misma navbar, y ahi no existe la seccion de contacto: los enlaces apuntan a
+// index.html#contacto y deben navegar de forma normal, sin preventDefault.
 function goToContact(e) {
   e.preventDefault();
   const section = document.getElementById('contacto');
   const input   = document.getElementById('nombre');
   section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  setTimeout(() => { input.focus({ preventScroll: true }); }, 600);
+  if (input) setTimeout(() => { input.focus({ preventScroll: true }); }, 600);
 }
-document.getElementById('ctaLink').addEventListener('click', goToContact);
-document.getElementById('heroCta').addEventListener('click', goToContact);
+if (document.getElementById('contacto')) {
+  const ctaLink = document.getElementById('ctaLink');
+  const heroCta = document.getElementById('heroCta');
+  if (ctaLink) ctaLink.addEventListener('click', goToContact);
+  if (heroCta) heroCta.addEventListener('click', goToContact);
+}
 
 // ── Reveal on scroll
 const observer = new IntersectionObserver((entries) => {
@@ -73,8 +82,9 @@ const isDevHost = ['localhost', '127.0.0.1', '0.0.0.0'].includes(location.hostna
 const CRM_BASE  = isDevHost ? 'http://localhost:9090' : 'https://crm.iselia.es';
 const LEADS_API = `${CRM_BASE}/api/public/leads/`;
 
-// ── Form submit
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+// ── Form submit (solo existe en la home)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) contactForm.addEventListener('submit', async function(e) {
   e.preventDefault();
 
   const form    = this;

@@ -135,20 +135,22 @@
   </a>
   <button class="nav-mobile-btn" id="mobileToggle" aria-label="Menú"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
   <ul class="nav-links" id="navLinks">
+    <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
+    <li><a href="#servicios" data-i18n="nav-services">Servicios</a></li>
+    <li><a href="#metodologia" data-i18n="nav-methodology">Metodología</a></li>
+    <li><a href="#contacto" data-i18n="nav-contact">Contacto</a></li>
     <li class="lang-switcher">
       <button class="lang-btn active" data-lang="es">ES</button>
       <span class="lang-divider">|</span>
       <button class="lang-btn" data-lang="en">EN</button>
     </li>
-    <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
-    <li><a href="#servicios" data-i18n="nav-services">Servicios</a></li>
-    <li><a href="#metodologia" data-i18n="nav-methodology">Metodología</a></li>
-    <li><a href="#contacto" class="nav-cta" id="ctaLink" data-i18n="nav-cta">Hablar con un experto</a></li>
+    <li><a href="#contacto" class="nav-cta" id="ctaLink" data-i18n="nav-cta">Hablemos</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-shape" aria-hidden="true"></div>
   <div class="hero-grid-bg"></div>
   <div class="hero-content">
     <h1 data-i18n="hero-h1">
@@ -184,20 +186,6 @@
   </div>
 </section>
 
-<!-- PROOF BAR -->
-<div class="proof-bar">
-  <span class="proof-label" data-i18n="proof-label">Experiencia acreditada en:</span>
-  <div class="sectors">
-    <span class="sector-tag">Retail</span>
-    <span class="sector-tag" data-i18n="sector-logistica">Logística</span>
-    <span class="sector-tag" data-i18n="sector-hosteleria">Hostelería</span>
-    <span class="sector-tag" data-i18n="sector-servicios">Servicios profesionales</span>
-    <span class="sector-tag" data-i18n="sector-industria">Industria</span>
-    <span class="sector-tag" data-i18n="sector-salud">Salud</span>
-    <span class="sector-tag" data-i18n="sector-distrib">Distribución</span>
-    <span class="sector-tag" data-i18n="sector-educacion">Educación</span>
-  </div>
-</div>
 
 <!-- PROBLEM -->
 <section class="problem" id="nosotros">
@@ -233,6 +221,12 @@
   <div class="section-eyebrow" data-i18n="svc-eyebrow">Lo que hacemos</div>
   <h2 class="section-title" data-i18n="svc-title">Soluciones a medida,<br /><span class="grad">resultados medibles.</span></h2>
   <p class="section-sub" data-i18n="svc-sub">No aplicamos recetas genéricas. Diseñamos cada intervención desde el conocimiento profundo de tu sector y tus operaciones.</p>
+  <div class="svc-banner" data-i18n="svc-banner">Cuatro servicios, un mismo método</div>
+  <div class="svc-connect" aria-hidden="true">
+    <span class="svc-stem"></span>
+    <span class="svc-bar"></span>
+    <span class="svc-drop"></span><span class="svc-drop"></span><span class="svc-drop"></span><span class="svc-drop"></span>
+  </div>
   <div class="services-grid reveal">
     <div class="service-card">
       <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
@@ -342,6 +336,54 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORES -->
+<section class="sectors-sec" id="sectores">
+  <div class="sectors-layout">
+    <div class="sectors-copy">
+      <div class="section-eyebrow" data-i18n="sec-eyebrow">Sectores</div>
+      <h2 class="section-title" data-i18n="sec-title">Cada sector tiene<br /><span class="grad">sus propias reglas.</span></h2>
+      <p class="section-sub" data-i18n="sec-sub">Más de 20 años dentro de empresas reales. Estos son los sectores donde mejor conocemos el terreno.</p>
+      <div class="accordion">
+        <details class="acc-item">
+          <summary><span data-i18n="sec-retail-t">Retail</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-retail-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-logistica-t">Logística</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-logistica-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-hosteleria-t">Hostelería</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-hosteleria-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-servicios-t">Servicios profesionales</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-servicios-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-industria-t">Industria</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-industria-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-salud-t">Salud</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-salud-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-distrib-t">Distribución</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-distrib-d">.</p>
+        </details>
+        <details class="acc-item">
+          <summary><span data-i18n="sec-educacion-t">Educación</span><span class="acc-icon" aria-hidden="true"></span></summary>
+          <p data-i18n="sec-educacion-d">.</p>
+        </details>
+      </div>
+    </div>
+    <div class="sectors-visual" aria-hidden="true">
+      <img src="assets/iselia-favicon-oscuro.svg" alt="" width="574" height="574" />
     </div>
   </div>
 </section>
