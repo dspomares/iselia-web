@@ -1,0 +1,33 @@
+# Cabeceras de Cloudflare (Pages / Workers static assets), que es lo que sirve
+# www.iselia.es: el repo se publica tal cual desde la raiz, asi que nginx no
+# interviene en produccion. Sin este fichero todo sale con
+# "public, max-age=0, must-revalidate" y el visitante que vuelve revalida
+# hasta las fuentes (70 KB) en cada carga.
+#
+# Las reglas van por extension y no se solapan: en _headers las coincidencias
+# multiples se combinan, y dos Cache-Control sobre el mismo fichero darian una
+# cabecera invalida. El HTML no lleva regla a proposito, porque el
+# "max-age=0, must-revalidate" por defecto es justo lo que necesita: ningun
+# nombre de fichero lleva hash, asi que el HTML es el unico punto donde un
+# deploy se ve de inmediato.
+
+# Subsets variables estables, y lo mas pesado de la carga.
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+# Sin hash en el nombre: una hora es el techo razonable.
+/*.css
+  Cache-Control: public, max-age=3600
+/*.js
+  Cache-Control: public, max-age=3600
+
+# Marcas e iconos: los genera brand/build-assets.py con nombre fijo, de modo
+# que un rediseno tarda como mucho un dia en propagarse.
+/*.svg
+  Cache-Control: public, max-age=86400
+/*.png
+  Cache-Control: public, max-age=86400
+/*.ico
+  Cache-Control: public, max-age=86400
+/*.txt
+  Cache-Control: public, max-age=86400

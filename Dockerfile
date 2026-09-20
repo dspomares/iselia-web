@@ -9,4 +9,7 @@ COPY i18n.js          /usr/share/nginx/html/i18n.js
 COPY main.js          /usr/share/nginx/html/main.js
 COPY assets/          /usr/share/nginx/html/assets/
 
+# Cabeceras de cache para los estaticos; ver comentarios dentro del fichero.
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
+
 EXPOSE 80
