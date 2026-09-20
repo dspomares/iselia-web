@@ -7,10 +7,12 @@ const uiLang = () => (typeof currentLang !== 'undefined' ? currentLang : 'es');
 // El umbral no es solo una sombra: .scrolled cambia el tema entero de la nav
 // y funde entre las dos variantes del logo, asi que 20px se disparaba con
 // cualquier toque de rueda. 80px pide un scroll deliberado.
+// El listener de scroll vive mas abajo, junto al scroll-spy: los dos van en
+// el mismo callback para no leer y escribir layout de forma alterna.
 const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 80);
-}, { passive: true });
+function updateNavTheme(scrollY) {
+  navbar.classList.toggle('scrolled', scrollY > 80);
+}
 
 // ── Mobile menu toggle
 const ICON_MENU  = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
@@ -62,20 +64,37 @@ const navSections = ['nosotros', 'servicios', 'metodologia', 'contacto']
   .filter(Boolean);
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
 
+// Primero todas las lecturas de layout, despues todas las escrituras. Leer un
+// rect justo despues de tocar una clase obliga al navegador a recalcular el
+// layout de forma sincrona en cada evento de scroll: 81 ms acumulados de
+// reflow forzado en el informe de PageSpeed del 20-09-2026.
 function updateActiveNav() {
+  const limit = window.innerHeight * 0.45;
   let current = 'nosotros';
-  navSections.forEach(section => {
-    if (section.getBoundingClientRect().top <= window.innerHeight * 0.45) {
-      current = section.id;
-    }
-  });
+  for (const section of navSections) {
+    if (section.getBoundingClientRect().top <= limit) current = section.id;
+  }
   navAnchors.forEach(a => {
     a.classList.toggle('nav-active', a.getAttribute('href') === `#${current}`);
   });
 }
 
-window.addEventListener('scroll', updateActiveNav, { passive: true });
+// Un unico listener para el tema de la nav y el scroll-spy, limitado a una
+// pasada por frame: el evento de scroll se dispara muchas mas veces de las
+// que el navegador llega a pintar.
+let scrollScheduled = false;
+window.addEventListener('scroll', () => {
+  if (scrollScheduled) return;
+  scrollScheduled = true;
+  requestAnimationFrame(() => {
+    scrollScheduled = false;
+    updateActiveNav();
+    updateNavTheme(window.scrollY);
+  });
+}, { passive: true });
+
 updateActiveNav();
+updateNavTheme(window.scrollY);
 
 // ── Lead capture — endpoint per environment (by hostname)
 const isDevHost = ['localhost', '127.0.0.1', '0.0.0.0'].includes(location.hostname);

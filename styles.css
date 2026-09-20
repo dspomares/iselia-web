@@ -53,7 +53,10 @@
   --bg2:         #0a1020;
   --white:     #ffffff;
   --text:      #cbd5e1;
-  --muted:     #64748b;
+  /* #64748b se quedaba en 3.75-4.14:1 sobre los tres fondos oscuros (PageSpeed
+     20-09-2026: 22 nodos fallando color-contrast). Este da 5.84:1 sobre el
+     fondo del formulario #111727, el mas claro de los tres. */
+  --muted:     #8595a8;
   --border:    rgba(255,255,255,.07);
   --border2:   rgba(255,255,255,.12);
   --glass:     rgba(255,255,255,.03);
@@ -820,7 +823,9 @@ section {
   width: 18px; height: 18px;
   color: var(--blue);
 }
-.contact-item h4 { font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: .2rem; text-transform: uppercase; letter-spacing: .06em; }
+/* h3, no h4: el salto h2 -> h4 rompia el orden de encabezados (heading-order
+   en PageSpeed, 20-09-2026). El tamano lo fija esta regla, no la etiqueta. */
+.contact-item h3 { font-size: .75rem; font-weight: 600; color: var(--muted); margin-bottom: .2rem; text-transform: uppercase; letter-spacing: .06em; }
 .contact-item p  { font-size: .9rem; color: var(--white); }
 .contact-item p a { color: var(--white); text-decoration: none; transition: color .2s; }
 .contact-item p a:hover { color: var(--blue); }

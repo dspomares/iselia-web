@@ -3,6 +3,22 @@
 <head>
   <meta charset="UTF-8" />
 
+  <!-- Recursos criticos, adelantados al CMP. Son <link>, no scripts: el
+       auto-blocking de Cookiebot solo reescribe scripts e iframes, asi que
+       subirlos no rompe el orden exigido (charset -> Cookiebot -> GA4).
+       Sin crossorigin: uc.js y gtag.js se piden en modo no-CORS, y anadirlo
+       abriria una segunda conexion en vez de reutilizar esta. -->
+  <link rel="preconnect" href="https://consent.cookiebot.com" />
+  <link rel="preconnect" href="https://consentcdn.cookiebot.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Los subsets latin son los unicos que usa el castellano y el ingles; sin
+       preload el navegador no los descubre hasta parsear el CSS (165 ms y
+       242 ms en el informe de PageSpeed del 20-09-2026). crossorigin es
+       obligatorio en preload de fuentes aunque sean del mismo origen. -->
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/spacegrotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+
   <!-- Cookiebot CMP — debe ser el primer script del head: data-blockingmode="auto"
        solo intercepta lo declarado despues de el, y GA4 lee de aqui el consentimiento. -->
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
@@ -56,7 +72,6 @@
   <link rel="icon" type="image/svg+xml" href="assets/iselia-favicon-oscuro.svg" media="(prefers-color-scheme: dark)" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/iselia-apple-touch-icon.png" />
 
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -130,7 +145,7 @@
 
 <footer>
   <div class="footer-logo">
-    <img src="assets/iselia-lockup-horizontal-mono.svg" alt="Iselia" width="125" height="25" />
+    <img src="assets/iselia-lockup-horizontal-mono.svg" alt="Iselia" width="125" height="25" loading="lazy" decoding="async" />
   </div>
   <p data-i18n="footer-copy">© 2026 Iselia Networks, SLU · Todos los derechos reservados</p>
   <p class="footer-legal">
