@@ -64,36 +64,49 @@ const navSections = ['nosotros', 'servicios', 'metodologia', 'contacto']
   .filter(Boolean);
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
 
-// Primero todas las lecturas de layout, despues todas las escrituras. Leer un
-// rect justo despues de tocar una clase obliga al navegador a recalcular el
-// layout de forma sincrona en cada evento de scroll: 81 ms acumulados de
-// reflow forzado en el informe de PageSpeed del 20-09-2026.
-function updateActiveNav() {
-  const limit = window.innerHeight * 0.45;
-  let current = 'nosotros';
-  for (const section of navSections) {
-    if (section.getBoundingClientRect().top <= limit) current = section.id;
-  }
+// Sin leer geometria. Esto llamaba a getBoundingClientRect() por seccion en
+// cada scroll, y pedir geometria con el estilo recien tocado obliga al
+// navegador a recalcular el layout de forma sincrona: 87 ms de reflow forzado
+// en el informe de PageSpeed del 20-09-2026, que limitar la frecuencia a un
+// pase por frame no quito. El observador recibe lo mismo del navegador sin
+// pedirselo.
+function setActiveNav(id) {
   navAnchors.forEach(a => {
-    a.classList.toggle('nav-active', a.getAttribute('href') === `#${current}`);
+    a.classList.toggle('nav-active', a.getAttribute('href') === `#${id}`);
   });
 }
 
-// Un unico listener para el tema de la nav y el scroll-spy, limitado a una
-// pasada por frame: el evento de scroll se dispara muchas mas veces de las
-// que el navegador llega a pintar.
+if (navSections.length) {
+  // El margen recorta la raiz a una linea sin altura al 45% de la ventana, que
+  // es la altura que decidia la version anterior.
+  const crossing = new Set();
+  const spy = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (e.isIntersecting) crossing.add(e.target); else crossing.delete(e.target);
+    }
+    // La linea cruza como mucho una seccion. Cuando no cruza ninguna — el
+    // hero, los tramos sin id (why, sectores) y el footer — se mantiene la
+    // ultima activa, que es lo que hacia el calculo anterior.
+    const active = navSections.find(sec => crossing.has(sec));
+    if (active) setActiveNav(active.id);
+  }, { rootMargin: '-45% 0px -55% 0px' });
+  navSections.forEach(sec => spy.observe(sec));
+  setActiveNav('nosotros');
+}
+
+// El unico listener de scroll que queda solo escribe una clase; no lee nada
+// del layout. Va limitado a un pase por frame porque el evento se dispara
+// muchas mas veces de las que el navegador llega a pintar.
 let scrollScheduled = false;
 window.addEventListener('scroll', () => {
   if (scrollScheduled) return;
   scrollScheduled = true;
   requestAnimationFrame(() => {
     scrollScheduled = false;
-    updateActiveNav();
     updateNavTheme(window.scrollY);
   });
 }, { passive: true });
 
-updateActiveNav();
 updateNavTheme(window.scrollY);
 
 // ── Lead capture — endpoint per environment (by hostname)
