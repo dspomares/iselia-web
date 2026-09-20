@@ -3,6 +3,7 @@ const translations = {
     'page-title':        'Iselia — Consultoría tecnológica con IA para Pymes',
     'meta-desc':         'Iselia aplica más de 20 años de experiencia sectorial e inteligencia artificial para transformar los procesos de tu empresa.',
     'mobile-aria':       'Menú',
+    'lang-aria':         'Idioma',
 
     /* NAV */
     'nav-services':      'Servicios',
@@ -292,6 +293,7 @@ const translations = {
     'page-title':        'Iselia — AI-powered Technology Consulting for SMEs',
     'meta-desc':         'Iselia applies over 20 years of sector experience and artificial intelligence to transform your company\'s processes.',
     'mobile-aria':       'Menu',
+    'lang-aria':         'Language',
 
     /* NAV */
     'nav-services':      'Services',
@@ -597,6 +599,10 @@ function applyLang(lang) {
   const mobileBtn = document.getElementById('mobileToggle');
   if (mobileBtn) mobileBtn.setAttribute('aria-label', t['mobile-aria']);
 
+  // aria del desplegable de idioma
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle && t['lang-aria'] !== undefined) langToggle.setAttribute('aria-label', t['lang-aria']);
+
   // innerHTML elements
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
@@ -609,19 +615,58 @@ function applyLang(lang) {
     if (t[key] !== undefined) el.placeholder = t[key];
   });
 
-  // lang buttons active state
+  // opcion marcada en el desplegable + codigo visible en el boton
+  const langCode = document.getElementById('langCode');
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+    const on = btn.dataset.lang === lang;
+    btn.classList.toggle('active', on);
+    btn.setAttribute('aria-current', on ? 'true' : 'false');
+    if (on && langCode) langCode.textContent = btn.dataset.code || lang.toUpperCase();
   });
 
   // persist choice
   localStorage.setItem('iselia-lang', lang);
 }
 
+// El desplegable de idioma vive aqui y no en main.js a proposito: asi el
+// selector entero (abrir, elegir, marcar) depende de un solo script.
+function initLangMenu() {
+  const wrap   = document.getElementById('langSwitcher');
+  const toggle = document.getElementById('langToggle');
+  if (!wrap || !toggle) return;
+
+  const close = () => {
+    wrap.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = !wrap.classList.contains('open');
+    wrap.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', e => {
+    if (!wrap.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && wrap.classList.contains('open')) {
+      close();
+      toggle.focus();
+    }
+  });
+
+  wrap.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', close);
+  });
+}
+
 function initI18n() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
+  initLangMenu();
 
   // restore saved language (default es)
   const saved = localStorage.getItem('iselia-lang') || 'es';
