@@ -148,7 +148,6 @@ const translations = {
     'priv-page-title':   'Política de Privacidad — Iselia',
     'priv-meta-desc':    'Política de privacidad de Iselia Networks, SLU: responsable del tratamiento, finalidades, base legal y derechos del usuario conforme al RGPD y la LOPDGDD.',
     'priv-title':        'Política de Privacidad',
-    'priv-updated':      'Última actualización: 3 de septiembre de 2026',
     'priv-1-h':          '1. Responsable del Tratamiento',
     'priv-1-p':          'El responsable del tratamiento de tus datos personales es:',
     'priv-c-cif':        'CIF: B93913408',
@@ -192,7 +191,6 @@ const translations = {
     'avl-page-title':    'Aviso Legal \u2014 Iselia',
     'avl-meta-desc':     'Aviso legal de Iselia Networks, SLU: datos identificativos del titular, condiciones de uso, propiedad intelectual y legislaci\u00f3n aplicable conforme a la LSSICE.',
     'avl-title':         'Aviso Legal',
-    'avl-updated':       '\u00daltima actualizaci\u00f3n: 3 de septiembre de 2026',
 
     'avl-1-h':           '1. Datos Identificativos del Titular',
     'avl-1-p':           'En cumplimiento del deber de informaci\u00f3n previsto en el art\u00edculo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci\u00f3n y de Comercio Electr\u00f3nico (LSSICE), se facilitan los siguientes datos del titular de este sitio web:',
@@ -239,7 +237,6 @@ const translations = {
     'ck-page-title':     'Pol\u00edtica de Cookies \u2014 Iselia',
     'ck-meta-desc':     'Política de cookies de Iselia Networks, SLU: qué cookies utiliza el sitio, cómo se solicita tu consentimiento y cómo cambiarlo o retirarlo en cualquier momento.',
     'ck-title':          'Pol\u00edtica de Cookies',
-    'ck-updated':        '\u00daltima actualizaci\u00f3n: 3 de septiembre de 2026',
 
     'ck-1-h':            '1. \u00bfQu\u00e9 son las cookies?',
     'ck-1-p':            'Una cookie es un peque\u00f1o archivo de texto que un sitio web almacena en el navegador del visitante para guardar y recuperar informaci\u00f3n sobre su navegaci\u00f3n. Su uso est\u00e1 regulado por el art\u00edculo 22.2 de la Ley 34/2002 (LSSICE), que exige el consentimiento del usuario salvo para las estrictamente necesarias.',
@@ -438,7 +435,6 @@ const translations = {
     'priv-page-title':   'Privacy Policy — Iselia',
     'priv-meta-desc':    'Iselia Networks, SLU privacy policy: data controller, purposes, legal basis and user rights under the GDPR.',
     'priv-title':        'Privacy Policy',
-    'priv-updated':      'Last updated: 3 September 2026',
     'priv-1-h':          '1. Data Controller',
     'priv-1-p':          'The controller responsible for processing your personal data is:',
     'priv-c-cif':        'Spanish tax ID (CIF): B93913408',
@@ -482,7 +478,6 @@ const translations = {
     'avl-page-title':    'Legal Notice \u2014 Iselia',
     'avl-meta-desc':     'Legal notice of Iselia Networks, SLU: owner identification details, terms of use, intellectual property and applicable law under Spanish LSSICE.',
     'avl-title':         'Legal Notice',
-    'avl-updated':       'Last updated: 3 September 2026',
 
     'avl-1-h':           '1. Owner Identification Details',
     'avl-1-p':           'In compliance with the duty of information set out in Article 10 of Spanish Act 34/2002 of 11 July on Information Society Services and Electronic Commerce (LSSICE), the following details of the owner of this website are provided:',
@@ -529,7 +524,6 @@ const translations = {
     'ck-page-title':     'Cookie Policy \u2014 Iselia',
     'ck-meta-desc':     'Cookie policy of Iselia Networks, SLU: which cookies the site uses, how your consent is requested and how to change or withdraw it at any time.',
     'ck-title':          'Cookie Policy',
-    'ck-updated':        'Last updated: 3 September 2026',
 
     'ck-1-h':            '1. What are cookies?',
     'ck-1-p':            'A cookie is a small text file that a website stores in the visitor browser in order to save and retrieve information about their browsing. Their use is regulated by Article 22.2 of Spanish Act 34/2002 (LSSICE), which requires user consent except for strictly necessary ones.',
