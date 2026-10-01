@@ -14,10 +14,9 @@ const translations = {
 
     /* HERO */
     'hero-h1':           'No vendemos tecnología.<br /><span class="grad">Entendemos tu negocio.</span>',
-    'hero-desc':         'Más de 20 años ayudando a empresas reales a crecer de forma inteligente. Ahora, con la potencia de la inteligencia artificial al servicio de cada decisión y cada proceso de tu pyme.',
+    'hero-desc':         'Ayudamos a empresas reales a crecer de forma inteligente, con la potencia de la inteligencia artificial al servicio de cada decisión y cada proceso de tu pyme.',
     'hero-cta-btn':      'Empieza hoy, sin compromiso',
     'hero-outline-btn':  'Ver cómo trabajamos',
-    'stat-1-label':      'Años de experiencia sectorial',
     'stat-2-label':      'Sectores transformados',
     'stat-3-label':      'Ganancia media de eficiencia',
 
@@ -301,10 +300,9 @@ const translations = {
 
     /* HERO */
     'hero-h1':           'We don\'t sell technology.<br /><span class="grad">We understand your business.</span>',
-    'hero-desc':         'Over 20 years helping real companies grow intelligently. Now, with the power of artificial intelligence at the service of every decision and every process in your business.',
+    'hero-desc':         'We help real companies grow intelligently, with the power of artificial intelligence at the service of every decision and every process in your business.',
     'hero-cta-btn':      'Start today, no commitment',
     'hero-outline-btn':  'See how we work',
-    'stat-1-label':      'Years of sector experience',
     'stat-2-label':      'Sectors transformed',
     'stat-3-label':      'Average efficiency gain',
 
