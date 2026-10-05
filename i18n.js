@@ -115,7 +115,7 @@ const translations = {
     'form-sector-4':     'Servicios profesionales',
     'form-sector-5':     'Industria / Manufactura',
     'form-sector-6':     'Salud / Bienestar',
-    'form-sector-7':     'Educación / Formación',
+    'form-sector-7':     'Medios de comunicación',
     'form-sector-8':     'Otro',
     'form-msg-lbl':      '¿Cuál es tu mayor reto ahora mismo?',
     'form-msg-ph':       'Cuéntanos brevemente el problema o la oportunidad que quieres explorar…',
@@ -269,8 +269,8 @@ const translations = {
     'sec-salud-d':      'Agendas, documentación y seguimiento al día, con los datos donde la normativa exige que estén.',
     'sec-distrib-t':    'Distribución',
     'sec-distrib-d':    'Pedidos, reposición y margen por referencia visibles sin esperar al cierre de mes.',
-    'sec-educacion-t':  'Educación',
-    'sec-educacion-d':  'Matrícula, seguimiento del alumno y tareas administrativas que dejan de comerse el curso.',  },
+    'sec-medios-t':     'Medios de comunicación',
+    'sec-medios-d':     'Contenido editorial, producción audiovisual y medición de audiencias: más piezas en menos tiempo y datos para decidir qué publicar.',  },
 
   en: {
     'page-title':        'Iselia - AI-powered Technology Consulting for SMEs',
@@ -388,7 +388,7 @@ const translations = {
     'form-sector-4':     'Professional services',
     'form-sector-5':     'Industry / Manufacturing',
     'form-sector-6':     'Health / Wellness',
-    'form-sector-7':     'Education / Training',
+    'form-sector-7':     'Media',
     'form-sector-8':     'Other',
     'form-msg-lbl':      'What is your biggest challenge right now?',
     'form-msg-ph':       'Tell us briefly about the problem or opportunity you\'d like to explore…',
@@ -542,8 +542,8 @@ const translations = {
     'sec-salud-d':      'Scheduling, records and follow-up kept current, with the data where regulation requires it.',
     'sec-distrib-t':    'Distribution',
     'sec-distrib-d':    'Orders, replenishment and margin per item visible without waiting for month-end.',
-    'sec-educacion-t':  'Education',
-    'sec-educacion-d':  'Enrolment, student tracking and the admin that otherwise eats the school year.',  }
+    'sec-medios-t':     'Media',
+    'sec-medios-d':     'Editorial content, audiovisual production and audience measurement: more pieces in less time, and the data to decide what to publish.',  }
 };
 
 let currentLang = 'es';
