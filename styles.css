@@ -734,7 +734,9 @@ section {
 .why-pillars-sub { font-size: .8rem; color: var(--muted); margin: .25rem 0 1rem; }
 .why-metrics {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0, 1fr): con 1fr a secas la palabra mas larga ("Transparencia")
+     ensanchaba su columna y descuadraba la rejilla. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .85rem;
 }
 .wm {
@@ -1067,12 +1069,19 @@ footer p { font-size: .78rem; color: var(--muted); }
      despliega centrado bajo el y cae sobre el CTA, que queda por debajo. */
   .lang-switcher { align-self: center; }
   .lang-menu { right: auto; left: 50%; transform: translateX(-50%); }
-  .why-panel { order: -1; }
+  /* El panel va detras de los puntos, como en escritorio: delante dejaba la
+     cita y los pilares encima del titulo de la seccion. */
+  .why-panel { padding: 1.75rem 1.5rem; border-radius: 20px; }
+  .why-quote { font-size: 1.2rem; }
   footer { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 480px) {
   .problem-grid { grid-template-columns: 1fr; gap: 1px; }
+  /* A 390px el panel deja ~290px utiles: dos columnas no caben con
+     "Transparencia", asi que los pilares se apilan. */
+  .why-metrics { grid-template-columns: 1fr; gap: .65rem; }
+  .wm { padding: .85rem 1rem; }
   .services-grid { grid-template-columns: 1fr; }
   .svc-banner { font-size: 1rem; }
   .testi-grid { grid-template-columns: 1fr; }

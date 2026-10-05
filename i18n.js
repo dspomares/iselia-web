@@ -15,7 +15,7 @@ const translations = {
     /* HERO */
     'hero-h1':           'No vendemos tecnología.<br /><span class="grad">Entendemos tu negocio.</span>',
     'hero-desc':         'Ayudamos a empresas reales a crecer de forma inteligente, con la potencia de la inteligencia artificial al servicio de cada decisión y cada proceso de tu pyme.',
-    'hero-cta-btn':      'Empieza hoy, sin compromiso',
+    'hero-cta-btn':      'Empieza hoy',
     'hero-outline-btn':  'Ver cómo trabajamos',
 
     /* PROOF BAR */
@@ -288,7 +288,7 @@ const translations = {
     /* HERO */
     'hero-h1':           'We don\'t sell technology.<br /><span class="grad">We understand your business.</span>',
     'hero-desc':         'We help real companies grow intelligently, with the power of artificial intelligence at the service of every decision and every process in your business.',
-    'hero-cta-btn':      'Start today, no commitment',
+    'hero-cta-btn':      'Start today',
     'hero-outline-btn':  'See how we work',
 
     /* PROOF BAR */
