@@ -1,13 +1,13 @@
 const translations = {
   es: {
-    'page-title':        'Iselia — Consultoría tecnológica con IA para Pymes',
-    'meta-desc':         'Iselia aplica más de 20 años de experiencia sectorial e inteligencia artificial para transformar los procesos de tu empresa.',
+    'page-title':        'Iselia - Consultoría tecnológica con IA para Pymes',
+    'meta-desc':         'Consultoría tecnológica con IA para pymes: asesoría, diseño, implementación y acompañamiento para transformar los procesos de tu empresa.',
     'mobile-aria':       'Menú',
     'lang-aria':         'Idioma',
 
     /* NAV */
     'nav-services':      'Servicios',
-    'nav-methodology':   'Metodología',
+    'nav-sectors':       'Sectores',
     'nav-about':         'Nosotros',
     'nav-contact':       'Contacto',
     'nav-cta':           'Hablemos',
@@ -17,8 +17,6 @@ const translations = {
     'hero-desc':         'Ayudamos a empresas reales a crecer de forma inteligente, con la potencia de la inteligencia artificial al servicio de cada decisión y cada proceso de tu pyme.',
     'hero-cta-btn':      'Empieza hoy, sin compromiso',
     'hero-outline-btn':  'Ver cómo trabajamos',
-    'stat-2-label':      'Sectores transformados',
-    'stat-3-label':      'Ganancia media de eficiencia',
 
     /* PROOF BAR */
 
@@ -37,29 +35,29 @@ const translations = {
 
     /* SERVICES */
     'svc-eyebrow':       'Lo que hacemos',
-    'svc-banner':        'Cuatro servicios, un mismo método',
+    'svc-banner':        'Contigo en cada fase, o solo en la que necesites',
     'svc-title':         'Soluciones a medida,<br /><span class="grad">resultados medibles.</span>',
     'svc-sub':           'No aplicamos recetas genéricas. Diseñamos cada intervención desde el conocimiento profundo de tu sector y tus operaciones.',
-    'svc-1-title':       'Diagnóstico y hoja de ruta',
-    'svc-1-desc':        'Empezamos entendiendo dónde estás. Analizamos tus procesos, datos y equipo para diseñar un plan de transformación realista y priorizado.',
-    'svc-1-li-1':        'Auditoría de procesos',
+    'svc-1-title':       'Asesoría estratégica',
+    'svc-1-desc':        'Te ayudamos a decidir dónde invertir en tecnología e IA, y en qué orden. Partimos de tus objetivos de negocio, no de la herramienta de moda.',
+    'svc-1-li-1':        'Diagnóstico de procesos y datos',
     'svc-1-li-2':        'Mapa de oportunidades con IA',
-    'svc-1-li-3':        'Plan de acción por fases',
-    'svc-2-title':       'Automatización inteligente',
-    'svc-2-desc':        'Identificamos las tareas repetitivas de tu empresa y las automatizamos con IA, liberando a tu equipo para lo que de verdad importa.',
-    'svc-2-li-1':        'Flujos de trabajo automáticos',
-    'svc-2-li-2':        'Agentes de IA operativos',
-    'svc-2-li-3':        'Integración con tus sistemas actuales',
-    'svc-3-title':       'Analítica y decisión',
-    'svc-3-desc':        'Convertimos tus datos en visibilidad real: dashboards accionables, alertas y predicciones que te ayudan a gestionar antes de que los problemas lleguen.',
-    'svc-3-li-1':        'Cuadros de mando ejecutivo',
-    'svc-3-li-2':        'Modelos predictivos de negocio',
-    'svc-3-li-3':        'KPIs adaptados a tu sector',
-    'svc-4-title':       'Formación y adopción',
-    'svc-4-desc':        'La mejor tecnología no sirve de nada si el equipo no la usa. Acompañamos la transformación con formación práctica y cambio cultural.',
-    'svc-4-li-1':        'Talleres prácticos con IA',
-    'svc-4-li-2':        'Acompañamiento al equipo',
-    'svc-4-li-3':        'Soporte post-implantación',
+    'svc-1-li-3':        'Hoja de ruta priorizada con ROI estimado',
+    'svc-2-title':       'Diseño de soluciones',
+    'svc-2-desc':        'Convertimos cada oportunidad en una solución concreta: qué se construye, cómo encaja con tus sistemas y cuánto cuesta, antes de escribir una línea de código.',
+    'svc-2-li-1':        'Arquitectura y elección de herramientas',
+    'svc-2-li-2':        'Prototipos validados con tu equipo',
+    'svc-2-li-3':        'Alcance, plazos y coste cerrados',
+    'svc-3-title':       'Implementación técnica',
+    'svc-3-desc':        'Construimos la solución y la integramos en tu entorno, por fases cortas y con resultados visibles desde las primeras semanas.',
+    'svc-3-li-1':        'Automatizaciones y agentes de IA',
+    'svc-3-li-2':        'Integración con tus sistemas actuales',
+    'svc-3-li-3':        'Cuadros de mando y analítica',
+    'svc-4-title':       'Acompañamiento permanente',
+    'svc-4-desc':        'No desaparecemos tras la puesta en marcha. Formamos a tu equipo, medimos el impacto y seguimos mejorando la solución a medida que tu empresa cambia.',
+    'svc-4-li-1':        'Formación y adopción del equipo',
+    'svc-4-li-2':        'Soporte y mantenimiento',
+    'svc-4-li-3':        'Revisión periódica de resultados',
 
     /* WHY */
     'why-eyebrow':       'Nuestra diferencia',
@@ -72,31 +70,21 @@ const translations = {
     'why-3-title':       'Resultados antes que tecnología',
     'why-3-desc':        'Cada proyecto empieza por el problema de negocio. Medimos el impacto en euros, horas y decisiones, no en módulos instalados.',
     'why-4-title':       'Escala de pyme, rigor de gran empresa',
-    'why-4-desc':        'Adaptamos metodologías de compañías Fortune 500 a la realidad de una empresa de 10 a 100 personas. Sin sobrecarga, con máximo impacto.',
-    'why-quote':         '"La IA no va a reemplazar tu empresa.<br />Pero una empresa que use <span class="hi">IA bien aplicada</span><br />sí va a superar a la que no lo haga."',
-    'why-author':        '— Filosofía Iselia',
-    'wm-1-label':        'Reducción media en tiempo de procesos',
-    'wm-2-label':        'Años de experiencia multisectorial',
-    'wm-3-val':          '8 sem',
-    'wm-3-label':        'De diagnóstico a primeros resultados',
-    'wm-4-label':        'Proyectos con ROI definido desde el inicio',
+    'why-4-desc':        'Adaptamos metodologías de la gran empresa a la realidad de una pyme. Sin sobrecarga, con máximo impacto.',
+    'why-quote':         '"Menos promesas.<br />Más <span class="hi">procesos que funcionan</span>."',
+    'why-author':        '- Filosofía Iselia',
+    'pillars-title':     'Nuestros pilares',
+    'pillars-sub':       'Rigen todas las soluciones que diseñamos e implementamos.',
+    'wm-1-val':          'Visión',
+    'wm-1-label':        'Pensamos en dónde quiere llegar tu empresa, no solo en el problema de hoy.',
+    'wm-2-val':          'Honestidad',
+    'wm-2-label':        'Si algo no te conviene, te lo decimos, aunque eso nos cueste el proyecto.',
+    'wm-3-val':          'Transparencia',
+    'wm-3-label':        'Costes, plazos y avances a la vista en todo momento.',
+    'wm-4-val':          'Resultados',
+    'wm-4-label':        'Medimos el éxito por el impacto en tu negocio, no por lo entregado.',
 
     /* HOW */
-    'how-eyebrow':       'Cómo trabajamos',
-    'how-title':         'Simple, claro y <span class="grad">sin sorpresas.</span>',
-    'how-sub':           'Un proceso diseñado para minimizar la fricción en tu organización y maximizar el impacto desde la primera semana.',
-    'step-1-num':        'PASO 01',
-    'step-1-title':      'Diagnóstico gratuito',
-    'step-1-desc':       'Una sesión de trabajo para entender tu empresa, tus procesos y dónde está el mayor potencial de mejora.',
-    'step-2-num':        'PASO 02',
-    'step-2-title':      'Plan a medida',
-    'step-2-desc':       'Diseñamos una propuesta concreta, priorizada y con ROI estimado. Sin tecnicismos, con resultados claros.',
-    'step-3-num':        'PASO 03',
-    'step-3-title':      'Implantación ágil',
-    'step-3-desc':       'Actuamos por fases cortas para que veas resultados pronto y puedas ajustar el rumbo con agilidad.',
-    'step-4-num':        'PASO 04',
-    'step-4-title':      'Seguimiento y mejora',
-    'step-4-desc':       'No desaparecemos tras el proyecto. Medimos el impacto, ajustamos y seguimos contigo.',
 
     /* CONTACT */
     'contact-eyebrow':   'Contacto',
@@ -104,8 +92,8 @@ const translations = {
     'contact-sub':       'Sin compromisos. Sin presentaciones genéricas. Solo una charla honesta sobre tu empresa y cómo podemos ayudarte.',
     'contact-email-lbl': 'Email',
     'contact-phone-lbl': 'Teléfono',
-    'contact-sess-lbl':  'Primera sesión',
-    'contact-sess-val':  'Diagnóstico gratuito de 45 minutos',
+    'contact-sess-lbl':  'Primer paso',
+    'contact-sess-val':  'Cuéntanos tu necesidad y te ayudaremos a resolverla',
     'form-heading':      'Cuéntanos sobre tu proyecto',
     'form-name-lbl':     'Nombre *',
     'form-name-ph':      'Tu nombre',
@@ -114,10 +102,10 @@ const translations = {
     'form-email-lbl':    'Email *',
     'form-emp-lbl':      'Nº empleados',
     'form-emp-ph':       'Selecciona',
-    'form-emp-1':        '1 – 10',
-    'form-emp-2':        '11 – 25',
-    'form-emp-3':        '26 – 50',
-    'form-emp-4':        '51 – 100',
+    'form-emp-1':        '1 - 10',
+    'form-emp-2':        '11 - 25',
+    'form-emp-3':        '26 - 50',
+    'form-emp-4':        '51 - 100',
     'form-emp-5':        '+100',
     'form-sector-lbl':   'Sector',
     'form-sector-ph':    '¿En qué sector operas?',
@@ -132,10 +120,10 @@ const translations = {
     'form-msg-lbl':      '¿Cuál es tu mayor reto ahora mismo?',
     'form-msg-ph':       'Cuéntanos brevemente el problema o la oportunidad que quieres explorar…',
     'form-consent':      'He leído y acepto la <a href="privacidad.html">Política de Privacidad</a>. *',
-    'form-submit':       'Solicitar diagnóstico gratuito →',
+    'form-submit':       'Enviar mensaje →',
     'form-note':         'Sin spam. Tus datos se usan únicamente para contactarte.',
     'form-ok-title':     '¡Mensaje recibido!',
-    'form-ok-desc':      'Nos pondremos en contacto contigo en menos de 24 horas para coordinar tu sesión de diagnóstico.',
+    'form-ok-desc':      'Nos pondremos en contacto contigo en menos de 24 horas.',
 
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · Todos los derechos reservados',
@@ -144,7 +132,7 @@ const translations = {
     'footer-cookies':    'Política de Cookies',
 
     /* PRIVACY PAGE */
-    'priv-page-title':   'Política de Privacidad — Iselia',
+    'priv-page-title':   'Política de Privacidad - Iselia',
     'priv-meta-desc':    'Política de privacidad de Iselia Networks, SLU: responsable del tratamiento, finalidades, base legal y derechos del usuario conforme al RGPD y la LOPDGDD.',
     'priv-title':        'Política de Privacidad',
     'priv-1-h':          '1. Responsable del Tratamiento',
@@ -156,7 +144,6 @@ const translations = {
     'priv-2-h':          '2. Finalidades del Tratamiento',
     'priv-2-p':          'Tratamos los datos que nos facilitas con las siguientes finalidades:',
     'priv-2-li1':        'Gestionar y responder a las consultas y solicitudes recibidas a través del formulario de contacto.',
-    'priv-2-li2':        'Coordinar y prestar la sesión de diagnóstico solicitada.',
     'priv-2-li3':        'Enviarte información comercial sobre nuestros servicios, únicamente si nos has dado tu autorización previa.',
     'priv-2-li4':        'Prevenir envíos automatizados, abusos del servicio y actividades maliciosas.',
     'priv-3-h':          '3. Base Legal',
@@ -187,7 +174,7 @@ const translations = {
     'legal-back':        '\u2190 Volver al inicio',
 
     // --- aviso legal ---
-    'avl-page-title':    'Aviso Legal \u2014 Iselia',
+    'avl-page-title':    'Aviso Legal - Iselia',
     'avl-meta-desc':     'Aviso legal de Iselia Networks, SLU: datos identificativos del titular, condiciones de uso, propiedad intelectual y legislaci\u00f3n aplicable conforme a la LSSICE.',
     'avl-title':         'Aviso Legal',
 
@@ -215,12 +202,12 @@ const translations = {
     'avl-3-p2':          'Iselia se reserva el derecho a modificar, suspender o interrumpir, en cualquier momento y sin necesidad de preaviso, la presentaci\u00f3n, configuraci\u00f3n y contenidos del Sitio Web, as\u00ed como a denegar el acceso a quien incumpla estas condiciones.',
 
     'avl-4-h':           '4. Propiedad Intelectual e Industrial',
-    'avl-4-p1':          'Todos los contenidos del Sitio Web \u2014 incluidos, con car\u00e1cter no limitativo, textos, im\u00e1genes, dise\u00f1o gr\u00e1fico, estructura de navegaci\u00f3n, c\u00f3digo fuente, logotipos, marcas y nombres comerciales \u2014 son titularidad de Iselia o de terceros que han autorizado su uso, y est\u00e1n protegidos por la normativa de propiedad intelectual e industrial.',
+    'avl-4-p1':          'Todos los contenidos del Sitio Web - incluidos, con car\u00e1cter no limitativo, textos, im\u00e1genes, dise\u00f1o gr\u00e1fico, estructura de navegaci\u00f3n, c\u00f3digo fuente, logotipos, marcas y nombres comerciales - son titularidad de Iselia o de terceros que han autorizado su uso, y est\u00e1n protegidos por la normativa de propiedad intelectual e industrial.',
     'avl-4-p2':          'Queda prohibida la reproducci\u00f3n, distribuci\u00f3n, comunicaci\u00f3n p\u00fablica, transformaci\u00f3n o cualquier otra forma de explotaci\u00f3n, total o parcial, de dichos contenidos sin la autorizaci\u00f3n previa y por escrito de Iselia. El acceso al Sitio Web no otorga al usuario ning\u00fan derecho de titularidad sobre los mismos.',
 
     'avl-5-h':           '5. Enlaces y Servicios de Terceros',
     'avl-5-p1':          'El Sitio Web puede contener enlaces a p\u00e1ginas de terceros. Iselia no controla ni asume responsabilidad alguna sobre sus contenidos, pol\u00edticas o pr\u00e1cticas. La inclusi\u00f3n de un enlace no implica recomendaci\u00f3n ni relaci\u00f3n entre Iselia y el titular del sitio enlazado.',
-    'avl-5-p2':         'Al margen de dichos enlaces, el Sitio Web incorpora dos servicios de terceros: Cookiebot, para la gestión del consentimiento de cookies, y Google Analytics. Puedes consultar el detalle de estos servicios y su tratamiento de datos en nuestra <a href="privacidad.html">Política de Privacidad</a> y en la <a href="cookies.html">Política de Cookies</a>. El resto de recursos —tipografías, imágenes y código— se sirven desde nuestro propio servidor.',
+    'avl-5-p2':         'Al margen de dichos enlaces, el Sitio Web incorpora dos servicios de terceros: Cookiebot, para la gestión del consentimiento de cookies, y Google Analytics. Puedes consultar el detalle de estos servicios y su tratamiento de datos en nuestra <a href="privacidad.html">Política de Privacidad</a> y en la <a href="cookies.html">Política de Cookies</a>. El resto de recursos - tipografías, imágenes y código - se sirven desde nuestro propio servidor.',
 
     'avl-6-h':           '6. Exclusi\u00f3n de Garant\u00edas y Responsabilidad',
     'avl-6-p1':          'Iselia adopta medidas razonables para que la informaci\u00f3n del Sitio Web sea correcta y est\u00e9 actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del servicio, que puede verse afectada por causas t\u00e9cnicas ajenas a su control.',
@@ -233,7 +220,7 @@ const translations = {
     'avl-8-p':           'Este Aviso Legal se rige por la legislaci\u00f3n espa\u00f1ola. Para la resoluci\u00f3n de cualquier controversia derivada del acceso o uso del Sitio Web, las partes se someten a los Juzgados y Tribunales del domicilio social de Iselia, salvo que la normativa de consumidores y usuarios aplicable determine un fuero distinto de car\u00e1cter imperativo.',
 
     // --- pol\u00edtica de cookies ---
-    'ck-page-title':     'Pol\u00edtica de Cookies \u2014 Iselia',
+    'ck-page-title':     'Pol\u00edtica de Cookies - Iselia',
     'ck-meta-desc':     'Política de cookies de Iselia Networks, SLU: qué cookies utiliza el sitio, cómo se solicita tu consentimiento y cómo cambiarlo o retirarlo en cualquier momento.',
     'ck-title':          'Pol\u00edtica de Cookies',
 
@@ -255,7 +242,7 @@ const translations = {
     'ck-3-note':         'Al tratarse de una preferencia seleccionada expresamente por el usuario, este almacenamiento se considera estrictamente necesario y est\u00e1 <strong>exento del deber de obtener consentimiento</strong>, conforme al art\u00edculo 22.2 de la LSSICE y a la Gu\u00eda sobre el uso de las cookies de la Agencia Espa\u00f1ola de Protecci\u00f3n de Datos.',
 
     'ck-4-h':            '4. Servicios de terceros',
-    'ck-4-p':           'El sitio carga dos servicios de terceros: <strong>Cookiebot</strong>, prestado por Cybot A/S (Dinamarca), que proporciona el sistema de consentimiento; y <strong>Google Analytics 4</strong>, prestado por Google Ireland Limited y Google LLC. Al cargarse, tu dirección IP se comunica a estos proveedores; en el caso de Google, esto puede suponer una transferencia internacional de datos. Encontrarás el detalle y su base jurídica en el apartado «Destinatarios» de nuestra <a href="privacidad.html">Política de Privacidad</a>. El resto de recursos —tipografías, imágenes y código— se sirven desde nuestro propio servidor.',
+    'ck-4-p':           'El sitio carga dos servicios de terceros: <strong>Cookiebot</strong>, prestado por Cybot A/S (Dinamarca), que proporciona el sistema de consentimiento; y <strong>Google Analytics 4</strong>, prestado por Google Ireland Limited y Google LLC. Al cargarse, tu dirección IP se comunica a estos proveedores; en el caso de Google, esto puede suponer una transferencia internacional de datos. Encontrarás el detalle y su base jurídica en el apartado «Destinatarios» de nuestra <a href="privacidad.html">Política de Privacidad</a>. El resto de recursos - tipografías, imágenes y código - se sirven desde nuestro propio servidor.',
 
     'ck-5-h':           '5. Cómo cambiar tu decisión o borrar los datos',
     'ck-5-p':            'Puedes borrar en cualquier momento el dato descrito en el apartado 3 desde las opciones de tu navegador, normalmente en la secci\u00f3n de privacidad, al eliminar los datos de sitios web o el historial de navegaci\u00f3n. Tambi\u00e9n puedes navegar en modo inc\u00f3gnito o privado. La \u00fanica consecuencia es que el sitio dejar\u00e1 de recordar tu idioma y volver\u00e1 a mostrarse en espa\u00f1ol.',
@@ -267,7 +254,7 @@ const translations = {
     /* SECTORES */
     'sec-eyebrow':      'Sectores',
     'sec-title':        'Cada sector tiene<br /><span class="grad">sus propias reglas.</span>',
-    'sec-sub':          'Más de 20 años dentro de empresas reales. Estos son los sectores donde mejor conocemos el terreno.',
+    'sec-sub':          'Estos son los sectores donde mejor conocemos el terreno.',
     'sec-retail-t':     'Retail',
     'sec-retail-d':     'Previsión de demanda, control de stock y precios que se ajustan a lo que pasa en tienda.',
     'sec-logistica-t':  'Logística',
@@ -286,14 +273,14 @@ const translations = {
     'sec-educacion-d':  'Matrícula, seguimiento del alumno y tareas administrativas que dejan de comerse el curso.',  },
 
   en: {
-    'page-title':        'Iselia — AI-powered Technology Consulting for SMEs',
-    'meta-desc':         'Iselia applies over 20 years of sector experience and artificial intelligence to transform your company\'s processes.',
+    'page-title':        'Iselia - AI-powered Technology Consulting for SMEs',
+    'meta-desc':         'Technology and AI consultancy for SMEs: advisory, design, implementation and ongoing support to transform your company\'s processes.',
     'mobile-aria':       'Menu',
     'lang-aria':         'Language',
 
     /* NAV */
     'nav-services':      'Services',
-    'nav-methodology':   'Methodology',
+    'nav-sectors':       'Industries',
     'nav-about':         'About',
     'nav-contact':       'Contact',
     'nav-cta':           'Let\'s talk',
@@ -303,8 +290,6 @@ const translations = {
     'hero-desc':         'We help real companies grow intelligently, with the power of artificial intelligence at the service of every decision and every process in your business.',
     'hero-cta-btn':      'Start today, no commitment',
     'hero-outline-btn':  'See how we work',
-    'stat-2-label':      'Sectors transformed',
-    'stat-3-label':      'Average efficiency gain',
 
     /* PROOF BAR */
 
@@ -317,35 +302,35 @@ const translations = {
     'prob-2-title':      'Decisions without real data',
     'prob-2-desc':       'You make important decisions without clear visibility of what\'s happening in your business.',
     'prob-3-title':      'Technology that doesn\'t fit',
-    'prob-3-desc':       'Generic tools that don\'t adapt to the way you work — not the other way around.',
+    'prob-3-desc':       'Generic tools that don\'t adapt to the way you work - not the other way around.',
     'prob-4-title':      'Fear of falling behind',
     'prob-4-desc':       'AI is advancing fast and you don\'t know where to start without risking what already works.',
 
     /* SERVICES */
     'svc-eyebrow':       'What we do',
-    'svc-banner':        'Four services, one method',
+    'svc-banner':        'With you at every stage - or just the one you need',
     'svc-title':         'Tailored solutions,<br /><span class="grad">measurable results.</span>',
     'svc-sub':           'We don\'t apply generic recipes. We design each intervention from a deep understanding of your sector and operations.',
-    'svc-1-title':       'Diagnosis & roadmap',
-    'svc-1-desc':        'We start by understanding where you are. We analyse your processes, data and team to design a realistic, prioritised transformation plan.',
-    'svc-1-li-1':        'Process audit',
+    'svc-1-title':       'Strategic advisory',
+    'svc-1-desc':        'We help you decide where to invest in technology and AI, and in what order. We start from your business goals, not from the tool of the moment.',
+    'svc-1-li-1':        'Process and data diagnosis',
     'svc-1-li-2':        'AI opportunity map',
-    'svc-1-li-3':        'Phased action plan',
-    'svc-2-title':       'Intelligent automation',
-    'svc-2-desc':        'We identify the repetitive tasks in your company and automate them with AI, freeing your team for what truly matters.',
-    'svc-2-li-1':        'Automatic workflows',
-    'svc-2-li-2':        'Operational AI agents',
-    'svc-2-li-3':        'Integration with your current systems',
-    'svc-3-title':       'Analytics & decision-making',
-    'svc-3-desc':        'We turn your data into real visibility: actionable dashboards, alerts and predictions that help you manage before problems arise.',
-    'svc-3-li-1':        'Executive dashboards',
-    'svc-3-li-2':        'Business predictive models',
-    'svc-3-li-3':        'KPIs tailored to your sector',
-    'svc-4-title':       'Training & adoption',
-    'svc-4-desc':        'The best technology is useless if the team doesn\'t use it. We accompany the transformation with practical training and cultural change.',
-    'svc-4-li-1':        'Hands-on AI workshops',
-    'svc-4-li-2':        'Team coaching',
-    'svc-4-li-3':        'Post-implementation support',
+    'svc-1-li-3':        'Prioritised roadmap with estimated ROI',
+    'svc-2-title':       'Solution design',
+    'svc-2-desc':        'We turn each opportunity into a concrete solution: what gets built, how it fits your systems and what it costs - before a single line of code is written.',
+    'svc-2-li-1':        'Architecture and tool selection',
+    'svc-2-li-2':        'Prototypes validated with your team',
+    'svc-2-li-3':        'Fixed scope, timeline and cost',
+    'svc-3-title':       'Technical implementation',
+    'svc-3-desc':        'We build the solution and integrate it into your environment, in short phases, with visible results from the first weeks.',
+    'svc-3-li-1':        'Automations and AI agents',
+    'svc-3-li-2':        'Integration with your current systems',
+    'svc-3-li-3':        'Dashboards and analytics',
+    'svc-4-title':       'Ongoing support',
+    'svc-4-desc':        'We don\'t disappear after go-live. We train your team, measure the impact and keep improving the solution as your company changes.',
+    'svc-4-li-1':        'Team training and adoption',
+    'svc-4-li-2':        'Support and maintenance',
+    'svc-4-li-3':        'Regular results reviews',
 
     /* WHY */
     'why-eyebrow':       'Our difference',
@@ -356,33 +341,23 @@ const translations = {
     'why-2-title':       'Applied AI, not theoretical AI',
     'why-2-desc':        'We don\'t sell you a demo. We implement solutions that work in your environment, with your data and your team.',
     'why-3-title':       'Results before technology',
-    'why-3-desc':        'Every project starts with the business problem. We measure impact in money, hours and decisions — not installed modules.',
+    'why-3-desc':        'Every project starts with the business problem. We measure impact in money, hours and decisions - not installed modules.',
     'why-4-title':       'SME scale, enterprise rigour',
-    'why-4-desc':        'We adapt Fortune 500 methodologies to the reality of a 10–100 person company. No overhead, maximum impact.',
-    'why-quote':         '"AI is not going to replace your company.<br />But a company that uses <span class="hi">AI well</span><br />will outperform the one that doesn\'t."',
-    'why-author':        '— Iselia Philosophy',
-    'wm-1-label':        'Average reduction in process time',
-    'wm-2-label':        'Years of multi-sector experience',
-    'wm-3-val':          '8 wks',
-    'wm-3-label':        'From diagnosis to first results',
-    'wm-4-label':        'Projects with ROI defined from the start',
+    'why-4-desc':        'We adapt large-enterprise methodologies to the reality of an SME. No overhead, maximum impact.',
+    'why-quote':         '"Fewer promises.<br />More <span class="hi">processes that work</span>."',
+    'why-author':        '- Iselia Philosophy',
+    'pillars-title':     'Our pillars',
+    'pillars-sub':       'They govern every solution we design and implement.',
+    'wm-1-val':          'Vision',
+    'wm-1-label':        'We think about where your company wants to go, not just today\'s problem.',
+    'wm-2-val':          'Honesty',
+    'wm-2-label':        'If something isn\'t right for you, we say so - even if it costs us the project.',
+    'wm-3-val':          'Transparency',
+    'wm-3-label':        'Costs, timelines and progress in plain view at all times.',
+    'wm-4-val':          'Results',
+    'wm-4-label':        'We measure success by the impact on your business, not by what we deliver.',
 
     /* HOW */
-    'how-eyebrow':       'How we work',
-    'how-title':         'Simple, clear and <span class="grad">no surprises.</span>',
-    'how-sub':           'A process designed to minimise friction in your organisation and maximise impact from the first week.',
-    'step-1-num':        'STEP 01',
-    'step-1-title':      'Free diagnosis',
-    'step-1-desc':       'A working session to understand your company, your processes and where the greatest improvement potential lies.',
-    'step-2-num':        'STEP 02',
-    'step-2-title':      'Tailored plan',
-    'step-2-desc':       'We design a specific, prioritised proposal with estimated ROI. No jargon, clear results.',
-    'step-3-num':        'STEP 03',
-    'step-3-title':      'Agile implementation',
-    'step-3-desc':       'We work in short phases so you see results quickly and can adjust course with agility.',
-    'step-4-num':        'STEP 04',
-    'step-4-title':      'Follow-up & improvement',
-    'step-4-desc':       'We don\'t disappear after the project. We measure impact, adjust and stay with you.',
 
     /* CONTACT */
     'contact-eyebrow':   'Contact',
@@ -390,8 +365,8 @@ const translations = {
     'contact-sub':       'No commitments. No generic presentations. Just an honest chat about your company and how we can help.',
     'contact-email-lbl': 'Email',
     'contact-phone-lbl': 'Phone',
-    'contact-sess-lbl':  'First session',
-    'contact-sess-val':  'Free 45-minute diagnosis',
+    'contact-sess-lbl':  'First step',
+    'contact-sess-val':  'Tell us what you need and we\'ll help you solve it',
     'form-heading':      'Tell us about your project',
     'form-name-lbl':     'Name *',
     'form-name-ph':      'Your name',
@@ -400,10 +375,10 @@ const translations = {
     'form-email-lbl':    'Email *',
     'form-emp-lbl':      'No. of employees',
     'form-emp-ph':       'Select',
-    'form-emp-1':        '1 – 10',
-    'form-emp-2':        '11 – 25',
-    'form-emp-3':        '26 – 50',
-    'form-emp-4':        '51 – 100',
+    'form-emp-1':        '1 - 10',
+    'form-emp-2':        '11 - 25',
+    'form-emp-3':        '26 - 50',
+    'form-emp-4':        '51 - 100',
     'form-emp-5':        '+100',
     'form-sector-lbl':   'Sector',
     'form-sector-ph':    'What sector do you operate in?',
@@ -418,10 +393,10 @@ const translations = {
     'form-msg-lbl':      'What is your biggest challenge right now?',
     'form-msg-ph':       'Tell us briefly about the problem or opportunity you\'d like to explore…',
     'form-consent':      'I have read and accept the <a href="privacidad.html">Privacy Policy</a>. *',
-    'form-submit':       'Request a free diagnosis →',
+    'form-submit':       'Send message →',
     'form-note':         'No spam. Your data is used solely to contact you.',
     'form-ok-title':     'Message received!',
-    'form-ok-desc':      'We\'ll get back to you within 24 hours to schedule your diagnosis session.',
+    'form-ok-desc':      'We\'ll get back to you within 24 hours.',
 
     /* FOOTER */
     'footer-copy':       '© 2026 Iselia Networks, SLU · All rights reserved',
@@ -430,7 +405,7 @@ const translations = {
     'footer-cookies':    'Cookie Policy',
 
     /* PRIVACY PAGE */
-    'priv-page-title':   'Privacy Policy — Iselia',
+    'priv-page-title':   'Privacy Policy - Iselia',
     'priv-meta-desc':    'Iselia Networks, SLU privacy policy: data controller, purposes, legal basis and user rights under the GDPR.',
     'priv-title':        'Privacy Policy',
     'priv-1-h':          '1. Data Controller',
@@ -442,7 +417,6 @@ const translations = {
     'priv-2-h':          '2. Purposes of Processing',
     'priv-2-p':          'We process the data you provide for the following purposes:',
     'priv-2-li1':        'To manage and respond to enquiries and requests received through the contact form.',
-    'priv-2-li2':        'To coordinate and deliver the requested diagnosis session.',
     'priv-2-li3':        'To send you commercial information about our services, only where you have given your prior consent.',
     'priv-2-li4':        'To prevent automated submissions, service abuse and malicious activity.',
     'priv-3-h':          '3. Legal Basis',
@@ -473,7 +447,7 @@ const translations = {
     'legal-back':        '\u2190 Back to home',
 
     // --- legal notice ---
-    'avl-page-title':    'Legal Notice \u2014 Iselia',
+    'avl-page-title':    'Legal Notice - Iselia',
     'avl-meta-desc':     'Legal notice of Iselia Networks, SLU: owner identification details, terms of use, intellectual property and applicable law under Spanish LSSICE.',
     'avl-title':         'Legal Notice',
 
@@ -501,12 +475,12 @@ const translations = {
     'avl-3-p2':          'Iselia reserves the right to modify, suspend or discontinue the presentation, configuration and contents of the Website at any time and without prior notice, and to deny access to anyone who breaches these terms.',
 
     'avl-4-h':           '4. Intellectual and Industrial Property',
-    'avl-4-p1':          'All contents of the Website \u2014 including, without limitation, text, images, graphic design, navigation structure, source code, logos, trade marks and trade names \u2014 are owned by Iselia or by third parties who have authorised their use, and are protected by intellectual and industrial property law.',
+    'avl-4-p1':          'All contents of the Website - including, without limitation, text, images, graphic design, navigation structure, source code, logos, trade marks and trade names - are owned by Iselia or by third parties who have authorised their use, and are protected by intellectual and industrial property law.',
     'avl-4-p2':          'The reproduction, distribution, public communication, transformation or any other form of exploitation, in whole or in part, of such contents without the prior written authorisation of Iselia is prohibited. Access to the Website grants the user no ownership rights over them.',
 
     'avl-5-h':           '5. Links and Third-Party Services',
     'avl-5-p1':          'The Website may contain links to third-party pages. Iselia neither controls nor assumes any responsibility for their contents, policies or practices. The inclusion of a link implies neither a recommendation nor any relationship between Iselia and the owner of the linked site.',
-    'avl-5-p2':         'Apart from such links, the Website embeds two third-party services: Cookiebot, for cookie consent management, and Google Analytics. Details of these services and their data processing are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>. All remaining resources — web fonts, images and code — are served from our own server.',
+    'avl-5-p2':         'Apart from such links, the Website embeds two third-party services: Cookiebot, for cookie consent management, and Google Analytics. Details of these services and their data processing are available in our <a href="privacidad.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>. All remaining resources - web fonts, images and code - are served from our own server.',
 
     'avl-6-h':           '6. Disclaimer of Warranties and Liability',
     'avl-6-p1':          'Iselia takes reasonable measures to keep the information on the Website accurate and up to date, but does not guarantee the absence of errors or uninterrupted availability of the service, which may be affected by technical causes beyond its control.',
@@ -519,7 +493,7 @@ const translations = {
     'avl-8-p':           'This Legal Notice is governed by Spanish law. For the resolution of any dispute arising from access to or use of the Website, the parties submit to the Courts and Tribunals of the registered office of Iselia, unless the applicable consumer protection legislation establishes a different mandatory venue.',
 
     // --- cookie policy ---
-    'ck-page-title':     'Cookie Policy \u2014 Iselia',
+    'ck-page-title':     'Cookie Policy - Iselia',
     'ck-meta-desc':     'Cookie policy of Iselia Networks, SLU: which cookies the site uses, how your consent is requested and how to change or withdraw it at any time.',
     'ck-title':          'Cookie Policy',
 
@@ -541,7 +515,7 @@ const translations = {
     'ck-3-note':         'As this is a preference expressly selected by the user, this storage is considered strictly necessary and is <strong>exempt from the requirement to obtain consent</strong>, in accordance with Article 22.2 of the LSSICE and the Guidance on the use of cookies issued by the Spanish Data Protection Agency.',
 
     'ck-4-h':            '4. Third-party services',
-    'ck-4-p':           'The site loads two third-party services: <strong>Cookiebot</strong>, provided by Cybot A/S (Denmark), which supplies the consent mechanism; and <strong>Google Analytics 4</strong>, provided by Google Ireland Limited and Google LLC. When they load, your IP address is communicated to those providers; in the case of Google this may involve an international data transfer. Details and the legal basis can be found in the Recipients section of our <a href="privacidad.html">Privacy Policy</a>. All remaining resources — web fonts, images and code — are served from our own server.',
+    'ck-4-p':           'The site loads two third-party services: <strong>Cookiebot</strong>, provided by Cybot A/S (Denmark), which supplies the consent mechanism; and <strong>Google Analytics 4</strong>, provided by Google Ireland Limited and Google LLC. When they load, your IP address is communicated to those providers; in the case of Google this may involve an international data transfer. Details and the legal basis can be found in the Recipients section of our <a href="privacidad.html">Privacy Policy</a>. All remaining resources - web fonts, images and code - are served from our own server.',
 
     'ck-5-h':           '5. How to change your choice or delete the data',
     'ck-5-p':            'You may delete the item described in section 3 at any time from your browser settings, usually in the privacy section, by clearing website data or browsing history. You may also browse in incognito or private mode. The only consequence is that the site will stop remembering your language and will be displayed in Spanish again.',
@@ -553,7 +527,7 @@ const translations = {
     /* SECTORES */
     'sec-eyebrow':      'Industries',
     'sec-title':        'Every industry plays<br /><span class="grad">by its own rules.</span>',
-    'sec-sub':          'More than 20 years inside real companies. These are the industries whose ground we know best.',
+    'sec-sub':          'These are the industries whose ground we know best.',
     'sec-retail-t':     'Retail',
     'sec-retail-d':     'Demand forecasting, stock control and pricing that follows what is actually happening in store.',
     'sec-logistica-t':  'Logistics',
@@ -666,7 +640,7 @@ function initI18n() {
 }
 
 // A consent platform can delay this script past DOMContentLoaded, and that event
-// never fires again — so start straight away when the document is already parsed.
+// never fires again - so start straight away when the document is already parsed.
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initI18n);
 } else {

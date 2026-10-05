@@ -59,7 +59,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Active nav link on scroll
-const navSections = ['nosotros', 'servicios', 'metodologia', 'contacto']
+const navSections = ['nosotros', 'servicios', 'sectores', 'contacto']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
@@ -84,8 +84,8 @@ if (navSections.length) {
     for (const e of entries) {
       if (e.isIntersecting) crossing.add(e.target); else crossing.delete(e.target);
     }
-    // La linea cruza como mucho una seccion. Cuando no cruza ninguna — el
-    // hero, los tramos sin id (why, sectores) y el footer — se mantiene la
+    // La linea cruza como mucho una seccion. Cuando no cruza ninguna - el
+    // hero, el tramo sin id (why) y el footer - se mantiene la
     // ultima activa, que es lo que hacia el calculo anterior.
     const active = navSections.find(sec => crossing.has(sec));
     if (active) setActiveNav(active.id);
@@ -109,7 +109,7 @@ window.addEventListener('scroll', () => {
 
 updateNavTheme(window.scrollY);
 
-// ── Lead capture — endpoint per environment (by hostname)
+// ── Lead capture - endpoint per environment (by hostname)
 const isDevHost = ['localhost', '127.0.0.1', '0.0.0.0'].includes(location.hostname);
 const CRM_BASE  = isDevHost ? 'http://localhost:9090' : 'https://crm.iselia.es';
 const LEADS_API = `${CRM_BASE}/api/public/leads/`;
