@@ -636,20 +636,8 @@ section {
   border-radius: 12px;
   border: 1px solid var(--border2);
   display: flex; align-items: center; justify-content: center;
-  background: var(--glass2);
-}
-/* Icono + numero de fase: los cuatro servicios son las fases de un mismo
-   ciclo (asesoria -> diseno -> implementacion -> acompanamiento). */
-.service-head {
-  display: flex; align-items: center; justify-content: space-between;
   margin-bottom: 1.25rem;
-}
-.service-step {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  color: var(--muted);
+  background: var(--glass2);
 }
 .service-icon-wrap svg { width: 22px; height: 22px; color: var(--blue); }
 .service-card:nth-child(2) .service-icon-wrap svg { color: var(--violet); }
