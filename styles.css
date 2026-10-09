@@ -483,15 +483,18 @@ section {
    y otra. Las tarjetas de dentro suben tambien un punto para no fundirse. */
 .section-alt { background: var(--bg-alt); }
 
-/* Cabeceras centradas en las secciones de una columna (.why va a la izquierda). */
-.who, .problem, .services, .sectors-sec { text-align: center; }
+/* Cabeceras centradas (pildora, titulo y subtitulo). En .why solo la
+   cabecera: los puntos y el panel de debajo siguen alineados a la izquierda. */
+.who, .problem, .services, .why, .sectors-sec { text-align: center; }
 .who .problem-card,
 .problem .problem-card,
 .services .service-card,
+.why .why-layout,
 .sectors-sec .acc-item { text-align: left; }
 .who > .section-sub,
 .problem > .section-sub,
 .services > .section-sub,
+.why > .section-sub,
 .sectors-sec > .section-sub { margin-left: auto; margin-right: auto; }
 
 /* Titulos de tarjeta: mismo nivel, misma fuente, tamano y peso en todas las

@@ -61,8 +61,9 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Active nav link on scroll
 // Se observan TODAS las secciones, no solo las que tienen enlace: al entrar en
-// el hero, en "Donde duele" o en contacto, que no estan en el menu, no queda
-// ningun enlace marcado en vez de arrastrar el anterior.
+// el hero o en contacto, que no estan en el menu, no queda ningun enlace
+// marcado en vez de arrastrar el anterior. Una seccion sin enlace propio puede
+// marcar otro con data-nav: "Donde duele" (#retos) marca A quien ayudamos.
 const navSections = [...document.querySelectorAll('body > section')];
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 
@@ -88,7 +89,7 @@ if (navAnchors.length && navSections.length) {
     // La linea cruza como mucho una seccion; en el footer no cruza ninguna y
     // se mantiene lo ultimo, que es contacto (sin enlace).
     const active = navSections.find(sec => crossing.has(sec));
-    if (active) setActiveNav(active.id);
+    if (active) setActiveNav(active.dataset.nav || active.id);
   }, { rootMargin: '-45% 0px -55% 0px' });
   navSections.forEach(sec => spy.observe(sec));
 }

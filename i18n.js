@@ -14,7 +14,7 @@ const translations = {
 
     /* HERO */
     'hero-h1':           'No vendemos tecnología.<br /><span class="grad">Entendemos tu negocio.</span>',
-    'hero-desc':         'Ayudamos a empresas en cualquier etapa - desde el lanzamiento hasta el crecimiento - a crecer de forma inteligente, con la IA detrás de cada decisión y cada proceso.',
+    'hero-desc':         'Ayudamos a empresas en cualquier etapa - desde el lanzamiento hasta el crecimiento - a construir de forma inteligente, con la IA detrás de cada decisión y cada proceso.',
     'hero-cta-btn':      'Empieza hoy',
     'hero-outline-btn':  'Ver cómo trabajamos',
 
