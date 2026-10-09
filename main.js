@@ -3,15 +3,16 @@
 // ReferenceError if that script never ran. Read it at call time and fall back.
 const uiLang = () => (typeof currentLang !== 'undefined' ? currentLang : 'es');
 
-// ── Navbar: claro arriba, oscuro al hacer scroll
-// El umbral no es solo una sombra: .scrolled cambia el tema entero de la nav
-// y funde entre las dos variantes del logo, asi que 20px se disparaba con
-// cualquier toque de rueda. 80px pide un scroll deliberado.
-// El listener de scroll vive mas abajo, junto al scroll-spy: los dos van en
-// el mismo callback para no leer y escribir layout de forma alterna.
+// ── Navbar: borde inferior real -> --nav-offset (scroll-margin-top de las
+// secciones), para que un ancla deje la seccion justo debajo de la pildora y
+// no escondida detras ni a media altura. Se mide al cambiar de tamano la nav
+// (fuentes, idioma, salto movil/escritorio), nunca en un evento de scroll.
 const navbar = document.getElementById('navbar');
-function updateNavTheme(scrollY) {
-  navbar.classList.toggle('scrolled', scrollY > 80);
+if (navbar) {
+  new ResizeObserver(() => {
+    document.documentElement.style.setProperty(
+      '--nav-offset', `${navbar.offsetTop + navbar.offsetHeight}px`);
+  }).observe(navbar);
 }
 
 // ── Mobile menu toggle
@@ -24,7 +25,7 @@ if (mobileToggle && navLinks) {
     navLinks.classList.toggle('open');
     mobileToggle.innerHTML = navLinks.classList.contains('open') ? ICON_CLOSE : ICON_MENU;
   });
-  navLinks.querySelectorAll('a').forEach(a => {
+  navbar.querySelectorAll('.nav-links a, .nav-cta').forEach(a => {
     a.addEventListener('click', () => {
       navLinks.classList.remove('open');
       mobileToggle.innerHTML = ICON_MENU;
@@ -59,10 +60,11 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Active nav link on scroll
-const navSections = ['nosotros', 'servicios', 'sectores', 'contacto']
-  .map(id => document.getElementById(id))
-  .filter(Boolean);
-const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-cta)');
+// Se observan TODAS las secciones, no solo las que tienen enlace: al entrar en
+// el hero, en "Donde duele" o en contacto, que no estan en el menu, no queda
+// ningun enlace marcado en vez de arrastrar el anterior.
+const navSections = [...document.querySelectorAll('body > section')];
+const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 
 // Sin leer geometria. Esto llamaba a getBoundingClientRect() por seccion en
 // cada scroll, y pedir geometria con el estilo recien tocado obliga al
@@ -72,47 +74,44 @@ const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]:not(.nav-c
 // pedirselo.
 function setActiveNav(id) {
   navAnchors.forEach(a => {
-    a.classList.toggle('nav-active', a.getAttribute('href') === `#${id}`);
+    a.classList.toggle('nav-active', !!id && a.getAttribute('href') === `#${id}`);
   });
 }
 
-if (navSections.length) {
-  // El margen recorta la raiz a una linea sin altura al 45% de la ventana, que
-  // es la altura que decidia la version anterior.
+if (navAnchors.length && navSections.length) {
+  // El margen recorta la raiz a una linea sin altura al 45% de la ventana.
   const crossing = new Set();
   const spy = new IntersectionObserver(entries => {
     for (const e of entries) {
       if (e.isIntersecting) crossing.add(e.target); else crossing.delete(e.target);
     }
-    // La linea cruza como mucho una seccion. Cuando no cruza ninguna - el
-    // hero, el tramo sin id (why) y el footer - se mantiene la
-    // ultima activa, que es lo que hacia el calculo anterior.
+    // La linea cruza como mucho una seccion; en el footer no cruza ninguna y
+    // se mantiene lo ultimo, que es contacto (sin enlace).
     const active = navSections.find(sec => crossing.has(sec));
     if (active) setActiveNav(active.id);
   }, { rootMargin: '-45% 0px -55% 0px' });
   navSections.forEach(sec => spy.observe(sec));
-  setActiveNav('nosotros');
 }
-
-// El unico listener de scroll que queda solo escribe una clase; no lee nada
-// del layout. Va limitado a un pase por frame porque el evento se dispara
-// muchas mas veces de las que el navegador llega a pintar.
-let scrollScheduled = false;
-window.addEventListener('scroll', () => {
-  if (scrollScheduled) return;
-  scrollScheduled = true;
-  requestAnimationFrame(() => {
-    scrollScheduled = false;
-    updateNavTheme(window.scrollY);
-  });
-}, { passive: true });
-
-updateNavTheme(window.scrollY);
 
 // ── Lead capture - endpoint per environment (by hostname)
 const isDevHost = ['localhost', '127.0.0.1', '0.0.0.0'].includes(location.hostname);
 const CRM_BASE  = isDevHost ? 'http://localhost:9090' : 'https://crm.iselia.es';
 const LEADS_API = `${CRM_BASE}/api/public/leads/`;
+
+// ── "Todavia no he lanzado mi negocio": Empresa pasa a opcional (la etiqueta
+// cambia "*" por "(opcional)") y Nº de empleados se oculta y se vacia. Las dos
+// etiquetas estan en el HTML con su propia clave i18n, asi que esto solo
+// alterna `hidden` y no depende de las traducciones de i18n.js.
+const sinLanzar = document.getElementById('sinLanzar');
+if (sinLanzar) sinLanzar.addEventListener('change', () => {
+  const on = sinLanzar.checked;
+  document.getElementById('empresa').required = !on;
+  document.getElementById('empresaReq').hidden = on;
+  document.getElementById('empresaOpt').hidden = !on;
+  document.getElementById('sinLanzarHint').hidden = !on;
+  document.getElementById('empleadosGroup').hidden = on;
+  if (on) document.getElementById('empleados').value = '';
+});
 
 // ── Form submit (solo existe en la home)
 const contactForm = document.getElementById('contactForm');
@@ -139,6 +138,7 @@ if (contactForm) contactForm.addEventListener('submit', async function(e) {
   const first_name = spaceIdx === -1 ? nombre : nombre.slice(0, spaceIdx);
   const last_name  = spaceIdx === -1 ? undefined : nombre.slice(spaceIdx + 1) || undefined;
 
+  const company   = form.querySelector('#empresa').value.trim() || undefined;
   const employees = form.querySelector('#empleados').value || undefined;
   const sector    = form.querySelector('#sector').value    || undefined;
   const notes     = form.querySelector('#mensaje').value.trim() || undefined;
@@ -147,7 +147,7 @@ if (contactForm) contactForm.addEventListener('submit', async function(e) {
     first_name,
     ...(last_name  && { last_name }),
     email:   form.querySelector('#email').value.trim(),
-    company: form.querySelector('#empresa').value.trim(),
+    ...(company    && { company }),
     ...(employees  && { employees }),
     ...(sector     && { sector }),
     ...(notes      && { notes }),

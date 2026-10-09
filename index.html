@@ -145,15 +145,13 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo" aria-label="Iselia">
-    <img class="logo-light" src="assets/iselia-lockup-horizontal-color.svg" alt="Iselia" width="150" height="30" />
-    <img class="logo-dark" src="assets/iselia-lockup-horizontal-oscuro.svg" alt="" aria-hidden="true" width="150" height="30" />
+    <img src="assets/iselia-lockup-horizontal-oscuro.svg" alt="Iselia" width="150" height="30" />
   </a>
-  <button class="nav-mobile-btn" id="mobileToggle" aria-label="Menú"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#nosotros" data-i18n="nav-about">Nosotros</a></li>
+    <li><a href="#ayudamos" data-i18n="nav-who">A quién ayudamos</a></li>
     <li><a href="#servicios" data-i18n="nav-services">Servicios</a></li>
+    <li><a href="#por-que" data-i18n="nav-why">Por qué Iselia</a></li>
     <li><a href="#sectores" data-i18n="nav-sectors">Sectores</a></li>
-    <li><a href="#contacto" data-i18n="nav-contact">Contacto</a></li>
     <li class="lang-switcher" id="langSwitcher">
       <button type="button" class="lang-toggle" id="langToggle" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">
         <span class="lang-code" id="langCode">ES</span>
@@ -164,8 +162,9 @@
         <li><button type="button" class="lang-btn" role="menuitem" data-lang="en" data-code="EN">English</button></li>
       </ul>
     </li>
-    <li><a href="#contacto" class="nav-cta" id="ctaLink" data-i18n="nav-cta">Hablemos</a></li>
   </ul>
+  <a href="#contacto" class="nav-cta" id="ctaLink"><span data-i18n="nav-cta">Hablemos</span><span class="cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+  <button class="nav-mobile-btn" id="mobileToggle" aria-label="Menú"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg></button>
 </nav>
 
 <!-- HERO -->
@@ -178,9 +177,9 @@
       <span class="grad">Entendemos tu negocio.</span>
     </h1>
     <p class="hero-desc" data-i18n="hero-desc">
-      Ayudamos a empresas reales a crecer de forma inteligente, con la potencia
-      de la inteligencia artificial al servicio de cada decisión y cada proceso
-      de tu pyme.
+      Ayudamos a empresas en cualquier etapa - desde el lanzamiento hasta el
+      crecimiento - a crecer de forma inteligente, con la IA detrás de cada
+      decisión y cada proceso.
     </p>
     <div class="hero-actions">
       <a href="#contacto" class="btn-primary" id="heroCta">
@@ -193,12 +192,36 @@
 </section>
 
 
+<!-- WHO WE HELP -->
+<section class="who section-alt" id="ayudamos">
+  <div class="section-eyebrow" data-i18n="who-eyebrow">A quién ayudamos</div>
+  <h2 class="section-title" data-i18n="who-title">Estés donde estés.<br /><span class="hl">Empezamos desde ahí.</span></h2>
+  <p class="section-sub" data-i18n="who-sub">Desde la primera idea hasta tu contratación número cien, te ayudamos a llevar tu negocio a donde necesita llegar.</p>
+  <div class="card-strip who-grid reveal">
+    <div class="problem-card">
+      <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+      <h3 data-i18n="who-1-title">Abriendo un nuevo negocio</h3>
+      <p data-i18n="who-1-desc">Tienes la idea y las ganas, pero no un mapa claro de qué herramientas, sistemas y procesos necesitas de verdad. Te ayudamos a montarlo bien desde el principio, para que crezcas sin tener que rehacerlo todo más adelante.</p>
+    </div>
+    <div class="problem-card">
+      <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+      <h3 data-i18n="who-2-title">Creciendo rápido</h3>
+      <p data-i18n="who-2-desc">Lo que funcionaba con 5 personas no funciona con 30. Hojas de cálculo, herramientas parcheadas y apaños manuales empiezan a frenarte. Te ayudamos a escalar tus operaciones antes de que se conviertan en un cuello de botella.</p>
+    </div>
+    <div class="problem-card">
+      <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <h3 data-i18n="who-3-title">Consolidada, pero estancada</h3>
+      <p data-i18n="who-3-desc">Años de sistemas que no se hablan entre sí, procesos que nadie entiende del todo, dinero que se escapa por algún sitio. Encontramos qué te está frenando y lo solucionamos paso a paso.</p>
+    </div>
+  </div>
+</section>
+
 <!-- PROBLEM -->
-<section class="problem" id="nosotros">
-  <div class="section-eyebrow" data-i18n="prob-eyebrow">Por qué Iselia</div>
-  <h2 class="section-title" data-i18n="prob-title">Las pymes tienen los mismos retos.<br /><span class="grad">Pero cada una es única.</span></h2>
+<section class="problem" id="retos">
+  <div class="section-eyebrow" data-i18n="prob-eyebrow">Dónde duele</div>
+  <h2 class="section-title" data-i18n="prob-title">Las pymes tienen los mismos retos.<br /><span class="hl">Pero cada una es única.</span></h2>
   <p class="section-sub" data-i18n="prob-sub">Sabemos lo que te quita el sueño porque llevamos décadas dentro de empresas como la tuya.</p>
-  <div class="problem-grid reveal">
+  <div class="card-strip problem-grid reveal">
     <div class="problem-card">
       <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
       <h3 data-i18n="prob-1-title">Tiempo perdido en tareas manuales</h3>
@@ -212,10 +235,10 @@
     <div class="problem-card">
       <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
       <h3 data-i18n="prob-3-title">Tecnología que no encaja</h3>
-      <p data-i18n="prob-3-desc">Herramientas genéricas que no se adaptan a cómo trabajas tú, no al revés.</p>
+      <p data-i18n="prob-3-desc">Herramientas genéricas que te obligan a adaptarte a ellas, cuando debería ser al revés.</p>
     </div>
     <div class="problem-card">
-      <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+      <span class="problem-glyph"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
       <h3 data-i18n="prob-4-title">Miedo a quedarse atrás</h3>
       <p data-i18n="prob-4-desc">La IA avanza rápido y no sabes por dónde empezar sin arriesgar lo que ya funciona.</p>
     </div>
@@ -223,19 +246,17 @@
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="servicios">
+<section class="services section-alt" id="servicios">
   <div class="section-eyebrow" data-i18n="svc-eyebrow">Lo que hacemos</div>
-  <h2 class="section-title" data-i18n="svc-title">Soluciones a medida,<br /><span class="grad">resultados medibles.</span></h2>
+  <h2 class="section-title" data-i18n="svc-title">Soluciones a medida,<br /><span class="hl">resultados medibles.</span></h2>
   <p class="section-sub" data-i18n="svc-sub">No aplicamos recetas genéricas. Diseñamos cada intervención desde el conocimiento profundo de tu sector y tus operaciones.</p>
-  <div class="svc-banner" data-i18n="svc-banner">Contigo en cada fase, o solo en la que necesites</div>
-  <div class="svc-connect" aria-hidden="true">
-    <span class="svc-stem"></span>
-    <span class="svc-bar"></span>
-    <span class="svc-drop"></span><span class="svc-drop"></span><span class="svc-drop"></span><span class="svc-drop"></span>
-  </div>
+  <p class="svc-banner" data-i18n="svc-banner">Contigo en cada fase, o solo en la que necesites</p>
   <div class="services-grid reveal">
     <div class="service-card">
-      <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg></div>
+      <div class="service-top">
+        <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <span class="service-num">01</span>
+      </div>
       <h3 data-i18n="svc-1-title">Asesoría estratégica</h3>
       <p data-i18n="svc-1-desc">Te ayudamos a decidir dónde invertir en tecnología e IA, y en qué orden. Partimos de tus objetivos de negocio, no de la herramienta de moda.</p>
       <ul class="service-list">
@@ -245,7 +266,10 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></div>
+      <div class="service-top">
+        <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></div>
+        <span class="service-num">02</span>
+      </div>
       <h3 data-i18n="svc-2-title">Diseño de soluciones</h3>
       <p data-i18n="svc-2-desc">Convertimos cada oportunidad en una solución concreta: qué se construye, cómo encaja con tus sistemas y cuánto cuesta, antes de escribir una línea de código.</p>
       <ul class="service-list">
@@ -255,7 +279,10 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
+      <div class="service-top">
+        <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
+        <span class="service-num">03</span>
+      </div>
       <h3 data-i18n="svc-3-title">Implementación técnica</h3>
       <p data-i18n="svc-3-desc">Construimos la solución y la integramos en tu entorno, por fases cortas y con resultados visibles desde las primeras semanas.</p>
       <ul class="service-list">
@@ -265,7 +292,10 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg></div>
+      <div class="service-top">
+        <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <span class="service-num">04</span>
+      </div>
       <h3 data-i18n="svc-4-title">Acompañamiento permanente</h3>
       <p data-i18n="svc-4-desc">No desaparecemos tras la puesta en marcha. Formamos a tu equipo, medimos el impacto y seguimos mejorando la solución a medida que tu empresa cambia.</p>
       <ul class="service-list">
@@ -278,46 +308,58 @@
 </section>
 
 <!-- WHY -->
-<section class="why">
+<section class="why" id="por-que">
+  <div class="section-eyebrow" data-i18n="why-eyebrow">Por qué Iselia</div>
+  <h2 class="section-title" data-i18n="why-title">Experiencia que<br /><span class="hl">no se improvisa.</span></h2>
+  <p class="section-sub" data-i18n="why-sub">Lo que nos distingue no es la tecnología que usamos, sino cómo la aplicamos a realidades concretas de negocio.</p>
   <div class="why-layout">
-    <div>
-      <div class="section-eyebrow" data-i18n="why-eyebrow">Nuestra diferencia</div>
-      <h2 class="section-title" data-i18n="why-title">Experiencia que<br /><span class="grad">no se improvisa.</span></h2>
-      <p class="section-sub" data-i18n="why-sub">Lo que nos distingue no es la tecnología que usamos, sino cómo la aplicamos a realidades concretas de negocio.</p>
-      <div class="why-points reveal">
-        <div class="why-point">
-          <div class="why-num">01</div>
-          <div>
-            <h3 data-i18n="why-1-title">Hablamos tu idioma, no el de los manuales</h3>
-            <p data-i18n="why-1-desc">Venimos de haber gestionado y optimizado empresas reales. Entendemos las presiones operativas, los recursos limitados y las urgencias del día a día.</p>
-          </div>
+    <div class="why-points reveal">
+      <div class="why-point">
+        <div class="why-num">01</div>
+        <div>
+          <h3 data-i18n="why-1-title">Hablamos tu idioma, no el de los manuales</h3>
+          <p data-i18n="why-1-desc">Venimos de dirigir y optimizar empresas reales. Conocemos la presión operativa, los recursos limitados y los incendios del día a día.</p>
         </div>
-        <div class="why-point">
-          <div class="why-num">02</div>
-          <div>
-            <h3 data-i18n="why-2-title">IA aplicada, no IA teórica</h3>
-            <p data-i18n="why-2-desc">No te vendemos una demo. Implantamos soluciones que funcionan en tu entorno, con tus datos y con tu equipo.</p>
-          </div>
+      </div>
+      <div class="why-point">
+        <div class="why-num">02</div>
+        <div>
+          <h3 data-i18n="why-2-title">Ponemos orden en el caos</h3>
+          <p data-i18n="why-2-desc">Analizamos cómo funciona de verdad tu negocio - cada sistema, cada equipo, cada proceso. Después encontramos dónde estás perdiendo dinero y lo conectamos todo en un solo lugar fácil de gestionar.</p>
         </div>
-        <div class="why-point">
-          <div class="why-num">03</div>
-          <div>
-            <h3 data-i18n="why-3-title">Resultados antes que tecnología</h3>
-            <p data-i18n="why-3-desc">Cada proyecto empieza por el problema de negocio. Medimos el impacto en euros, horas y decisiones, no en módulos instalados.</p>
-          </div>
+      </div>
+      <div class="why-point">
+        <div class="why-num">03</div>
+        <div>
+          <h3 data-i18n="why-3-title">IA aplicada, no IA teórica</h3>
+          <p data-i18n="why-3-desc">No te vendemos una demo. Construimos sobre cómo ya trabajas - tus sistemas, tus datos, tu equipo.</p>
         </div>
-        <div class="why-point">
-          <div class="why-num">04</div>
-          <div>
-            <h3 data-i18n="why-4-title">Escala de pyme, rigor de gran empresa</h3>
-            <p data-i18n="why-4-desc">Adaptamos metodologías de la gran empresa a la realidad de una pyme. Sin sobrecarga, con máximo impacto.</p>
-          </div>
+      </div>
+      <div class="why-point">
+        <div class="why-num">04</div>
+        <div>
+          <h3 data-i18n="why-4-title">Resultados que se pueden medir</h3>
+          <p data-i18n="why-4-desc">Medimos cada proyecto en dinero ahorrado, horas liberadas y mejores decisiones - no en módulos instalados ni funcionalidades entregadas.</p>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-num">05</div>
+        <div>
+          <h3 data-i18n="why-5-title">Escala de pyme, rigor de gran empresa</h3>
+          <p data-i18n="why-5-desc">Adaptamos metodologías de la gran empresa a la realidad de una pyme. Sin sobrecarga, con máximo impacto.</p>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-num">06</div>
+        <div>
+          <h3 data-i18n="why-6-title">Cambio sin riesgo</h3>
+          <p data-i18n="why-6-desc">Sabemos lo que se siente cuando tirar de un solo hilo puede desmontarlo todo. Por eso empezamos donde el retorno llega antes y cambiamos una pieza cada vez - tu negocio sigue funcionando mientras lo mejoramos.</p>
         </div>
       </div>
     </div>
     <div class="why-panel reveal reveal-delay-2">
       <div class="why-panel-content">
-        <p class="why-quote" data-i18n="why-quote">"Menos promesas.<br />Simplemente, <span class="hi">procesos que funcionan</span>."</p>
+        <p class="why-quote" data-i18n="why-quote">“Menos promesas.<br />Simplemente, <span class="hi">procesos que funcionan</span>.”</p>
         <p class="why-author" data-i18n="why-author">- Filosofía Iselia</p>
         <p class="why-pillars-title" data-i18n="pillars-title">Nuestros pilares</p>
         <p class="why-pillars-sub" data-i18n="pillars-sub">Rigen todas las soluciones que diseñamos e implementamos.</p>
@@ -336,7 +378,7 @@
           </div>
           <div class="wm">
             <h3 class="wm-val" data-i18n="wm-4-val">Resultados</h3>
-            <p class="wm-label" data-i18n="wm-4-label">Medimos el éxito por el impacto en tu negocio, no por lo entregado.</p>
+            <p class="wm-label" data-i18n="wm-4-label">Un proyecto termina cuando tu negocio ve los resultados, no cuando lo entregamos.</p>
           </div>
         </div>
       </div>
@@ -345,50 +387,47 @@
 </section>
 
 <!-- SECTORES -->
-<section class="sectors-sec" id="sectores">
-  <div class="sectors-layout">
-    <div class="sectors-copy">
-      <div class="section-eyebrow" data-i18n="sec-eyebrow">Sectores</div>
-      <h2 class="section-title" data-i18n="sec-title">Cada sector tiene<br /><span class="grad">sus propias reglas.</span></h2>
-      <p class="section-sub" data-i18n="sec-sub">Estos son los sectores donde mejor conocemos el terreno.</p>
-      <div class="accordion">
-        <details class="acc-item">
-          <summary><span data-i18n="sec-retail-t">Retail</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-retail-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-logistica-t">Logística</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-logistica-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-hosteleria-t">Hostelería</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-hosteleria-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-servicios-t">Servicios profesionales</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-servicios-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-industria-t">Industria</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-industria-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-salud-t">Salud</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-salud-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-distrib-t">Distribución</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-distrib-d">.</p>
-        </details>
-        <details class="acc-item">
-          <summary><span data-i18n="sec-medios-t">Medios de comunicación</span><span class="acc-icon" aria-hidden="true"></span></summary>
-          <p data-i18n="sec-medios-d">.</p>
-        </details>
-      </div>
-    </div>
-    <div class="sectors-visual" aria-hidden="true">
-      <img src="assets/iselia-favicon-oscuro.svg" alt="" width="574" height="574" loading="lazy" decoding="async" />
-    </div>
+<section class="sectors-sec section-alt" id="sectores">
+  <div class="section-eyebrow" data-i18n="sec-eyebrow">Sectores</div>
+  <h2 class="section-title" data-i18n="sec-title">Conocemos tu sector.<br /><span class="hl">Y construimos para él.</span></h2>
+  <p class="section-sub" data-i18n="sec-sub">La tecnología por sí sola no resuelve los retos de cada sector. Por eso partimos del conocimiento del negocio.</p>
+  <div class="accordion reveal">
+    <details class="acc-item">
+      <summary><span data-i18n="sec-retail-t">Retail</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-retail-d">Stock, ventas y canales online y tienda física en una sola vista, con previsiones que reducen tanto el exceso de stock como las roturas.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-logistica-t">Logística</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-logistica-d">Rutas, seguimiento de envíos y operaciones de almacén conectados y automatizados - menos retrasos y menos llamadas de "¿dónde está mi pedido?".</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-hosteleria-t">Hostelería</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-hosteleria-d">Reservas, turnos del personal y pedidos a proveedores que funcionan solos, para que tu equipo se dedique a los clientes.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-servicios-t">Servicios profesionales</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-servicios-d">Propuestas, control de horas y facturación automatizados - más horas facturables y menos horas de gestión.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-industria-t">Industria</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-industria-d">Datos de producción y mantenimiento en tiempo real, para detectar cuellos de botella y averías antes de que te cuesten dinero.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-salud-t">Salud</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-salud-d">Citas, historiales y gestión administrativa simplificados, con los datos sensibles tratados como exige la normativa sanitaria.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-distrib-t">Distribución</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-distrib-d">Pedidos, inventario y proveedores sincronizados entre tus sistemas, con márgenes claros por cliente y por producto.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-medios-t">Medios de comunicación</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-medios-d">Flujos de contenido, datos de audiencia y venta de publicidad conectados, para ver qué funciona y qué genera ingresos de verdad.</p>
+    </details>
+    <details class="acc-item">
+      <summary><span data-i18n="sec-inmob-t">Inmobiliario</span><span class="acc-icon" aria-hidden="true"></span></summary>
+      <p data-i18n="sec-inmob-d">Cartera de inmuebles, contactos y visitas en un solo lugar, con seguimientos que se hacen solos y una visión clara de cada operación en curso.</p>
+    </details>
   </div>
 </section>
 
@@ -397,8 +436,8 @@
   <div class="contact-layout">
     <div>
       <div class="section-eyebrow" data-i18n="contact-eyebrow">Contacto</div>
-      <h2 class="section-title" data-i18n="contact-title">¿Listo para<br /><span class="grad">la conversación?</span></h2>
-      <p class="section-sub" data-i18n="contact-sub">Sin compromisos. Sin presentaciones genéricas. Solo una charla honesta sobre tu empresa y cómo podemos ayudarte.</p>
+      <h2 class="section-title" data-i18n="contact-title">¿Listo para<br /><span class="hl">la conversación?</span></h2>
+      <p class="section-sub" data-i18n="contact-sub">Sin compromisos. Sin presentaciones genéricas. Solo una charla honesta sobre tu negocio y cómo podemos ayudarte.</p>
       <div class="contact-info">
         <div class="contact-item">
           <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
@@ -434,8 +473,13 @@
             <input type="text" id="nombre" name="nombre" data-i18n-ph="form-name-ph" placeholder="Tu nombre" required />
           </div>
           <div class="form-group">
-            <label for="empresa" data-i18n="form-company-lbl">Empresa *</label>
+            <label for="empresa"><span id="empresaReq" data-i18n="form-company-lbl">Empresa *</span><span id="empresaOpt" data-i18n="form-company-lbl-opt" hidden>Empresa (opcional)</span></label>
             <input type="text" id="empresa" name="empresa" data-i18n-ph="form-company-ph" placeholder="Nombre de tu empresa" required />
+            <div class="form-check">
+              <input type="checkbox" id="sinLanzar" name="sin_lanzar" />
+              <label for="sinLanzar" data-i18n="form-nolaunch">Todavía no he lanzado mi negocio</label>
+            </div>
+            <p class="form-hint" id="sinLanzarHint" data-i18n="form-nolaunch-hint" hidden>Genial - cuéntanos tu idea abajo y nosotros nos encargamos del resto.</p>
           </div>
         </div>
         <div class="form-row">
@@ -443,7 +487,7 @@
             <label for="email" data-i18n="form-email-lbl">Email *</label>
             <input type="email" id="email" name="email" placeholder="tu@empresa.com" required />
           </div>
-          <div class="form-group">
+          <div class="form-group" id="empleadosGroup">
             <label for="empleados" data-i18n="form-emp-lbl">Nº empleados</label>
             <select id="empleados" name="empleados">
               <option value="" data-i18n="form-emp-ph">Selecciona</option>
@@ -465,7 +509,9 @@
             <option value="servicios"  data-i18n="form-sector-4">Servicios profesionales</option>
             <option value="industria"  data-i18n="form-sector-5">Industria / Manufactura</option>
             <option value="salud"      data-i18n="form-sector-6">Salud / Bienestar</option>
+            <option value="distribucion" data-i18n="form-sector-9">Distribución</option>
             <option value="medios"     data-i18n="form-sector-7">Medios de comunicación</option>
+            <option value="inmobiliario" data-i18n="form-sector-10">Inmobiliario</option>
             <option value="otro"       data-i18n="form-sector-8">Otro</option>
           </select>
         </div>
