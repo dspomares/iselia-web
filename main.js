@@ -139,7 +139,10 @@ if (contactForm) contactForm.addEventListener('submit', async function(e) {
   const first_name = spaceIdx === -1 ? nombre : nombre.slice(0, spaceIdx);
   const last_name  = spaceIdx === -1 ? undefined : nombre.slice(spaceIdx + 1) || undefined;
 
-  const company   = form.querySelector('#empresa').value.trim() || undefined;
+  // Sin empresa y con "Todavia no he lanzado mi negocio" marcado, el CRM recibe
+  // el centinela NO_COMPANY en vez de no recibir el campo.
+  const company   = form.querySelector('#empresa').value.trim()
+                 || (form.querySelector('#sinLanzar').checked ? 'NO_COMPANY' : undefined);
   const employees = form.querySelector('#empleados').value || undefined;
   const sector    = form.querySelector('#sector').value    || undefined;
   const notes     = form.querySelector('#mensaje').value.trim() || undefined;
